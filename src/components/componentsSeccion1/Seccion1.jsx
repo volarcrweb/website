@@ -77,15 +77,15 @@ const Seccion1 = () => {
         <Stack spacing={1}>
         <Stack>
 
-        <Typography className="title1">
+        <Typography className="title1" variant="h1">
             Descubre Nuevos
         </Typography>
-        <Typography className="title2">
+        <Typography className="title2" variant="h1">
             Horizontes
         </Typography>
         </Stack>
 
-        <Typography className="title3">
+        <Typography className="title3" variant="h2">
             lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
         </Typography>
         </Stack>

@@ -42,7 +42,7 @@ const Seccion2 = () => {
         <Stack
           alignItems={"center"}
           justifyContent={"center"}
-          spacing={isMobile || isTablet ? 0 : -2}
+          spacing={isMobile || isTablet ? 1 : -2}
           style={{ width: isMobile || isTablet ? "100%" : "60%", height: isMobile || isTablet ? "30%" : "100%" }}
         >
           <Stack
@@ -55,7 +55,7 @@ const Seccion2 = () => {
             <Typography className="titleBold">UNLEASH</Typography>
             <Typography className="titleLight">
               Discover a world without limits. Where you are chasing sunsets on
-              tropical beaches or exploring vibrant cityscapes
+              tropical beaches
             </Typography>
           </Stack>
 
