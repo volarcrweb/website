@@ -1,0 +1,105 @@
+.videobackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que el video quede detrás del contenido */
+    object-fit: cover; /* Escala el video para cubrir todo el área */
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 10px; 
+  
+  }
+
+  .title1{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 4rem !important;
+    color: #fff !important;
+  }
+
+  .title2{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 4rem !important;
+    color: #fff !important;
+  }
+
+  .title3{
+    font-family: "Montserrat-Light" !important;
+    font-size: 1rem !important;
+    color: #fff !important;
+  }
+
+  .btnExplore{
+    background-color: #E10600 !important;
+    color: #fff !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    text-transform: none !important;
+    border-radius: 10px !important;
+    width: 20% !important;
+    height: 115% !important;
+  }
+
+  .btnExplore:hover{
+    background-color: #e107007e !important;
+
+  }
+
+  
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .title1{
+      font-size: 2rem !important;
+    }
+
+    .title2{
+      font-size: 2rem !important;
+    }
+
+    .title3{
+      font-size: 0.8rem !important;
+      width: 90% !important;
+    }
+
+    .btnExplore{
+      width: 10% !important;
+      height: 70% !important;
+      font-size: 0.8rem !important;
+      padding: 0% !important;
+      min-width: 10% !important;
+    }
+    
+    .MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters{
+      font-size: 0.8rem !important;
+      padding: 6px 9px !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .title1{
+      font-size: 2rem !important;
+    }
+
+    .title2{
+      font-size: 2rem !important;
+    }
+
+    .title3{
+      font-size: 0.8rem !important;
+      width: 90% !important;
+    }
+
+    .btnExplore{
+      width: 10% !important;
+      height: 70% !important;
+      font-size: 0.8rem !important;
+      padding: 0% !important;
+      min-width: 10% !important;
+    }
+    
+    .MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters{
+      font-size: 0.8rem !important;
+      padding: 6px 9px !important;
+    }
+  
+    
+  }

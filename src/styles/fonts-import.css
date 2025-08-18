@@ -1,0 +1,176 @@
+
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(/fonts/Montserrat-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url(/fonts/Montserrat-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: 'Montserrat-Light';
+    src: url(/fonts/Montserrat-Light.ttf);
+  }
+  @font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(/fonts/Montserrat-Medium.ttf);
+  }
+  @font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(/fonts/Montserrat-Regular.ttf);
+  }
+
+  .scroll{
+    overflow: auto;
+    height: 100vh;
+    /* Aplicamos estilos al scroll que se encuentra dentro del Box. */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #9b9933
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #015439;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+}
+}
+
+
+.btnTranslate{
+  position: fixed !important;
+  border: none !important;
+  color: #000 !important;
+  text-align: center;
+  border-radius: 8px;
+  background: #FAFAFA !important;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat-Bold" !important;
+  font-size: 16px;
+  text-transform: none !important;
+  width: 64px;
+  height: 40px;
+  z-index: 1000;
+  margin-left: 90% !important;
+  margin-top: 0% !important;
+  min-width: 64px !important;
+}
+
+.btnWA{
+  position: fixed !important;
+  overflow: visible;
+  border: none !important;
+  color: #000 !important;
+  text-align: center;
+  border-radius: 50px;
+  background: #e1070098 !important;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  text-transform: none !important;
+  width: 73px;
+  height: 73px;
+  z-index: 1000;
+  margin-left: 92% !important;
+  /*margin-top: 30% !important; */
+  min-width: 64px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnWA::before {
+  content: '';
+  position: absolute;
+  left: -1px; top: -1px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #E10600;
+  animation: pulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.btnWA:hover{
+  background: #E10600 !important;
+  color: #FFF !important;
+}
+.btnTranslateSuccess{
+  position: fixed !important;
+  border: none !important;
+  color: #000 !important;
+  text-align: center;
+  border-radius: 8px;
+  background: #FAFAFA !important;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  font-family: "NHGrotesk-ExtraLight" !important;
+  font-size: 16px;
+  text-transform: none !important;
+  width: 64px;
+  height: 40px;
+  z-index: 1000;
+  margin-left: 92% !important;
+  margin-top: -2% !important;
+  min-width: 64px !important;
+
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .btnTranslate{
+    margin-left: 85% !important;
+    margin-top: -8% !important;
+    width: 44px;
+    min-width: 44px !important;
+    height: 30px;
+  }
+  .btnWA{
+    right: 16px;
+    bottom: 10%;
+    width: 50px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btnWA{
+    right: 16px;
+    bottom: 10%;
+    width: 50px;
+    height: 60px;
+  }
+  .btnTranslate{
+      margin-left: 78% !important;
+      margin-top: 0% !important;
+      width: 44px;
+      min-width: 44px !important;
+      height: 28px;
+  
+  
+  }
+  .btnTranslateSuccess{
+    margin-left: 85% !important;
+    margin-top: -1% !important;
+    width: 44px;
+    min-width: 44px !important;
+    height: 28px;
+  }
+}

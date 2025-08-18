@@ -1,0 +1,59 @@
+.titleBold{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 4.5rem !important;
+    color: #2D2D2D !important;
+    text-transform: uppercase !important;
+
+}
+
+.titleLight{
+    font-family: "Montserrat-Regular" !important;
+    font-size: 0.8rem !important;
+    color: #2D2D2D !important;
+    width: 30% !important;
+    text-transform: capitalize !important;
+}
+
+.textRed{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 2.5rem !important;
+    color: #E10600 !important;
+}
+.textBlack{
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    color: #2D2D2D !important;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .titleBold{
+        font-size: 2rem !important;
+    }
+    .titleLight{
+        font-size: 0.7rem !important;
+        width: 50% !important;
+    }
+    .textRed{
+        font-size: 1rem !important;
+    }
+    .textBlack{
+        font-size: 0.6rem !important;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .titleBold{
+        font-size: 1.4rem !important;
+    }
+    .titleLight{
+        font-size: 0.5rem !important;
+        width: 50% !important;
+    }
+    .textRed{
+        font-size: 1rem !important;
+    }
+    .textBlack{
+        font-size: 0.6rem !important;
+    }
+}
