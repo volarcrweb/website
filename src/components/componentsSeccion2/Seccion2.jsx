@@ -55,7 +55,7 @@ const Seccion2 = () => {
             <Typography className="titleBold">UNLEASH</Typography>
             <Typography className="titleLight">
               Discover a world without limits. Where you are chasing sunsets on
-              tropical beaches
+              tropical beaches.
             </Typography>
           </Stack>
 
