@@ -153,8 +153,8 @@
 
 @media (max-width: 600px) {
   .btnWA{
-    right: 35px;
-    bottom: -35%;
+    right: 25px;
+    bottom: -55%;
     width: 50px;
     height: 60px;
   }
