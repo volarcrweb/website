@@ -54,7 +54,7 @@
   text-transform: none !important;
   width: 64px;
   height: 40px;
-  z-index: 1000;
+  z-index: 1000 !important;
   margin-left: 90% !important;
   margin-top: 0% !important;
   min-width: 64px !important;
@@ -67,7 +67,7 @@
   color: #000 !important;
   text-align: center;
   border-radius: 50px;
-  background: #e1070098 !important;
+  background: #134A4B !important;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   text-transform: none !important;
@@ -76,6 +76,7 @@
   z-index: 1000;
   margin-left: 92% !important;
   /*margin-top: 30% !important; */
+  margin-bottom: 110% !important;
   min-width: 64px !important;
   display: flex;
   align-items: center;
@@ -90,7 +91,7 @@
   height: 100%;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid #E10600;
+  border: 1px solid #134A4B;
   animation: pulse 2s infinite;
   z-index: -1;
 }
@@ -111,7 +112,7 @@
 }
 
 .btnWA:hover{
-  background: #E10600 !important;
+  background: #134A4B !important;
   color: #FFF !important;
 }
 .btnTranslateSuccess{
@@ -152,8 +153,8 @@
 
 @media (max-width: 600px) {
   .btnWA{
-    right: 16px;
-    bottom: 10%;
+    right: 35px;
+    bottom: -35%;
     width: 50px;
     height: 60px;
   }

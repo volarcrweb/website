@@ -29,9 +29,10 @@
   }
 
   .btnExplore{
-    background-color: #E10600 !important;
+    background-color: #134A4B !important;
     color: #fff !important;
     font-family: "Montserrat-Regular" !important;
+    font-weight: 600 !important;
     font-size: 1rem !important;
     text-transform: none !important;
     border-radius: 10px !important;
@@ -40,7 +41,7 @@
   }
 
   .btnExplore:hover{
-    background-color: #e107007e !important;
+    background-color: #134a4b88 !important;
 
   }
 

@@ -1,0 +1,81 @@
+.destinationsTitle{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 3rem !important;
+    color: #2D2D2D !important;
+    text-transform: uppercase;
+}
+
+.cardTitle{
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1.2rem !important;
+    color: #fff !important;
+    z-index: 2 !important;
+    padding-left: 15px !important;
+}
+
+.cardButton{
+    font-family: "Montserrat-Light" !important;
+    z-index: 2;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding-left: 15px !important;
+}
+
+.cardTour:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cardTour:not(:hover){
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.btnSeeAll{
+    font-family: "Montserrat-Regular" !important;
+    z-index: 2;
+    color: #134A4B !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 10px;
+    border: 1px solid #134A4B;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    z-index: 0 !important;
+    width: auto;
+    &:hover{
+        scale: 1.05;
+        transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 600px) {
+    .destinationsTitle{
+        font-size: 1.5rem !important;
+    }
+    .cardTitle{
+        font-size: 0.9rem !important;
+    }
+    .cardButton{
+        font-size: 0.7rem !important;
+    }
+    .btnSeeAll{
+        font-size: 0.5rem !important;
+        gap: 5px;
+        width: 80px;
+        padding: 5px 10px;
+    }
+}

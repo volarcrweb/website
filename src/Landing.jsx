@@ -2,6 +2,8 @@ import { Stack, useMediaQuery } from '@mui/material'
 import Seccion1 from './components/componentsSeccion1/Seccion1'
 import "./styles/fonts-import.css"
 import Seccion2 from './components/componentsSeccion2/Seccion2'
+import Seccion3 from './components/componentsSeccion3/Seccion3'
+import Seccion5 from './components/componentsSeccion5/Seccion5'
 
 const Landing = () => {
   const isMobile = useMediaQuery('(max-width: 600px)');
@@ -12,6 +14,8 @@ const Landing = () => {
       </a> 
     <Seccion1/>
     <Seccion2/>
+    <Seccion3/>
+    <Seccion5/>
 </Stack>
   )
 }

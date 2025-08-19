@@ -1,0 +1,58 @@
+
+.title-flota{
+    color: #134A4B !important;
+    text-align: center !important;
+    font-family: "Montserrat-Bold" !important;
+    font-size: 66.416px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+}
+.title2-flota{
+    color: #2D2D2D !important;
+    text-align: center !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
+
+
+.titleAmenidad{
+    color: #134A4B;
+    text-align: center;
+    font-family: "Montserrat-Bold" !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+
+}
+.descripcionAmenidad{
+    color: #2D2D2D !important;
+    text-align: center !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    width: 206px !important;
+
+}
+
+@media (max-width: 600px) {
+    .title-flota {
+        font-size: 32px !important;
+    }
+    .title2-flota {
+        font-size: 16px !important;
+    }
+    .titleAmenidad {
+        font-size: 14px !important;
+    }
+    .descripcionAmenidad {
+        font-size: 12px !important;
+        width: 150px !important;
+    }
+}

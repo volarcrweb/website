@@ -28,10 +28,12 @@ const Seccion1 = () => {
   const handleCloseDate = () => setAnchorDate(null);
   const handleClosePeople = () => setAnchorPeople(null);
   return (
+    <Stack style={{paddingTop:isMobile ? "2%" : "0.5%", paddingLeft:isMobile ? "2%" : "1%", paddingRight:isMobile ? "1%" : "0%", height: "100%", width: isMobile ? "99%" : "100%"}}>
     <Stack
       style={{
-        width: "100%",
+        width: "99%",
         height: isMobile ? "80vh" : "90vh",
+        paddingTop: isMobile ? "0%" : "0%",
         borderRadius: "10px",
         position: "relative",
       }}
@@ -47,7 +49,7 @@ const Seccion1 = () => {
       />
       <Box
         style={{
-          backgroundColor: "rgba(78, 76, 76, 0.45)",
+          backgroundColor: "rgba(76, 76, 78, 0.45)",
           width: "100%",
           height: "100%",
           borderRadius: "10px",
@@ -78,10 +80,10 @@ const Seccion1 = () => {
         <Stack>
 
         <Typography className="title1" variant="h1">
-            Descubre Nuevos
+            Discover New
         </Typography>
         <Typography className="title2" variant="h1">
-            Horizontes
+            Horizons
         </Typography>
         </Stack>
 
@@ -94,7 +96,7 @@ const Seccion1 = () => {
           <Stack spacing={0.5} style={{flex: 1, cursor: "pointer"}} onClick={handleOpenLocation}>
             <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
               <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>Location</Typography>
-              <KeyboardArrowDownRoundedIcon style={{color: "#FF6B2C", fontSize: 25}} />
+              <KeyboardArrowDownRoundedIcon style={{color: "#134A4B", fontSize: 25}} />
             </Stack>
             <Typography style={{fontSize: isMobile ? "0.6rem" : "1rem", color: "#9CA3AF"}}>{location || "Your destination"}</Typography>
           </Stack>
@@ -102,7 +104,7 @@ const Seccion1 = () => {
           <Stack spacing={0.5} style={{flex: 1, cursor: "pointer"}} onClick={handleOpenDate}>
             <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
               <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>Duration</Typography>
-              <KeyboardArrowDownRoundedIcon style={{color: "#FF6B2C", fontSize: 25}} />
+              <KeyboardArrowDownRoundedIcon style={{color: "#134A4B", fontSize: 25}} />
             </Stack>
             <Typography style={{fontSize: isMobile ? "0.6rem" :"1rem", color: "#9CA3AF"}}>{dateOption || "When does it start?"}</Typography>
           </Stack>
@@ -110,12 +112,12 @@ const Seccion1 = () => {
           <Stack spacing={0.5} style={{flex: 1, cursor: "pointer"}} onClick={handleOpenPeople}>
             <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
               <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>People</Typography>
-              <KeyboardArrowDownRoundedIcon style={{color: "#FF6B2C", fontSize: 25}} />
+              <KeyboardArrowDownRoundedIcon style={{color: "#134A4B", fontSize: 25}} />
             </Stack>
             <Typography style={{fontSize: isMobile ? "0.6rem" : "1rem", color: "#9CA3AF"}}>{people || "How many people?"}</Typography>
           </Stack>
 
-          <Button className="btnExplore" style={{backgroundColor: "#3B82F6", color: "white", borderRadius: "12px", padding: "12px 24px", textTransform: "none", fontWeight: "600"}}>
+          <Button className="btnExplore" >
             {isMobile || isTablet ? <img src="/images/search.svg" alt="search" style={{width: "20px", height: "20px"}}/> : "Explore Now"}
           </Button>
 
@@ -148,6 +150,7 @@ const Seccion1 = () => {
 
 
 
+    </Stack>
     </Stack>
   );
 };
