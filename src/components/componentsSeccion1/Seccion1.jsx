@@ -88,7 +88,7 @@ const Seccion1 = () => {
         </Stack>
 
         <Typography className="title3" variant="h2">
-            lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+        From the cloud-kissed peaks of Arenal Volcano to the turquoise waters of the Pacific, Costa Rica beauty is meant to be seen from the sky.
         </Typography>
         </Stack>
         <Stack spacing={isMobile || isTablet ? 0.5 : 1} style={{backgroundColor:"#F2F4F8", width: isMobile || isTablet ? "90%" : "45%", borderRadius: isMobile || isTablet ? "10px" : "20px", padding:isMobile || isTablet ? "1.5% 2%" : "1% 1%"}} direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
