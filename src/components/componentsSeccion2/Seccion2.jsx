@@ -42,7 +42,7 @@ const Seccion2 = () => {
         <Stack
           alignItems={"center"}
           justifyContent={"center"}
-          spacing={isMobile || isTablet ? 1 : -2}
+          spacing={isMobile || isTablet ? 0 : -2}
           style={{ width: isMobile || isTablet ? "100%" : "60%", height: isMobile || isTablet ? "30%" : "100%" }}
         >
           <Stack
@@ -52,10 +52,9 @@ const Seccion2 = () => {
             justifyContent={"flex-start"}
             style={{ width: "90%" }}
           >
-            <Typography className="titleBold">UNLEASH</Typography>
+            <Typography className="titleBold">ELEVATE</Typography>
             <Typography className="titleLight">
-              Discover a world without limits. Where you are chasing sunsets on
-              tropical beaches.
+            Experience Costa Rica in the most spectacular way.
             </Typography>
           </Stack>
 
@@ -66,7 +65,7 @@ const Seccion2 = () => {
             justifyContent={"flex-start"}
             style={{ width: "90%" }}
           >
-            <Typography className="titleBold">wanderlust with</Typography>
+            <Typography className="titleBold">YOUR JOURNEY,</Typography>
           </Stack>
 
           <Stack
@@ -77,10 +76,9 @@ const Seccion2 = () => {
             style={{ width: "90%" }}
           >
             <Typography className="titleLight">
-              from breathtaking landscapes to culturaL wonders. The world is
-              yours to explore.
+            we offer a seamless, stylish, and unforgettable way to travel.
             </Typography>
-            <Typography className="titleBold">VOLAR</Typography>
+            <Typography className="titleBold">FLY WITH US</Typography>
           </Stack>
         </Stack>
       </Stack>
@@ -104,8 +102,8 @@ const Seccion2 = () => {
             borderRadius: isMobile ? "20px" : "30px",
           }}
         >
-          <Typography className="textRed">20% OFF</Typography>
-          <Typography className="textBlack">till 15th of August</Typography>
+          <Typography className="textRed">GO BEYOND</Typography>
+          <Typography className="textBlack">the ordinary tour</Typography>
         </Stack>
 
         <Box
