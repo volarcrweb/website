@@ -35,7 +35,7 @@ const tours = [
     },
     {
         id: 2,
-        title: "Volcán Poás",
+        title: "Poás Volcano",
         url: "#",
         image: "/images/poas.svg",
     },
