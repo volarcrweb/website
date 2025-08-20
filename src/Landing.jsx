@@ -21,7 +21,7 @@ const Landing = () => {
 
 <SpeedDial
         ariaLabel="SpeedDial openIcon example"
-        sx={{ position: 'fixed', bottom: isMobile ? "23%" : "16%", right: isMobile ? "8%" : "2%" }}
+        sx={{ position: 'fixed', bottom: isMobile ? "15%" : "16%", right: isMobile ? "8%" : "2%" }}
         FabProps={{ sx: { bgcolor: '#134A4B', color: '#fff', '&:hover': { bgcolor: '#0f3a3b' } } }}
         icon={<SpeedDialIcon openIcon={<ShareIcon />} />}
       >
