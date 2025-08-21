@@ -173,7 +173,7 @@ const handleFilterClick = (type) => {
             borderRadius: "34px",
             width: isMobile ? "80%" : "50%",
             padding: isMobile ? "1% 1%" : "0.3% 0.5%",
-            zIndex: "1000",
+            zIndex: "0",
             boxShadow: isMobile ? "none" : "none",
             backdropFilter: isMobile ? "none" : "blur(1.5px)",
       
