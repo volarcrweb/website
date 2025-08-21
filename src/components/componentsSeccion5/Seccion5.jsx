@@ -53,21 +53,21 @@ const Seccion5 = () => {
   const amenities = [
     {
       title:  "MD 902 Explorer",
-      title2: "",
+      title2: "Twin Engine",
       description: "Up to 6 passengers + 1 Pilot",
       image: "/images/blanco.svg",
       video: "/images/video-horizontal.mp4"
     },
     {
       title:  "AS350 B2",
-      title2: "",
+      title2: "Single Engine",
       description: "Up to 5 passengers + 1 Pilot",
       image: "/images/azul.svg",
       video: "/images/video-vertical1.mp4"
     },
     {
       title:  "Robinson 44",
-      title2: "",
+      title2: "Single Engine",
       description: "Up to 3 passengers + 1 Pilot",
       image: "/images/negro.svg",
       video: "/images/video-vertical2.mp4"

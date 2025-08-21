@@ -62,6 +62,21 @@
     }
 }
 
+.filter-title{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 1.5rem !important;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+.filter-number{
+    font-family: "Montserrat-Regular" !important;
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+    color: #2D2D2D !important;
+    text-transform: uppercase;
+}
+
+
 @media (max-width: 600px) {
     .destinationsTitle{
         font-size: 1.5rem !important;
@@ -77,5 +92,11 @@
         gap: 5px;
         width: 80px;
         padding: 5px 10px;
+    }
+    .filter-number{
+        font-size: 0.6rem !important;
+    }
+    .filter-title{
+        font-size: 1rem !important;
     }
 }
