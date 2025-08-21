@@ -26,7 +26,7 @@ const CardTour = ({ title, url, image }) => {
 
 const Seccion3 = () => {
     const isMobile = useMediaQuery('(max-width: 600px)');
-    const [activeFilter, setActiveFilter] = useState(null);
+    const [activeFilter, setActiveFilter] = useState('sanjose');
 
 const tours = [
     {
