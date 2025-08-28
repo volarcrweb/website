@@ -81,7 +81,7 @@ const Seccion5 = () => {
       justifyContent="space-evenly"
       alignItems="center"
       spacing={2}
-      style={{ paddingTop: isMobile ? "15%" : "5%", paddingLeft:"10%", paddingRight:"10%", paddingBottom: isMobile ? "25%" : "15%" }}
+      style={{ paddingTop: isMobile ? "15%" : "5%", paddingLeft:"10%", paddingRight:"10%", paddingBottom: isMobile ? "25%" : "8%" }}
     >
         {isMobile && (
                <Stack

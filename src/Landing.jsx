@@ -5,6 +5,9 @@ import "./styles/fonts-import.css"
 import Seccion2 from './components/componentsSeccion2/Seccion2'
 import Seccion3 from './components/componentsSeccion3/Seccion3'
 import Seccion5 from './components/componentsSeccion5/Seccion5'
+import Seccion4 from './components/componentsSeccion4/Seccion4'
+import Footer from './components/componentsFooter/Footer';
+// import Seccion6 from './components/componentsSeccion6/Seccion6'
 
 const Landing = () => {
   const isMobile = useMediaQuery('(max-width: 600px)');
@@ -42,6 +45,8 @@ const Landing = () => {
     <Seccion2/>
     <Seccion3/>
     <Seccion5/>
+    <Seccion4/>
+    <Footer/>
 </Stack>
   )
 }

@@ -156,13 +156,10 @@ const handleFilterClick = (type) => {
   };
 
   return (
-<Stack direction={"column"} style={{width: "100%", height: isMobile ? "auto" : "70vh", backgroundImage: "url('/images/agua.svg')", backgroundSize: "cover", backgroundPosition: "center", marginTop: "-9%", padding: isMobile ? "18% 0% 8% 0%" : "13% 0% 5% 0%"}}>
+<Stack direction={"column"} style={{width: "100%", height: isMobile ? "auto" : "70vh", backgroundImage: "url('/images/agua.svg')", backgroundSize: "cover", backgroundPosition: "center", marginTop: "-9%", padding: isMobile ? "18% 0% 8% 0%" : "13% 0% 8% 0%"}}>
 <Stack spacing={isMobile ? 3 : 6} style={{padding: "0% 5%"}}>
     <Stack direction={"row"} justifyContent={"center"} alignItems={"center"}>
-{/* <Typography variant="h1" className="destinationsTitle">
-    Popular Tours
-</Typography> */}
- {/* Encabezado */}
+
  <Stack
           direction={"column"}
           justifyContent={ "flex-start"}

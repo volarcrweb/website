@@ -1,8 +1,16 @@
 .titleSeccion4 {
-    font-family: "Montserrat-Regular" !important;
+    font-family: "Montserrat-Bold" !important;
     font-size: 2rem !important;
     color: #fff !important;
     text-align: center !important;
     text-transform: uppercase !important;
+    z-index: 1 !important;
+}
+
+.serviceTitle {
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    color: #fff !important;
+    text-align: center !important;
     z-index: 1 !important;
 }
