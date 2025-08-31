@@ -12,6 +12,7 @@ const AmenidadToggle = ({ title, title2, description, image, onClick }) => {
       alignItems="center"
       spacing={1}
       onClick={onClick}
+      style={{cursor: "pointer"}}
     >
       <Box
         style={{

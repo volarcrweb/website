@@ -2,22 +2,25 @@ import { SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, useMediaQuery } from 
 import ShareIcon from '@mui/icons-material/Share';
 import Seccion1 from './components/componentsSeccion1/Seccion1'
 import "./styles/fonts-import.css"
-import Seccion2 from './components/componentsSeccion2/Seccion2'
-import Seccion3 from './components/componentsSeccion3/Seccion3'
+// import Seccion2 from './components/componentsSeccion2/Seccion2'
+// import Seccion3 from './components/componentsSeccion3/Seccion3'
 import Seccion5 from './components/componentsSeccion5/Seccion5'
-import Seccion4 from './components/componentsSeccion4/Seccion4'
+// import Seccion4 from './components/componentsSeccion4/Seccion4'
 import Footer from './components/componentsFooter/Footer';
+import Galeria from './components/componentsGaleria/Galeria';
+import Servicios from './components/componentsServicios/Servicios'
+import Tours from './components/componentsTours/Tours';
 // import Seccion6 from './components/componentsSeccion6/Seccion6'
 
 const Landing = () => {
   const isMobile = useMediaQuery('(max-width: 600px)');
 
   const actions = [
-    { icon: <img src="/images/email.svg" style={{width: isMobile ? "50%" : "60%"}} alt='WA'/>, name: 'Email', url: "#" },
+    { icon: <img src="/images/email.svg" style={{width: isMobile ? "50%" : "60%"}} alt='WA'/>, name: 'Email', url: "mailto:reservations@volarcr.com" },
     { icon: <img src="/images/WANegro.svg" style={{width: isMobile ? "50%" : "60%"}} alt='WA'/>, name: 'Whatsapp', url: "https://api.whatsapp.com/send?phone=50685959741" },
   ];
   return (
-<Stack justifyContent={"center"} alignItems={"center"}>
+<Stack justifyContent={"center"} alignItems={"center"} style={{overflowX:isMobile ? "hidden" : "visible"}}>
    {/* <a className='btnWA' href="https://api.whatsapp.com/send?phone=50685959741" target="_blank" rel="noopener noreferrer">
         <img src="/images/WA.svg" style={{width: isMobile ? "50%" : "60%"}} alt='WA'/>
       </a> */}
@@ -42,10 +45,14 @@ const Landing = () => {
         ))}
       </SpeedDial>
     <Seccion1/>
-    <Seccion2/>
-    <Seccion3/>
+    <Servicios/>
+    <Tours/>
+    {/* <Seccion2/> */}
+    <Galeria/>
+    {/* <Seccion3/> */}
     <Seccion5/>
-    <Seccion4/>
+    {/* <Seccion4/> */}
+    {/* <Seccion6/> */}
     <Footer/>
 </Stack>
   )

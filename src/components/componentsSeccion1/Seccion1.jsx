@@ -28,13 +28,13 @@ const Seccion1 = () => {
   const handleCloseDate = () => setAnchorDate(null);
   const handleClosePeople = () => setAnchorPeople(null);
   return (
-    <Stack style={{paddingTop:isMobile ? "2%" : "0.5%", paddingLeft:isMobile ? "2%" : "1%", paddingRight:isMobile ? "1%" : "0%", height: "100%", width: isMobile ? "99%" : "100%"}}>
+    <Stack style={{height: "100%", width: isMobile ? "100%" : "100%"}}>
     <Stack
       style={{
-        width: "99%",
+        width: "100%",
         height: isMobile ? "80vh" : "90vh",
-        paddingTop: isMobile ? "0%" : "0%",
-        borderRadius: "10px",
+        // paddingTop: isMobile ? "0%" : "0%",
+        // borderRadius: "10px",
         position: "relative",
       }}
     >
@@ -52,7 +52,7 @@ const Seccion1 = () => {
           backgroundColor: "rgba(76, 76, 78, 0.45)",
           width: "100%",
           height: "100%",
-          borderRadius: "10px",
+          // borderRadius: "10px",
           position: "absolute",
           top: 0,
           left: 0,

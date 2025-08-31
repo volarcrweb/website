@@ -48,11 +48,32 @@ const Footer = () => {
 
                 {/* disclaimer */}
 
-                <Stack alignItems={"center"}>
-                  <Typography className="disclaimer">
-                  Tobías Bolaños Palma International Airport (MRPV), Hangar #04, 35 & 36, Pavas, San José, Costa Rica
-                  </Typography>
-                </Stack>
+                <Stack alignItems={"center"} spacing={1}>
+            <Stack direction="row" justifyContent="center" spacing={1} style={{width: "90%"}}>
+              <Stack direction="row" justifyContent="center" spacing={1}>
+                <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
+              <a href="tel:+50622909742" className="disclaimer">
+          +506 2290-9742
+                  </a>
+              </Stack>
+          
+              <Stack direction="row" justifyContent="center" spacing={1}>
+                  <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
+              <a href="tel:+50622909742" className="disclaimer">
+          +506 2290-9742
+                  </a>
+              </Stack>
+              <Stack direction="row" justifyContent="center" spacing={1}>
+                <img src="images/icons/mailF.svg" alt="phone" style={{width:"8%"}}/>
+              <a href="mailto:reservations@volarcr.com" className="disclaimer">
+          reservations@volarcr.com
+                  </a>
+              </Stack>
+                  </Stack>
+            <Typography className="disclaimer">
+            Tobías Bolaños Palma International Airport (MRPV), Hangar #04, 35 & 36, Pavas, San José, Costa Rica
+            </Typography>
+          </Stack>
 
                 <Stack direction="row" justifyContent="center" spacing={2}>
                   <a href="https://www.facebook.com/VolarCR/">
@@ -192,7 +213,28 @@ const Footer = () => {
 
           {/* disclaimer */}
 
-          <Stack alignItems={"center"}>
+          <Stack alignItems={"center"} style={{marginLeft:"2%"}}>
+            <Stack direction="row" justifyContent="center" spacing={2} style={{width: "50%"}}>
+              <Stack direction="row" justifyContent="center" spacing={1}>
+                <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
+              <a href="tel:+50622909742" className="disclaimer">
+          +506 2290-9742
+                  </a>
+              </Stack>
+          
+              <Stack direction="row" justifyContent="center" spacing={1}>
+                  <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
+              <a href="tel:+50622909742" className="disclaimer">
+          +506 2290-9742
+                  </a>
+              </Stack>
+              <Stack direction="row" justifyContent="center" spacing={1}>
+                <img src="images/icons/mailF.svg" alt="phone" style={{width:"8%"}}/>
+              <a href="mailto:reservations@volarcr.com" className="disclaimer">
+          reservations@volarcr.com
+                  </a>
+              </Stack>
+                  </Stack>
             <Typography className="disclaimer">
             Tobías Bolaños Palma International Airport (MRPV), Hangar #04, 35 & 36, Pavas, San José, Costa Rica
             </Typography>

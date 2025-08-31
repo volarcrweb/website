@@ -1,0 +1,99 @@
+.tituloAmenidades {
+    color: #FFF !important;
+    text-align: right !important;
+    font-family: "Montserrat-Bold" !important;
+    font-size: 4.58313rem !important;
+}
+
+.subtituloAmenidades {
+    color: #FFF !important;
+    text-align: right !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 2.09756rem !important;
+}
+
+.toggleButton {
+    color: #FFF !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 0.95rem !important;
+    text-transform: none !important;
+    border-radius: 3.33375rem !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    width: auto !important;
+    height: 1.96688rem !important;
+    text-shadow: 0 2.134px 2.134px rgba(0, 0, 0, 0.25) !important;
+    border: none !important;
+}
+.toggleButton:hover {
+    background: rgba(255, 255, 255, 0.35) !important;
+}
+
+
+.MuiButtonBase-root.MuiToggleButtonGroup-grouped.MuiToggleButtonGroup-groupedHorizontal.MuiToggleButton-root.Mui-selected.MuiToggleButton-sizeMedium.MuiToggleButton-standard.toggleButton{
+    background: rgba(255, 255, 255, 0.35)!important;
+}
+
+.tituloDetalle {
+    color: #134A4B !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 3.00013rem !important;
+    font-weight: 500 !important;
+    text-align: left !important;
+    line-height: 85% !important;
+}
+.subtituloDetalle {
+    color: #134A4B !important;
+    text-align: center !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 0.9125rem !important;
+}
+
+/* Estilos para el texto en movimiento */
+.movingtext-container {
+
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.movingtext {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 80s linear infinite;
+    font-family: "Montserrat-Bold" !important;
+    font-size: 3rem !important;
+    color: #2D2D2D !important;
+    font-weight: 700 !important;
+    -webkit-animation: scrollText 80s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    .tituloAmenidades{
+        font-size: 1.5rem !important;
+    }
+    .subtituloAmenidades{
+        font-size: 1rem !important;
+    }
+    .toggleButton{
+        font-size: 0.6rem !important;
+    }
+    .tituloDetalle{
+        font-size: 1.5rem !important;
+    }
+    .subtituloDetalle{
+        font-size: 0.6rem !important;
+    }
+    .movingtext{
+        font-size: 1.5rem !important;
+    }
+}

@@ -190,7 +190,7 @@ const Seccion6 = () => {
         }
     ]
   return (
-<Stack direction={"column"} justifyContent={"center"} alignItems={"center"} style={{width:"100%", height:"80vh", position:"relative", overflow:"hidden", backgroundImage: "url('/images/seccionMapa.svg')", backgroundSize: "inherit", backgroundPosition: "center", paddingTop:"3%", paddingBottom:"2%"}}>
+<Stack direction={"column"} justifyContent={"center"} alignItems={"center"} style={{width:"100%", height:"80vh", position:"relative", overflow:"hidden", backgroundSize: "inherit", backgroundPosition: "center", paddingTop:"3%", paddingBottom:"2%"}}>
 <Box style={{width:"100%", height:"100%", backgroundImage: "url('/images/hojas.svg')", backgroundSize: "inherit", backgroundPosition: "center", position:"absolute", top:0, left:0, zIndex:0}}/>
 
 

@@ -6,7 +6,7 @@
     object-fit: cover; /* Escala el video para cubrir todo el área */
     min-width: 100%;
     min-height: 100%;
-    border-radius: 10px; 
+    /* border-radius: 10px;  */
   
   }
 

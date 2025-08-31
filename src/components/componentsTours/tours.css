@@ -1,0 +1,22 @@
+.titleToursSeccion{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 2rem !important;
+    color: #F2F4F8 !important;
+    text-transform: uppercase;
+}
+
+.toursText{
+    color: #F2F4F8 !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .titleToursSeccion{
+        font-size: 1.5rem !important;
+    }
+    .toursText{
+        font-size: 0.6rem !important;
+    }
+}
