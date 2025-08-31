@@ -119,7 +119,7 @@ const Galeria = () => {
 <Stack style={{width: "100%", height: "25%", backgroundColor:"#F2F4F8"}}>
   <div className="movingtext-container">
     <Typography className="movingtext">
-      EXTRAORDINARY VIEWS , AMAZING EXPERIENCES &nbsp;&nbsp;&nbsp; EXTRAORDINARY VIEWS , AMAZING EXPERIENCES &nbsp;&nbsp;&nbsp;EXTRAORDINARY VIEWS , AMAZING EXPERIENCES &nbsp;&nbsp;&nbsp;EXTRAORDINARY VIEWS , AMAZING EXPERIENCES &nbsp;&nbsp;&nbsp;EXTRAORDINARY VIEWS , AMAZING EXPERIENCES &nbsp;&nbsp;&nbsp;EXTRAORDINARY VIEWS , AMAZING EXPERIENCES &nbsp;&nbsp;&nbsp;
+      {translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp; {translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;
     </Typography>
   </div>
 </Stack>
