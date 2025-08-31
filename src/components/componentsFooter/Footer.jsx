@@ -36,7 +36,7 @@ const Footer = () => {
                 
 
                 <Typography className="derechos">
-                All Rights Reserved © 2025
+                {translation.footer.allRightsReserved}
               </Typography>
 
                 </Stack>
@@ -59,8 +59,8 @@ const Footer = () => {
           
               <Stack direction="row" justifyContent="center" spacing={1}>
                   <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
-              <a href="tel:+50622909742" className="disclaimer">
-          +506 2290-9742
+              <a href="tel:+50685959741" className="disclaimer">
+          +506 8595-9741
                   </a>
               </Stack>
               <Stack direction="row" justifyContent="center" spacing={1}>
@@ -193,7 +193,7 @@ const Footer = () => {
                 Volar Air Charter
                 </Typography>
                 <Typography className="derechos">
-                All Rights Reserved © 2025 
+                {translation.footer.allRightsReserved}
               </Typography>
               </Stack>
 
@@ -224,8 +224,8 @@ const Footer = () => {
           
               <Stack direction="row" justifyContent="center" spacing={1}>
                   <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
-              <a href="tel:+50622909742" className="disclaimer">
-          +506 2290-9742
+              <a href="tel:+50685959741" className="disclaimer">
+          +506 8595-9741
                   </a>
               </Stack>
               <Stack direction="row" justifyContent="center" spacing={1}>

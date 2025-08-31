@@ -1,18 +1,21 @@
 import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material"
 import "./servicios.css"
+import { useContext } from "react";
+import { LanguageContext } from "../LanguageProvider";
 
 
 const Servicios = () => {
     const isMobile = useMediaQuery('(max-width: 600px)');
+    const { translation } = useContext(LanguageContext);
 
         // Datos de ejemplo para los servicios
         const servicios = [
-            { id: 1, titulo: "Helicopter Tours", icono: "images/icons/helicopter.svg" },
-            { id: 2, titulo: "VIP Charter Flights", icono: "images/icons/premium.svg" },
-            { id: 3, titulo: "Weddings & Events", icono: "images/icons/events.svg" },
-            { id: 4, titulo: "Aerial Filming & Photography", icono: "images/icons/camera.svg" },
-            { id: 5, titulo: "Lidar Mapping & Survey", icono: "images/icons/radar.svg" },
-            { id: 6, titulo: "External Loads", icono: "images/icons/cargo.svg" },
+            { id: 1, titulo: translation.seccion2.service1, icono: "images/icons/helicopter.svg" },
+            { id: 2, titulo: translation.seccion2.service2, icono: "images/icons/premium.svg" },
+            { id: 3, titulo: translation.seccion2.service3, icono: "images/icons/events.svg" },
+            { id: 4, titulo: translation.seccion2.service4, icono: "images/icons/camera.svg" },
+            { id: 5, titulo: translation.seccion2.service5, icono: "images/icons/radar.svg" },
+            { id: 6, titulo: translation.seccion2.service6, icono: "images/icons/cargo.svg" },
         ];
 
   return (

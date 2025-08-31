@@ -5,7 +5,7 @@ import { LanguageContext } from "../LanguageProvider";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 
 const Seccion1 = () => {
-  const { translation, toggleLanguage } = useContext(LanguageContext);
+  const { translation } = useContext(LanguageContext);
   const isMobile = useMediaQuery('(max-width: 600px)');
   const isTablet = useMediaQuery('(max-width: 1024px)');
   const [location, setLocation] = useState("");
@@ -16,9 +16,9 @@ const Seccion1 = () => {
   const [anchorDate, setAnchorDate] = useState(null);
   const [anchorPeople, setAnchorPeople] = useState(null);
 
-  const locationOptions = ["San José", "Tamarindo", "La Fortuna", "Monteverde"];
-  const dateOptions = ["15 minutes", "30 minutes", "1 hour", "2+ hours"];
-  const peopleOptions = ["1 person", "2 people", "3 people", "4+ people"];
+  const locationOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós"];
+  const dateOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós", "Papagayo", "Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo"];
+  const peopleOptions = ["1 "+translation.filter.person, "2 "+translation.filter.people, "3 "+translation.filter.people, "4 "+translation.filter.people, "5 "+translation.filter.people, "6 "+translation.filter.people];
 
   const handleOpenLocation = (event) => setAnchorLocation(event.currentTarget);
   const handleOpenDate = (event) => setAnchorDate(event.currentTarget);
@@ -56,7 +56,7 @@ const Seccion1 = () => {
           position: "absolute",
           top: 0,
           left: 0,
-          zIndex: 0,
+          zIndex: -1,
         }}
       />
 <Stack spacing={20}>
@@ -64,61 +64,59 @@ const Seccion1 = () => {
         direction={"row"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        style={{ width: "95%", zIndex: 1, paddingLeft: "2.5%", paddingRight: "2.5%" }}
+        style={{ width: "95%", zIndex: -1, paddingLeft: "2.5%", paddingRight: "2.5%" }}
       >
         <img src="/images/logo.png" alt="logo" style={{ width: isMobile ? "25%" : isTablet ? "20%" : "7%" }} />
 
-        <Button className='btnTranslate' onClick={toggleLanguage}>
-        <img src={translation.buttonText} style={{width:"69%"}}/>
-      </Button>
+
 
       </Stack>
 
 
-      <Stack spacing={isMobile || isTablet ? 9 : 4} style={{zIndex:1, paddingLeft: isMobile || isTablet ? "2%" : "3%"}}>
+      <Stack spacing={isMobile || isTablet ? 9 : 4} style={{zIndex:0, paddingLeft: isMobile || isTablet ? "2%" : "3%"}}>
         <Stack spacing={1}>
         <Stack>
 
         <Typography className="title1" variant="h1">
-            Discover New
+            {translation.seccion1.titulo1}
         </Typography>
         <Typography className="title2" variant="h1">
-            Horizons
+            {translation.seccion1.titulo2}
         </Typography>
         </Stack>
 
         <Typography className="title3" variant="h2">
-        From the cloud-kissed peaks of Arenal Volcano to the turquoise waters of the Pacific, Costa Rica beauty is meant to be seen from the sky.
+        {translation.seccion1.descripcion}
         </Typography>
         </Stack>
         <Stack spacing={isMobile || isTablet ? 0.5 : 1} style={{backgroundColor:"#F2F4F8", width: isMobile || isTablet ? "90%" : "45%", borderRadius: isMobile || isTablet ? "10px" : "20px", padding:isMobile || isTablet ? "1.5% 2%" : "1% 1%"}} direction={"row"} alignItems={"center"} justifyContent={"space-between"}>
 
           <Stack spacing={0.5} style={{flex: 1, cursor: "pointer"}} onClick={handleOpenLocation}>
             <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
-              <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>Location</Typography>
+              <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>{translation.seccion1.from}</Typography>
               <KeyboardArrowDownRoundedIcon style={{color: "#134A4B", fontSize: 25}} />
             </Stack>
-            <Typography style={{fontSize: isMobile ? "0.6rem" : "1rem", color: "#9CA3AF"}}>{location || "Your destination"}</Typography>
+            <Typography style={{fontSize: isMobile ? "0.6rem" : "1rem", color: "#9CA3AF"}}>{location || translation.seccion1.yourOrigin}</Typography>
           </Stack>
 
           <Stack spacing={0.5} style={{flex: 1, cursor: "pointer"}} onClick={handleOpenDate}>
             <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
-              <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>Duration</Typography>
+              <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>{translation.seccion1.to}</Typography>
               <KeyboardArrowDownRoundedIcon style={{color: "#134A4B", fontSize: 25}} />
             </Stack>
-            <Typography style={{fontSize: isMobile ? "0.6rem" :"1rem", color: "#9CA3AF"}}>{dateOption || "When does it start?"}</Typography>
+            <Typography style={{fontSize: isMobile ? "0.6rem" :"1rem", color: "#9CA3AF"}}>{dateOption || translation.seccion1.yourDestination}</Typography>
           </Stack>
 
           <Stack spacing={0.5} style={{flex: 1, cursor: "pointer"}} onClick={handleOpenPeople}>
             <Stack direction={"row"} alignItems={"center"} spacing={0.5}>
-              <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>People</Typography>
+              <Typography style={{fontSize: isMobile ? "0.7rem" : "14px", fontWeight: "600", color: "#374151"}}>{translation.seccion1.people}</Typography>
               <KeyboardArrowDownRoundedIcon style={{color: "#134A4B", fontSize: 25}} />
             </Stack>
-            <Typography style={{fontSize: isMobile ? "0.6rem" : "1rem", color: "#9CA3AF"}}>{people || "How many people?"}</Typography>
+            <Typography style={{fontSize: isMobile ? "0.6rem" : "1rem", color: "#9CA3AF"}}>{people || translation.seccion1.howManyPeople}</Typography>
           </Stack>
 
           <Button className="btnExplore" >
-            {isMobile || isTablet ? <img src="/images/search.svg" alt="search" style={{width: "20px", height: "20px"}}/> : "Explore Now"}
+            {isMobile || isTablet ? <img src="/images/search.svg" alt="search" style={{width: "20px", height: "20px"}}/> : translation.seccion1.request}
           </Button>
 
         </Stack>

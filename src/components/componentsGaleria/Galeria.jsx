@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
     Divider,
     Stack,
@@ -8,10 +8,11 @@ import {
     useMediaQuery,
   } from "@mui/material";
   import "./galeria.css";
+import { LanguageContext } from "../LanguageProvider";
 
 
 const Galeria = () => {
-
+    const { translation } = useContext(LanguageContext);
     const [alignment, setAlignment] = useState(1);
     const isMobile = useMediaQuery("(max-width: 600px)");
 
@@ -30,12 +31,12 @@ const Galeria = () => {
         detalle: [
           {
             id: 1,
-            nombre: "Tucan",
+            nombre: translation.seccion4.tucan,
             imagen: "/images/galeria/tucan.svg",
           },
           {
             id: 2,
-            nombre: "Monos",
+            nombre: translation.seccion4.Monos,
             imagen: "/images/galeria/mono.svg",
           },
         ],
@@ -47,12 +48,12 @@ const Galeria = () => {
         detalle: [
           {
             id: 1,
-            nombre: "Ballenas",
+            nombre: translation.seccion4.ballenas,
             imagen: "/images/galeria/ballenaIcon.svg",
           },
           {
             id: 2,
-            nombre: "Delfines",
+            nombre: translation.seccion4.delfines,
             imagen: "/images/galeria/delfin.svg",
           },
         ],
@@ -64,12 +65,12 @@ const Galeria = () => {
         detalle: [
           {
             id: 1,
-            nombre: "Tortugas",
+            nombre: translation.seccion4.tortugas,
             imagen: "/images/galeria/tortuga.svg",
           },
           {
             id: 2,
-            nombre: "Pelicano",
+            nombre: translation.seccion4.pelicano,
             imagen: "/images/galeria/pelicano.svg",
           },
         ],
@@ -81,12 +82,12 @@ const Galeria = () => {
         detalle: [
           {
             id: 1,
-            nombre: "Perezosos",
+            nombre: translation.seccion4.perezoso,
             imagen: "/images/galeria/perezoso.svg",
           },
           {
             id: 2,
-            nombre: "Ranas",
+            nombre: translation.seccion4.ranas,
             imagen: "/images/galeria/rana.svg",
           }
          
@@ -95,16 +96,16 @@ const Galeria = () => {
       {
         id: 5,
         nombre: "La Fortuna",
-        imagen: "/images/galeria/fortuna.svg",
+        imagen: "/images/galeria/arenal.svg",
         detalle: [
           {
             id: 1,
-            nombre: "Armadillo",
+            nombre: translation.seccion4.armadillo,
             imagen: "/images/galeria/armadillo.svg",
           },
           {
             id: 2,
-            nombre: "Danta",
+            nombre: translation.seccion4.danta,
             imagen: "/images/galeria/danta.svg",
           },
         ],
@@ -143,9 +144,9 @@ const Galeria = () => {
         style={{width: isMobile ? "100%" : "50%"}}
       >
         <Stack justifyContent={"center"} alignItems={"center"} spacing={isMobile ? 0 : -2} >
-          <Typography className="tituloAmenidades">The best sights</Typography>
+          <Typography className="tituloAmenidades">{translation.seccion4.titulo}</Typography>
           <Typography className="subtituloAmenidades">
-          Within our destinations
+          {translation.seccion4.subtitulo}
           </Typography>
         </Stack>
         <ToggleButtonGroup

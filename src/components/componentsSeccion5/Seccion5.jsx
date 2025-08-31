@@ -1,6 +1,7 @@
 import { Box, Stack, Typography, Grid, useMediaQuery } from "@mui/material";
 import "./seccion5.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { LanguageContext } from "../LanguageProvider";
 
 // Nuevo componente AmenidadToggle
 const AmenidadToggle = ({ title, title2, description, image, onClick }) => {
@@ -43,6 +44,7 @@ const AmenidadToggle = ({ title, title2, description, image, onClick }) => {
 const Seccion5 = () => {
   const [currentVideo, setCurrentVideo] = useState("/images/video-horizontal.mp4");
   const isMobile = useMediaQuery('(max-width: 600px)');
+  const { translation } = useContext(LanguageContext);
 
   const handleAmenityClick = (video) => {
     setCurrentVideo(null);
@@ -54,22 +56,22 @@ const Seccion5 = () => {
   const amenities = [
     {
       title:  "MD 902 Explorer",
-      title2: "Twin Engine",
-      description: "Up to 6 passengers + 1 Pilot",
+      title2: translation.seccion5.twinEngine,
+      description: translation.seccion5.upTo6Passengers,
       image: "/images/blanco.svg",
       video: "/images/video-horizontal.mp4"
     },
     {
       title:  "AS350 B2",
-      title2: "Single Engine",
-      description: "Up to 5 passengers + 1 Pilot",
+      title2: translation.seccion5.singleEngine,
+      description: translation.seccion5.upTo5Passengers,
       image: "/images/azul.svg",
       video: "/images/video-vertical1.mp4"
     },
     {
       title:  "Robinson 44",
-      title2: "Single Engine",
-      description: "Up to 3 passengers + 1 Pilot",
+      title2: translation.seccion5.singleEngine,
+      description: translation.seccion5.upTo3Passengers,
       image: "/images/negro.svg",
       video: "/images/video-vertical2.mp4"
     }
@@ -92,10 +94,10 @@ const Seccion5 = () => {
                spacing={1}
              >
                <Typography className="title-flota">
-                 Our Fleet
+                 {translation.seccion5.titulo}
                </Typography>
                <Typography className="title2-flota">
-               Unique in Costa Rica, the most versatile and reliable helicopters for tourism, corporate, and air services in Costa Rica.
+               {translation.seccion5.subtitulo}
                </Typography>
              </Stack>
         )}
@@ -180,10 +182,10 @@ const Seccion5 = () => {
                spacing={1}
              >
                <Typography className="title-flota">
-                 Our Fleet
+                 {translation.seccion5.titulo}
                </Typography>
                <Typography className="title2-flota">
-               Unique in Costa Rica, the most versatile and reliable helicopters for tourism, corporate, and air services in Costa Rica.
+               {translation.seccion5.subtitulo}
                </Typography>
              </Stack>
         )}

@@ -1,10 +1,12 @@
 import { Box, Stack, ToggleButton, ToggleButtonGroup, Typography, useMediaQuery } from '@mui/material'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { LanguageContext } from '../LanguageProvider';
 import "./tours.css"
 
 
 const Tours = () => {
   const isMobile = useMediaQuery('(max-width: 600px)');
+  const { translation } = useContext(LanguageContext);
 
   const tours = [
     {
@@ -16,7 +18,7 @@ const Tours = () => {
     },
     {
         id: 2,
-        title: "Poás Volcano",
+        title: translation.seccion3.poas,
         url: "#",
         image: "/images/poas.svg",
         category: "sanjose",
@@ -32,14 +34,14 @@ const Tours = () => {
     
     {
         id: 4,
-        title: "City Tour",
+        title: translation.seccion3.city,
         url: "#",
         image: "/images/cartago.svg",
         category: "sanjose",
     },
     {
         id: 5,
-        title: "Mini City Tour",
+        title: translation.seccion3.miniCity,
         url: "#",
         image: "/images/city.svg",
         category: "sanjose",
@@ -81,7 +83,7 @@ const Tours = () => {
     },
     {
         id: 12,
-        title: "Rincón de la Vieja y Tenorio",
+        title: translation.seccion3.rinconytenorio,
         url: "#",
         image: "/images/tenorio.svg",
         category: "otros",
@@ -118,7 +120,7 @@ const Tours = () => {
     },
     {
         id: 3,
-        name: "Otros",
+        name: translation.seccion3.otros,
         icon: "/images/liberia.svg",
         image: "/images/fortuna.svg",
         image2: "/images/fortunaDark.svg",
@@ -148,7 +150,7 @@ const Tours = () => {
   
 
   <Typography className="titleToursSeccion">
-    Popular Tours
+    {translation.seccion3.titulo}
   </Typography>
 
   <ToggleButtonGroup
