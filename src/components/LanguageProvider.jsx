@@ -4,10 +4,10 @@ import translation from '../store/translation.json';
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('es'); // Por defecto en español
+  const [language, setLanguage] = useState('en'); // Por defecto en español
 
   const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === 'es' ? 'en' : 'es'));
+    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'es' : 'en'));
   };
 
   return (
