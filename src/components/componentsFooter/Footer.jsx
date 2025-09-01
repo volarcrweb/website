@@ -50,12 +50,7 @@ const Footer = () => {
 
                 <Stack alignItems={"center"} spacing={1}>
             <Stack direction="row" justifyContent="center" spacing={1} style={{width: "90%"}}>
-              <Stack direction="row" justifyContent="center" spacing={1}>
-                <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
-              <a href="tel:+50622909742" className="disclaimer">
-          +506 2290-9742
-                  </a>
-              </Stack>
+            
           
               <Stack direction="row" justifyContent="center" spacing={1}>
                   <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
@@ -215,12 +210,7 @@ const Footer = () => {
 
           <Stack alignItems={"center"} style={{marginLeft:"2%"}}>
             <Stack direction="row" justifyContent="center" spacing={2} style={{width: "50%"}}>
-              <Stack direction="row" justifyContent="center" spacing={1}>
-                <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
-              <a href="tel:+50622909742" className="disclaimer">
-          +506 2290-9742
-                  </a>
-              </Stack>
+           
           
               <Stack direction="row" justifyContent="center" spacing={1}>
                   <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
