@@ -59,7 +59,7 @@ switch ($path) {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             enviarCorreoFormulario();
         } else {
-            jsonResponse(['error' => 'Método no permitido. Use POST.'], 405);
+            jsonResponse(['error' => 'Method not allowed. Use POST.'], 405);
         }
         break;
     
@@ -83,20 +83,26 @@ function enviarCorreoFormulario() {
         $data = json_decode($input, true);
         
         if (!$data) {
-            jsonResponse(['error' => 'Datos JSON inválidos'], 400);
+            jsonResponse(['error' => 'Invalid JSON data'], 400);
         }
+        
+        // Obtener el idioma (por defecto inglés)
+        $idioma = $data['language'] ?? 'en';
+        $es_espanol = ($idioma === 'es');
         
         // Validar campos requeridos
         $required_fields = ['name', 'email', 'location', 'destination', 'people'];
         foreach ($required_fields as $field) {
             if (empty($data[$field])) {
-                jsonResponse(['error' => "El campo '$field' es requerido"], 400);
+                $error_msg = $es_espanol ? "El campo '$field' es requerido" : "The field '$field' is required";
+                jsonResponse(['error' => $error_msg], 400);
             }
         }
         
         // Validar email
         if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-            jsonResponse(['error' => 'Email inválido'], 400);
+            $error_msg = $es_espanol ? 'Email inválido' : 'Invalid email address';
+            jsonResponse(['error' => $error_msg], 400);
         }
         
         // Preparar datos del correo
@@ -105,11 +111,45 @@ function enviarCorreoFormulario() {
         $origen = htmlspecialchars($data['location']);
         $destino = htmlspecialchars($data['destination']);
         $pasajeros = htmlspecialchars($data['people']);
-        $telefono = htmlspecialchars($data['phone'] ?? 'No proporcionado');
-        $mensaje = htmlspecialchars($data['message'] ?? 'Sin mensaje adicional');
+        $telefono = htmlspecialchars($data['phone'] ?? ($es_espanol ? 'No proporcionado' : 'Not provided'));
+        $mensaje = htmlspecialchars($data['message'] ?? ($es_espanol ? 'Sin mensaje adicional' : 'No additional message'));
         
-        // Crear el asunto del correo
-        $asunto = "Nueva solicitud de vuelo - $nombre";
+        // Crear el asunto del correo según el idioma
+        if ($es_espanol) {
+            $asunto = "Nueva solicitud de vuelo - $nombre";
+            $titulo_principal = "🚁 Nueva Solicitud de Vuelo";
+            $titulo_cliente = "Información del Cliente";
+            $titulo_vuelo = "Información del Vuelo";
+            $titulo_mensaje = "Mensaje Adicional";
+            $fecha_label = "Fecha de solicitud:";
+            $footer_text = "Volar CR - Sistema de Reservas";
+            $fecha_formato = 'd/m/Y H:i:s';
+            $labels = [
+                'name' => 'Nombre:',
+                'email' => 'Email:',
+                'phone' => 'Teléfono:',
+                'origin' => 'Origen:',
+                'destination' => 'Destino:',
+                'passengers' => 'Pasajeros:'
+            ];
+        } else {
+            $asunto = "New Flight Request - $nombre";
+            $titulo_principal = "🚁 New Flight Request";
+            $titulo_cliente = "Customer Information";
+            $titulo_vuelo = "Flight Information";
+            $titulo_mensaje = "Additional Message";
+            $fecha_label = "Request Date:";
+            $footer_text = "Volar CR - Reservation System";
+            $fecha_formato = 'm/d/Y H:i:s';
+            $labels = [
+                'name' => 'Name:',
+                'email' => 'Email:',
+                'phone' => 'Phone:',
+                'origin' => 'Origin:',
+                'destination' => 'Destination:',
+                'passengers' => 'Passengers:'
+            ];
+        }
         
         // Crear el cuerpo del correo en HTML
         $cuerpo_html = "
@@ -117,7 +157,7 @@ function enviarCorreoFormulario() {
         <html>
         <head>
             <meta charset='UTF-8'>
-            <title>Nueva Solicitud de Vuelo</title>
+            <title>" . ($es_espanol ? 'Nueva Solicitud de Vuelo' : 'New Flight Request') . "</title>
             <style>
                 body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
                 .container { max-width: 600px; margin: 0 auto; padding: 20px; }
@@ -135,50 +175,50 @@ function enviarCorreoFormulario() {
         <body>
             <div class='container'>
                 <div class='header'>
-                    <h1>🛩️ Nueva Solicitud de Vuelo</h1>
+                    <h1>$titulo_principal</h1>
                 </div>
                 <div class='content'>
-                    <h2>Información del Cliente</h2>
+                    <h2>$titulo_cliente</h2>
                     <table>
                         <tr>
-                            <td class='label-cell'>👤 Nombre:</td>
+                            <td class='label-cell'>👤 {$labels['name']}</td>
                             <td>$nombre</td>
                         </tr>
                         <tr>
-                            <td class='label-cell'>📧 Email:</td>
+                            <td class='label-cell'>📧 {$labels['email']}</td>
                             <td>$email_cliente</td>
                         </tr>
                         <tr>
-                            <td class='label-cell'>📱 Teléfono:</td>
+                            <td class='label-cell'>📱 {$labels['phone']}</td>
                             <td>$telefono</td>
                         </tr>
                     </table>
                     
-                    <h2>Información del Vuelo</h2>
+                    <h2>$titulo_vuelo</h2>
                     <table>
                         <tr>
-                            <td class='label-cell'>📍 Origen:</td>
+                            <td class='label-cell'>📍 {$labels['origin']}</td>
                             <td>$origen</td>
                         </tr>
                         <tr>
-                            <td class='label-cell'>🎯 Destino:</td>
+                            <td class='label-cell'>🎯 {$labels['destination']}</td>
                             <td>$destino</td>
                         </tr>
                         <tr>
-                            <td class='label-cell'>👥 Pasajeros:</td>
+                            <td class='label-cell'>👥 {$labels['passengers']}</td>
                             <td>$pasajeros</td>
                         </tr>
                     </table>
                     
-                    <h2>Mensaje Adicional</h2>
+                    <h2>$titulo_mensaje</h2>
                     <div style='background-color: white; padding: 15px; border-left: 4px solid #134A4B;'>
                         $mensaje
                     </div>
                     
-                    <p><strong>Fecha de solicitud:</strong> " . date('d/m/Y H:i:s') . "</p>
+                    <p><strong>$fecha_label</strong> " . date($fecha_formato) . "</p>
                 </div>
                 <div class='footer'>
-                    <p>© " . date('Y') . " Volar CR - Sistema de Reservas</p>
+                    <p>© " . date('Y') . " $footer_text</p>
                 </div>
             </div>
         </body>
@@ -194,14 +234,37 @@ function enviarCorreoFormulario() {
         );
         
         if ($resultado['exito']) {
-            // También enviar correo de confirmación al cliente
-            $asunto_cliente = "Confirmación de solicitud de vuelo - Volar CR";
+            // Crear correo de confirmación al cliente según el idioma
+            if ($es_espanol) {
+                $asunto_cliente = "Confirmación de solicitud de vuelo - Volar CR";
+                $titulo_confirmacion = "🚁 ¡Gracias por contactarnos!";
+                $saludo = "Hola $nombre,";
+                $mensaje_confirmacion = "Hemos recibido tu solicitud de vuelo con los siguientes detalles:";
+                $mensaje_contacto = "Nuestro equipo se pondrá en contacto contigo pronto para brindarte más información y ayudarte con tu reserva.";
+                $mensaje_gracias = "¡Gracias por elegir Volar CR!";
+                $footer_cliente = "Volar CR - Tu aventura comienza aquí";
+                $origen_label = "Origen:";
+                $destino_label = "Destino:";
+                $pasajeros_label = "Pasajeros:";
+            } else {
+                $asunto_cliente = "Flight Request Confirmation - Volar CR";
+                $titulo_confirmacion = "🚁 Thank you for contacting us!";
+                $saludo = "Hello $nombre,";
+                $mensaje_confirmacion = "We have received your flight request with the following details:";
+                $mensaje_contacto = "Our team will contact you soon to provide you with more information and help you with your reservation.";
+                $mensaje_gracias = "Thank you for choosing Volar CR!";
+                $footer_cliente = "Volar CR - Your adventure begins here";
+                $origen_label = "Origin:";
+                $destino_label = "Destination:";
+                $pasajeros_label = "Passengers:";
+            }
+            
             $cuerpo_cliente = "
             <!DOCTYPE html>
             <html>
             <head>
                 <meta charset='UTF-8'>
-                <title>Confirmación de Solicitud</title>
+                <title>" . ($es_espanol ? 'Confirmación de Solicitud' : 'Request Confirmation') . "</title>
                 <style>
                     body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
                     .container { max-width: 600px; margin: 0 auto; padding: 20px; }
@@ -213,21 +276,21 @@ function enviarCorreoFormulario() {
             <body>
                 <div class='container'>
                     <div class='header'>
-                        <h1>✈️ ¡Gracias por contactarnos!</h1>
+                        <h1>$titulo_confirmacion</h1>
                     </div>
                     <div class='content'>
-                        <h2>Hola $nombre,</h2>
-                        <p>Hemos recibido tu solicitud de vuelo con los siguientes detalles:</p>
+                        <h2>$saludo</h2>
+                        <p>$mensaje_confirmacion</p>
                         <ul>
-                            <li><strong>Origen:</strong> $origen</li>
-                            <li><strong>Destino:</strong> $destino</li>
-                            <li><strong>Pasajeros:</strong> $pasajeros</li>
+                            <li><strong>$origen_label</strong> $origen</li>
+                            <li><strong>$destino_label</strong> $destino</li>
+                            <li><strong>$pasajeros_label</strong> $pasajeros</li>
                         </ul>
-                        <p>Nuestro equipo se pondrá en contacto contigo pronto para brindarte más información y ayudarte con tu reserva.</p>
-                        <p><strong>¡Gracias por elegir Volar CR!</strong></p>
+                        <p>$mensaje_contacto</p>
+                        <p><strong>$mensaje_gracias</strong></p>
                     </div>
                     <div class='footer'>
-                        <p>© " . date('Y') . " Volar CR - Tu aventura comienza aquí</p>
+                        <p>© " . date('Y') . " $footer_cliente</p>
                     </div>
                 </div>
             </body>
@@ -241,20 +304,26 @@ function enviarCorreoFormulario() {
                 true
             );
             
+            $success_message = $es_espanol ? 'Correo enviado exitosamente' : 'Email sent successfully';
             jsonResponse([
                 'success' => true,
-                'message' => 'Correo enviado exitosamente'
+                'message' => $success_message
             ]);
         } else {
+            $error_message = $es_espanol ? 'Error al enviar el correo' : 'Error sending email';
             jsonResponse([
-                'error' => 'Error al enviar el correo',
+                'error' => $error_message,
                 'details' => $resultado['mensaje']
             ], 500);
         }
         
     } catch (Exception $e) {
+        $idioma = $data['language'] ?? 'en';
+        $es_espanol = ($idioma === 'es');
+        $error_message = $es_espanol ? 'Error interno del servidor' : 'Internal server error';
+        
         jsonResponse([
-            'error' => 'Error interno del servidor',
+            'error' => $error_message,
             'details' => $e->getMessage()
         ], 500);
     }
