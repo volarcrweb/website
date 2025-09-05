@@ -275,7 +275,6 @@ function enviarCorreoFormulario() {
             </head>
             <body>
                 <div class='container'>
-                <img src='https://www.volarcr.com/images/logo.svg' alt="logo" style="width: 15%;">
                     <div class='header'>
                         <h1>$titulo_confirmacion</h1>
                     </div>
@@ -319,6 +318,10 @@ function enviarCorreoFormulario() {
         }
         
     } catch (Exception $e) {
+        // Log del error para debugging
+        error_log("Error en enviarCorreoFormulario: " . $e->getMessage());
+        error_log("Stack trace: " . $e->getTraceAsString());
+        
         $idioma = $data['language'] ?? 'en';
         $es_espanol = ($idioma === 'es');
         $error_message = $es_espanol ? 'Error interno del servidor' : 'Internal server error';
@@ -326,6 +329,15 @@ function enviarCorreoFormulario() {
         jsonResponse([
             'error' => $error_message,
             'details' => $e->getMessage()
+        ], 500);
+    } catch (Error $e) {
+        // Capturar errores fatales de PHP
+        error_log("Error fatal en enviarCorreoFormulario: " . $e->getMessage());
+        error_log("Stack trace: " . $e->getTraceAsString());
+        
+        jsonResponse([
+            'error' => 'Error interno del servidor',
+            'details' => 'Fatal error occurred'
         ], 500);
     }
 }
