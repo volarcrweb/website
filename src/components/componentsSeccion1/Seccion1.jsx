@@ -1,8 +1,10 @@
-import { Box, Button, Stack, Typography, Menu, MenuItem, useMediaQuery } from "@mui/material";
+import { Box, Button, Stack, Typography, Menu, MenuItem, useMediaQuery, Dialog, DialogTitle, DialogContent, IconButton } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 import "./seccion1.css";
 import { useContext, useState } from "react";
 import { LanguageContext } from "../LanguageProvider";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
+import Form from "../componentsForm/Form";
 
 const Seccion1 = () => {
   const { translation } = useContext(LanguageContext);
@@ -15,10 +17,11 @@ const Seccion1 = () => {
   const [anchorLocation, setAnchorLocation] = useState(null);
   const [anchorDate, setAnchorDate] = useState(null);
   const [anchorPeople, setAnchorPeople] = useState(null);
+  const [dialogOpen, setDialogOpen] = useState(false);
 
-  const locationOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós"];
+  const locationOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós",  "Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo"];
   const dateOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós", "Papagayo", "Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo"];
-  const peopleOptions = ["1 "+translation.filter.person, "2 "+translation.filter.people, "3 "+translation.filter.people, "4 "+translation.filter.people, "5 "+translation.filter.people, "6 "+translation.filter.people];
+  const peopleOptions = ["1 "+translation.filter.person, "2 "+translation.filter.people, "3 "+translation.filter.people, "4 "+translation.filter.people, "5 "+translation.filter.people, "6 "+translation.filter.people, "7 "+translation.filter.people];
 
   const handleOpenLocation = (event) => setAnchorLocation(event.currentTarget);
   const handleOpenDate = (event) => setAnchorDate(event.currentTarget);
@@ -27,6 +30,9 @@ const Seccion1 = () => {
   const handleCloseLocation = () => setAnchorLocation(null);
   const handleCloseDate = () => setAnchorDate(null);
   const handleClosePeople = () => setAnchorPeople(null);
+
+  const handleOpenDialog = () => setDialogOpen(true);
+  const handleCloseDialog = () => setDialogOpen(false);
   return (
     <Stack style={{height: "100%", width: isMobile ? "100%" : "100%"}}>
     <Stack
@@ -115,7 +121,7 @@ const Seccion1 = () => {
             <Typography style={{fontSize: isMobile ? "0.6rem" : "1rem", color: "#9CA3AF"}}>{people || translation.seccion1.howManyPeople}</Typography>
           </Stack>
 
-          <Button className="btnExplore" >
+          <Button className="btnExplore" onClick={handleOpenDialog}>
             {isMobile || isTablet ? <img src="/images/search.svg" alt="search" style={{width: "20px", height: "20px"}}/> : translation.seccion1.request}
           </Button>
 
@@ -136,6 +142,39 @@ const Seccion1 = () => {
             <MenuItem key={opt} onClick={() => { setPeople(opt); handleClosePeople(); }}>{opt}</MenuItem>
           ))}
         </Menu>
+
+        {/* Dialog para el formulario */}
+        <Dialog 
+          open={dialogOpen} 
+          onClose={handleCloseDialog}
+          maxWidth="md"
+          fullWidth
+          fullScreen={isMobile}
+          PaperProps={{
+            sx: {
+              borderRadius: "1.25rem",
+              backgroundColor: "#298c8d6b",
+              minHeight: 'auto',
+              backdropFilter: "blur(10px)",
+              width: isMobile || isTablet ? "90%" : "35%",
+              maxWidth: isMobile || isTablet ? "90%" : "35%",
+              height: isMobile || isTablet ? "auto" : "auto",
+              maxHeight: isMobile || isTablet ? "100%" : "100%",
+             
+
+            }
+          }}
+        >
+      
+          <DialogContent sx={{ padding: isMobile || isTablet ? "4% 5%" : "2% 5%" }}>
+            <Form 
+              location={location}
+              destination={dateOption}
+              people={people}
+              onClose={handleCloseDialog}
+            />
+          </DialogContent>
+        </Dialog>
       
 
 

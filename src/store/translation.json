@@ -66,6 +66,19 @@
         "Aeropuerto":"International Airport",
         "person":"Person",
         "people":"People"
+      },
+      "form": {
+        "flightInfo":"Flight Information",
+        "contactInfo":"Contact Information",
+        "name":"Full Name",
+        "email":"Email",
+        "phone":"Phone",
+        "message":"Tell us more details about your trip...",
+        "btnSend":"Send",
+        "confidencial":"Your information is 100% confidential",
+        "titleForm1":"The adventure starts here",
+        "titleForm2":"We adapt to your needs",
+        "titleForm3":"Fill out the form to receive more information"
       }
     },
     "es": {
@@ -135,6 +148,19 @@
         "Aeropuerto":"Aeropuerto Internacional",
         "person":"Persona",
         "people":"Personas"
+      },
+      "form": {
+        "flightInfo":"Información del Vuelo",
+        "contactInfo":"Información de Contacto",
+        "name":"Nombre completo",
+        "email":"Correo electrónico",
+        "phone":"Teléfono",
+        "message":"Cuéntanos más detalles sobre tu viaje...",
+        "btnSend":"Enviar",
+        "confidencial":"Su información es 100% confidencial",
+        "titleForm1":"La aventura empieza aquí",
+        "titleForm2":"Nos adaptamos a tus necesidades",
+        "titleForm3":"Llená el formulario para recibir más información"
       }
 
     }
