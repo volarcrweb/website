@@ -275,13 +275,9 @@ function enviarCorreoFormulario() {
             </head>
             <body>
                 <div class='container'>
-                    
-                                         <div style='text-align: center; padding: 20px 20px 10px 20px; background-color: white;'>
-                         <img src='https://www.volarcr.com/images/logo.png' alt='Volar CR Logo' style='display: block; margin: 0 auto; width: 120px; max-width: 25%; height: auto; border: 0;'>
-                     </div>
-                     <div class='header'>
-                         <h1 style='margin-top: 0;'>$titulo_confirmacion</h1>
-                     </div>
+                    <div class='header'>
+                        <h1>$titulo_confirmacion</h1>
+                    </div>
                     <div class='content'>
                         <h2>$saludo</h2>
                         <p>$mensaje_confirmacion</p>
