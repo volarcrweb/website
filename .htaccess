@@ -4,6 +4,10 @@ RewriteEngine On
 Header always set Access-Control-Allow-Origin "*"
 Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS, DELETE, PUT"
 Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+Header always set Access-Control-Allow-Credentials "true"
+
+# Headers adicionales para mejor compatibilidad
+Header always set Access-Control-Max-Age "3600"
 
 # Manejar preflight OPTIONS requests
 RewriteCond %{REQUEST_METHOD} OPTIONS
