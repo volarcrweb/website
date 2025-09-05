@@ -88,32 +88,151 @@ const Form = ({ location, destination, people, onClose }) => {
     }
   };
 
-  const handleSubmit = (event) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsLoading(true);
+    setSubmitMessage('');
     
-    // Crear mensaje para WhatsApp
-    const message = `¡Hola! Me gustaría solicitar información sobre un vuelo:
-
-📍 Origen: ${formData.location || 'No especificado'}
-🎯 Destino: ${formData.destination || 'No especificado'}  
-👥 Pasajeros: ${formData.people || 'No especificado'}
-
-📝 Información de contacto:
-Nombre: ${formData.name}
-Email: ${formData.email}
-Teléfono: ${formData.phone}
-
-💬 Mensaje adicional:
-${formData.message || 'Sin mensaje adicional'}
-
-¡Gracias!`;
-
-    // Abrir WhatsApp con el mensaje
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=50685959741&text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-    
-    // Cerrar el dialog
-    onClose();
+    try {
+      // Determinar la URL del API según el entorno
+      const currentHostname = window.location.hostname;
+      let apiUrl;
+      
+      // Durante desarrollo, siempre usar apivolar.com que sabemos que funciona
+      if (currentHostname === 'localhost' || currentHostname === '127.0.0.1' || currentHostname === 'apivolar.com') {
+        apiUrl = 'https://api.volarcr.com/enviar-correo';
+      } else {
+        // Para producción en volarcr.com
+        apiUrl = 'https://api.volarcr.com/enviar-correo';
+      }
+      
+      // Agregar el idioma a los datos del formulario
+      const dataToSend = {
+        ...formData,
+        language: translation.type || 'en' // Obtener el idioma del contexto
+      };
+      
+      // Debug temporal - verificar qué se está enviando
+      console.log('Datos que se envían al API:', dataToSend);
+      console.log('Campo phone específicamente:', dataToSend.phone);
+      
+      
+      // Enviar datos al API
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        mode: 'cors', // Explicitar CORS
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataToSend)
+      });
+      
+      
+      let result;
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      try {
+        result = await response.json();
+      } catch (jsonError) {
+        throw new Error('Error al procesar la respuesta del servidor');
+      }
+      
+      
+      if (result.success === true || result.success === "true") {
+        const successMessage = translation.type === 'es' 
+          ? (translation.form?.successMessage || '¡Correo enviado exitosamente! Te contactaremos pronto.')
+          : (translation.form?.successMessage || 'Email sent successfully! We will contact you soon.');
+        setSubmitMessage(successMessage);
+        
+        // Limpiar formulario
+        setFormData({
+          location: location || "",
+          destination: destination || "",
+          people: people || "",
+          name: "",
+          email: "",
+          phone: "",
+          message: ""
+        });
+        
+        // Cerrar el dialog después de 3 segundos
+        setTimeout(() => {
+          onClose();
+        }, 3000);
+        
+      } else {
+        // Si llegamos aquí, el correo probablemente se envió pero hay un problema con la respuesta
+        
+        // Si hay un mensaje de error específico, usarlo
+        if (result.error) {
+          throw new Error(result.error);
+        } else if (result.message && (result.message.includes('exitosamente') || result.message.includes('successfully'))) {
+          // Si el mensaje indica éxito, tratarlo como éxito
+          const successMessage = translation.type === 'es' 
+            ? '¡Correo enviado exitosamente! Te contactaremos pronto.'
+            : 'Email sent successfully! We will contact you soon.';
+          setSubmitMessage(successMessage);
+          
+          // Limpiar formulario
+          setFormData({
+            location: location || "",
+            destination: destination || "",
+            people: people || "",
+            name: "",
+            email: "",
+            phone: "",
+            message: ""
+          });
+          
+          // Cerrar el dialog después de 3 segundos
+          setTimeout(() => {
+            onClose();
+          }, 3000);
+        } else {
+          throw new Error('Respuesta inesperada del servidor');
+        }
+      }
+      
+    } catch (error) {
+      
+      const isSpanish = translation.type === 'es';
+      let errorMessage = isSpanish 
+        ? (translation.form?.errorMessage || 'Error al enviar el correo. Por favor intenta nuevamente.')
+        : (translation.form?.errorMessage || 'Error sending email. Please try again.');
+      
+      // Manejar diferentes tipos de errores
+      if (error.name === 'TypeError') {
+        if (error.message.includes('fetch')) {
+          errorMessage = isSpanish 
+            ? 'Error de conexión. Verifica que el servidor esté funcionando.'
+            : 'Connection error. Please verify that the server is running.';
+        } else if (error.message.includes('Failed to fetch')) {
+          errorMessage = isSpanish 
+            ? 'No se pudo conectar con el servidor. Verifica tu conexión a internet.'
+            : 'Could not connect to server. Please check your internet connection.';
+        }
+      } else if (error.message.includes('HTTP error')) {
+        const prefix = isSpanish ? 'Error del servidor:' : 'Server error:';
+        errorMessage = `${prefix} ${error.message}`;
+      } else if (error.message.includes('JSON')) {
+        errorMessage = isSpanish 
+          ? 'Error al procesar la respuesta del servidor.'
+          : 'Error processing server response.';
+      } else {
+        // Para cualquier otro error, mostrar el mensaje específico
+        errorMessage = error.message || (isSpanish ? 'Error desconocido al enviar el correo.' : 'Unknown error sending email.');
+      }
+      
+      setSubmitMessage(errorMessage);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -274,13 +393,40 @@ ${formData.message || 'Sin mensaje adicional'}
           </Stack>
         </Stack>
 
+        {/* Mensaje de estado */}
+        {submitMessage && (
+          <Stack alignItems={"center"}>
+            <Typography 
+              sx={{ 
+                color: submitMessage.includes('Error') ? '#d32f2f' : '#2e7d32',
+                textAlign: 'center',
+                fontWeight: 'bold',
+                padding: '10px',
+                backgroundColor: submitMessage.includes('Error') ? '#ffebee' : '#e8f5e8',
+                borderRadius: '8px',
+                border: submitMessage.includes('Error') ? '1px solid #d32f2f' : '1px solid #2e7d32'
+              }}
+            >
+              {submitMessage}
+            </Typography>
+          </Stack>
+        )}
+
         {/* Botones */}
         <Stack alignItems={"center"}>
           <Button
             type="submit"
             className="button-form"
+            disabled={isLoading}
+            sx={{ 
+              opacity: isLoading ? 0.7 : 1,
+              cursor: isLoading ? 'not-allowed' : 'pointer'
+            }}
           >
-            {translation.form?.btnSend || 'Enviar'}
+            {isLoading 
+              ? (translation.form?.sending || 'Enviando...') 
+              : (translation.form?.btnSend || 'Enviar')
+            }
           </Button>
         </Stack>
 
