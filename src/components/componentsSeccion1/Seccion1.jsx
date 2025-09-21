@@ -127,17 +127,53 @@ const Seccion1 = () => {
 
         </Stack>
         {/* Menús desplegables */}
-        <Menu anchorEl={anchorLocation} open={Boolean(anchorLocation)} onClose={handleCloseLocation} transformOrigin={{ horizontal: "left", vertical: "top" }} anchorOrigin={{ horizontal: "left", vertical: "bottom" }} disableScrollLock>
+        <Menu 
+          anchorEl={anchorLocation} 
+          open={Boolean(anchorLocation)} 
+          onClose={handleCloseLocation} 
+          transformOrigin={{ horizontal: "left", vertical: "top" }} 
+          anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
+          PaperProps={{
+            style: {
+              maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
+              width: 'auto',
+            },
+          }}
+        >
           {locationOptions.map((opt) => (
             <MenuItem key={opt} onClick={() => { setLocation(opt); handleCloseLocation(); }}>{opt}</MenuItem>
           ))}
         </Menu>
-        <Menu anchorEl={anchorDate} open={Boolean(anchorDate)} onClose={handleCloseDate} transformOrigin={{ horizontal: "left", vertical: "top" }} anchorOrigin={{ horizontal: "left", vertical: "bottom" }} disableScrollLock>
+        <Menu 
+          anchorEl={anchorDate} 
+          open={Boolean(anchorDate)} 
+          onClose={handleCloseDate} 
+          transformOrigin={{ horizontal: "left", vertical: "top" }} 
+          anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
+          PaperProps={{
+            style: {
+              maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
+              width: 'auto',
+            },
+          }}
+        >
           {dateOptions.map((opt) => (
             <MenuItem key={opt} onClick={() => { setDateOption(opt); handleCloseDate(); }}>{opt}</MenuItem>
           ))}
         </Menu>
-        <Menu anchorEl={anchorPeople} open={Boolean(anchorPeople)} onClose={handleClosePeople} transformOrigin={{ horizontal: "left", vertical: "top" }} anchorOrigin={{ horizontal: "left", vertical: "bottom" }} disableScrollLock>
+        <Menu 
+          anchorEl={anchorPeople} 
+          open={Boolean(anchorPeople)} 
+          onClose={handleClosePeople} 
+          transformOrigin={{ horizontal: "left", vertical: "top" }} 
+          anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
+          PaperProps={{
+            style: {
+              maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
+              width: 'auto',
+            },
+          }}
+        >
           {peopleOptions.map((opt) => (
             <MenuItem key={opt} onClick={() => { setPeople(opt); handleClosePeople(); }}>{opt}</MenuItem>
           ))}
