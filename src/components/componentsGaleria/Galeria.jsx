@@ -31,14 +31,10 @@ const Galeria = () => {
         detalle: [
           {
             id: 1,
-            nombre: translation.seccion4.tucan,
-            imagen: "/images/galeria/tucan.svg",
+            nombre: "60 min",
+            imagen: "/images/clock.svg",
           },
-          {
-            id: 2,
-            nombre: translation.seccion4.Monos,
-            imagen: "/images/galeria/mono.svg",
-          },
+    
         ],
       },
       {
@@ -48,14 +44,10 @@ const Galeria = () => {
         detalle: [
           {
             id: 1,
-            nombre: translation.seccion4.ballenas,
-            imagen: "/images/galeria/ballenaIcon.svg",
+            nombre: "45 min",
+            imagen: "/images/clock.svg",
           },
-          {
-            id: 2,
-            nombre: translation.seccion4.delfines,
-            imagen: "/images/galeria/delfin.svg",
-          },
+    
         ],
       },
       {
@@ -65,49 +57,36 @@ const Galeria = () => {
         detalle: [
           {
             id: 1,
-            nombre: translation.seccion4.tortugas,
-            imagen: "/images/galeria/tortuga.svg",
+            nombre: "60 min",
+            imagen: "/images/clock.svg",
           },
-          {
-            id: 2,
-            nombre: translation.seccion4.pelicano,
-            imagen: "/images/galeria/pelicano.svg",
-          },
+    
         ],
       },
       {
         id: 4,
-        nombre: "City Tour",
+        nombre: "Mini City Tour",
         imagen: "/images/cityG.svg",
         detalle: [
           {
             id: 1,
-            nombre: translation.seccion4.perezoso,
-            imagen: "/images/galeria/perezoso.svg",
+            nombre: "15 min",
+            imagen: "/images/clock.svg",
           },
-          {
-            id: 2,
-            nombre: translation.seccion4.ranas,
-            imagen: "/images/galeria/rana.svg",
-          }
-         
+  
         ],
       },
       {
         id: 5,
-        nombre: "Arenal",
-        imagen: "/images/galeria/arenal.svg",
+        nombre: "City Tour",
+        imagen: "/images/cartagoG.svg",
         detalle: [
           {
             id: 1,
-            nombre: translation.seccion4.armadillo,
-            imagen: "/images/galeria/armadillo.svg",
+            nombre: "30 min",
+            imagen: "/images/clock.svg",
           },
-          {
-            id: 2,
-            nombre: translation.seccion4.danta,
-            imagen: "/images/galeria/danta.svg",
-          },
+       
         ],
       },
     ];
