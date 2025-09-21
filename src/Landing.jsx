@@ -66,7 +66,7 @@ const Landing = () => {
       </SpeedDial>
     <Seccion1/>
     <Servicios/>
-    <Tours/>
+    {/* <Tours/> */}
     {/* <Seccion2/> */}
     <Galeria/>
     {/* <Seccion3/> */}

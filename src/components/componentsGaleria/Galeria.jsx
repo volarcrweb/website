@@ -43,8 +43,8 @@ const Galeria = () => {
       },
       {
         id: 2,
-        nombre: "Bahia Ballena",
-        imagen: "/images/galeria/ballena.svg",
+        nombre: translation.type === "es" ? "Volcán Poás" : "Poas Volcano",
+        imagen: "/images/poasG.svg",
         detalle: [
           {
             id: 1,
@@ -60,8 +60,8 @@ const Galeria = () => {
       },
       {
         id: 3,
-        nombre: "Bahia Papagayo",
-        imagen: "/images/galeria/papagayo.svg",
+        nombre: "Tárcoles / Carara",
+        imagen: "/images/tarcolesG.svg",
         detalle: [
           {
             id: 1,
@@ -77,8 +77,8 @@ const Galeria = () => {
       },
       {
         id: 4,
-        nombre: "Monteverde",
-        imagen: "/images/galeria/monteverde.svg",
+        nombre: "City Tour",
+        imagen: "/images/cityG.svg",
         detalle: [
           {
             id: 1,
@@ -95,7 +95,7 @@ const Galeria = () => {
       },
       {
         id: 5,
-        nombre: "La Fortuna",
+        nombre: "Arenal",
         imagen: "/images/galeria/arenal.svg",
         detalle: [
           {
@@ -116,13 +116,13 @@ const Galeria = () => {
     
     <Stack spacing={-14} style={{ width: "100%", height: "90vh", }}>
 
-<Stack style={{width: "100%", height: "25%", backgroundColor:"#F2F4F8"}}>
+{/* <Stack style={{width: "100%", height: "25%", backgroundColor:"#F2F4F8"}}>
   <div className="movingtext-container">
     <Typography className="movingtext">
       {translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp; {translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;{translation.seccion4.extraordinario} &nbsp;&nbsp;&nbsp;
     </Typography>
   </div>
-</Stack>
+</Stack> */}
 
 
     <Stack
