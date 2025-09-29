@@ -40,7 +40,7 @@ const Galeria = () => {
       {
         id: 2,
         nombre: translation.type === "es" ? "Volcán Poás" : "Poas Volcano",
-        imagen: "/images/poasG.svg",
+        imagen: "/images/poasNew.svg",
         detalle: [
           {
             id: 1,
