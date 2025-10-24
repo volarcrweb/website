@@ -110,7 +110,7 @@ const Galeria = () => {
       style={{
         width: "100%",
         height: "50%",
-        backgroundImage: "url(/images/fondoGaleria.svg)",
+        backgroundImage: "url(/images/fondoNEW.svg)",
         backgroundSize: "cover",
         backgroundPosition: "top",
         paddingTop: isMobile ? "1rem" : "3rem"
