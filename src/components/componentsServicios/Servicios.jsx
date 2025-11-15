@@ -29,7 +29,7 @@ const Servicios = () => {
       height: isMobile ? "45vh" : "48vh",
       backgroundColor: "#F2F4F8",
     //   borderRadius: "20px",
-      marginTop: isMobile ? "-18%" : "0%",
+      marginTop: isMobile ? "0%" : "0%",
       zIndex: 0,
       paddingTop: isMobile ? "10%" : "2%",
       paddingBottom: isMobile ? "0%" : "3%",
