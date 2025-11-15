@@ -16,35 +16,47 @@ const Seccion1 = () => {
   const [anchorLocation, setAnchorLocation] = useState(null);
   const [anchorDate, setAnchorDate] = useState(null);
   const [anchorPeople, setAnchorPeople] = useState(null);
+  const [isLocationMenuOpen, setIsLocationMenuOpen] = useState(false);
+  const [isDateMenuOpen, setIsDateMenuOpen] = useState(false);
+  const [isPeopleMenuOpen, setIsPeopleMenuOpen] = useState(false);
   const [dialogOpen, setDialogOpen] = useState(false);
 
   const locationOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós",  "Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo"];
   const dateOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós", "Papagayo", "Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo"];
   const peopleOptions = ["1 "+translation.filter.person, "2 "+translation.filter.people, "3 "+translation.filter.people, "4 "+translation.filter.people, "5 "+translation.filter.people, "6 "+translation.filter.people, "7 "+translation.filter.people];
 
-  const handleOpenLocation = (event) => setAnchorLocation(event.currentTarget);
-  const handleOpenDate = (event) => setAnchorDate(event.currentTarget);
-  const handleOpenPeople = (event) => setAnchorPeople(event.currentTarget);
+  const handleOpenLocation = (event) => {
+    setAnchorLocation(event.currentTarget);
+    setIsLocationMenuOpen(true);
+  };
+  const handleOpenDate = (event) => {
+    setAnchorDate(event.currentTarget);
+    setIsDateMenuOpen(true);
+  };
+  const handleOpenPeople = (event) => {
+    setAnchorPeople(event.currentTarget);
+    setIsPeopleMenuOpen(true);
+  };
 
-  const handleCloseLocation = () => setAnchorLocation(null);
-  const handleCloseDate = () => setAnchorDate(null);
-  const handleClosePeople = () => setAnchorPeople(null);
+  const handleCloseLocation = () => setIsLocationMenuOpen(false);
+  const handleCloseDate = () => setIsDateMenuOpen(false);
+  const handleClosePeople = () => setIsPeopleMenuOpen(false);
 
   const handleOpenDialog = () => setDialogOpen(true);
   const handleCloseDialog = () => setDialogOpen(false);
 
   // Función para cerrar todos los menús
   const closeAllMenus = () => {
-    setAnchorLocation(null);
-    setAnchorDate(null);
-    setAnchorPeople(null);
+    setIsLocationMenuOpen(false);
+    setIsDateMenuOpen(false);
+    setIsPeopleMenuOpen(false);
   };
 
   // Effect para cerrar menús al hacer scroll
   useEffect(() => {
     const handleScroll = () => {
       // Solo cerrar si algún menú está abierto
-      if (anchorLocation || anchorDate || anchorPeople) {
+      if (isLocationMenuOpen || isDateMenuOpen || isPeopleMenuOpen) {
         // Cerrar inmediatamente
         closeAllMenus();
       }
@@ -55,7 +67,7 @@ const Seccion1 = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [anchorLocation, anchorDate, anchorPeople]);
+  }, [isLocationMenuOpen, isDateMenuOpen, isPeopleMenuOpen]);
   return (
     <Stack style={{height: "100%", width: isMobile ? "100%" : "100%"}}>
     <Stack
@@ -149,14 +161,13 @@ const Seccion1 = () => {
         {/* Menús desplegables */}
         <Menu 
           anchorEl={anchorLocation} 
-          open={Boolean(anchorLocation)} 
+          open={isLocationMenuOpen} 
           onClose={handleCloseLocation} 
           transformOrigin={{ horizontal: "left", vertical: "top" }} 
           anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
           disableScrollLock={true}
           disableAutoFocusItem={true}
           disableRestoreFocus={true}
-          disablePortal={true}
           MenuListProps={{
             disablePadding: false,
             style: { position: 'relative' }
@@ -165,7 +176,7 @@ const Seccion1 = () => {
             style: {
               maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
               width: 'auto',
-              position: 'fixed',
+              zIndex: 1300, // Asegurar que aparezca por encima de otras secciones
             },
           }}
         >
@@ -175,14 +186,13 @@ const Seccion1 = () => {
         </Menu>
         <Menu 
           anchorEl={anchorDate} 
-          open={Boolean(anchorDate)} 
+          open={isDateMenuOpen} 
           onClose={handleCloseDate} 
           transformOrigin={{ horizontal: "left", vertical: "top" }} 
           anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
           disableScrollLock={true}
           disableAutoFocusItem={true}
           disableRestoreFocus={true}
-          disablePortal={true}
           MenuListProps={{
             disablePadding: false,
             style: { position: 'relative' }
@@ -191,7 +201,7 @@ const Seccion1 = () => {
             style: {
               maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
               width: 'auto',
-              position: 'fixed',
+              zIndex: 1300, // Asegurar que aparezca por encima de otras secciones
             },
           }}
         >
@@ -201,14 +211,13 @@ const Seccion1 = () => {
         </Menu>
         <Menu 
           anchorEl={anchorPeople} 
-          open={Boolean(anchorPeople)} 
+          open={isPeopleMenuOpen} 
           onClose={handleClosePeople} 
           transformOrigin={{ horizontal: "left", vertical: "top" }} 
           anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
           disableScrollLock={true}
           disableAutoFocusItem={true}
           disableRestoreFocus={true}
-          disablePortal={true}
           MenuListProps={{
             disablePadding: false,
             style: { position: 'relative' }
@@ -217,7 +226,7 @@ const Seccion1 = () => {
             style: {
               maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
               width: 'auto',
-              position: 'fixed',
+              zIndex: 1300, // Asegurar que aparezca por encima de otras secciones
             },
           }}
         >

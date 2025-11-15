@@ -38,7 +38,7 @@ const Servicios = () => {
 <Typography className="titleSeccion4S"> Our Services</Typography>
 
 {/* Grid Responsive */}
-<Box style={{ position: "relative", zIndex: 1, padding: "20px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+<Box style={{ position: "relative", zIndex: 0, padding: "20px", display: "flex", justifyContent: "center", alignItems: "center" }}>
     <Grid 
         container 
         spacing={2}
