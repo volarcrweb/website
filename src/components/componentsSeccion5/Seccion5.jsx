@@ -118,9 +118,10 @@ const Seccion5 = () => {
             left: 0,
             width: "100%",
             height: "50%",
-            backgroundImage: "url(/images/circulo1.png)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            // backgroundImage: "url(/images/circulo1.png)",
+            backgroundColor: "#134A4B",
+            // backgroundSize: "cover",
+            // backgroundPosition: "center",
           }}
         />
         <Stack
@@ -130,9 +131,10 @@ const Seccion5 = () => {
             left: 0,
             width: "100%",
             height: "50%",
-            backgroundImage: "url(/images/circulo2.png)",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            // backgroundImage: "url(/images/circulo2.png)",
+            backgroundColor: "#134A4B",
+            // backgroundSize: "cover",
+            // backgroundPosition: "center",
           }}
         />
 
@@ -143,8 +145,8 @@ const Seccion5 = () => {
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            width: isMobile ? "270px" : "545px",
-            height: isMobile ? "270px" : "545px",
+            width: isMobile ? "300px" : "700px",
+            height: isMobile ? "300px" : "700px",
             borderRadius: "50%",
             overflow: "hidden",
             zIndex: 2,

@@ -25,14 +25,14 @@ const Servicios = () => {
     alignItems={"center"}
     spacing={3}
     style={{
-      width: "95%",
-      height: "48vh",
+      width: "100%",
+      height: isMobile ? "35vh" : "48vh",
       backgroundColor: "#F2F4F8",
-      borderRadius: "20px",
-      marginTop: isMobile ? "-9%" : "-5%",
+    //   borderRadius: "20px",
+      marginTop: isMobile ? "-18%" : "0%",
       zIndex: 0,
-      paddingTop: "2%",
-      paddingBottom: isMobile ? "1%" : "3%",
+      paddingTop: isMobile ? "10%" : "2%",
+      paddingBottom: isMobile ? "0%" : "3%",
     }}>
 
 <Typography className="titleSeccion4S"> Our Services</Typography>

@@ -1,7 +1,6 @@
-import { Box, Button, Stack, Typography, Menu, MenuItem, useMediaQuery, Dialog, DialogTitle, DialogContent, IconButton } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close';
+import { Box, Button, Stack, Typography, Menu, MenuItem, useMediaQuery, Dialog, DialogContent } from "@mui/material";
 import "./seccion1.css";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { LanguageContext } from "../LanguageProvider";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import Form from "../componentsForm/Form";
@@ -33,14 +32,36 @@ const Seccion1 = () => {
 
   const handleOpenDialog = () => setDialogOpen(true);
   const handleCloseDialog = () => setDialogOpen(false);
+
+  // Función para cerrar todos los menús
+  const closeAllMenus = () => {
+    setAnchorLocation(null);
+    setAnchorDate(null);
+    setAnchorPeople(null);
+  };
+
+  // Effect para cerrar menús al hacer scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      // Solo cerrar si algún menú está abierto
+      if (anchorLocation || anchorDate || anchorPeople) {
+        // Cerrar inmediatamente
+        closeAllMenus();
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [anchorLocation, anchorDate, anchorPeople]);
   return (
     <Stack style={{height: "100%", width: isMobile ? "100%" : "100%"}}>
     <Stack
       style={{
         width: "100%",
         height: isMobile ? "80vh" : "90vh",
-        // paddingTop: isMobile ? "0%" : "0%",
-        // borderRadius: "10px",
         position: "relative",
       }}
     >
@@ -58,7 +79,6 @@ const Seccion1 = () => {
           backgroundColor: "rgba(76, 76, 78, 0.45)",
           width: "100%",
           height: "100%",
-          // borderRadius: "10px",
           position: "absolute",
           top: 0,
           left: 0,
@@ -133,10 +153,19 @@ const Seccion1 = () => {
           onClose={handleCloseLocation} 
           transformOrigin={{ horizontal: "left", vertical: "top" }} 
           anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
+          disableScrollLock={true}
+          disableAutoFocusItem={true}
+          disableRestoreFocus={true}
+          disablePortal={true}
+          MenuListProps={{
+            disablePadding: false,
+            style: { position: 'relative' }
+          }}
           PaperProps={{
             style: {
               maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
               width: 'auto',
+              position: 'fixed',
             },
           }}
         >
@@ -150,10 +179,19 @@ const Seccion1 = () => {
           onClose={handleCloseDate} 
           transformOrigin={{ horizontal: "left", vertical: "top" }} 
           anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
+          disableScrollLock={true}
+          disableAutoFocusItem={true}
+          disableRestoreFocus={true}
+          disablePortal={true}
+          MenuListProps={{
+            disablePadding: false,
+            style: { position: 'relative' }
+          }}
           PaperProps={{
             style: {
               maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
               width: 'auto',
+              position: 'fixed',
             },
           }}
         >
@@ -167,10 +205,19 @@ const Seccion1 = () => {
           onClose={handleClosePeople} 
           transformOrigin={{ horizontal: "left", vertical: "top" }} 
           anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
+          disableScrollLock={true}
+          disableAutoFocusItem={true}
+          disableRestoreFocus={true}
+          disablePortal={true}
+          MenuListProps={{
+            disablePadding: false,
+            style: { position: 'relative' }
+          }}
           PaperProps={{
             style: {
               maxHeight: 48 * 5.5, // Altura aproximada para 5.5 items (48px por item)
               width: 'auto',
+              position: 'fixed',
             },
           }}
         >
