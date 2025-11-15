@@ -26,7 +26,7 @@ const Servicios = () => {
     spacing={3}
     style={{
       width: "100%",
-      height: isMobile ? "35vh" : "48vh",
+      height: isMobile ? "45vh" : "48vh",
       backgroundColor: "#F2F4F8",
     //   borderRadius: "20px",
       marginTop: isMobile ? "-18%" : "0%",
