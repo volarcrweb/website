@@ -41,6 +41,54 @@
 
 }
 
+.titleDIalog{
+    color: #ffffff !important;
+    text-align: center !important;
+    font-family: "Montserrat-Bold" !important;
+    font-size: 1.5rem !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    text-transform: uppercase !important;
+}
+
+.subtitleDIalog{
+    color: #ffffff !important;
+    text-align: center !important;
+    font-family: "Montserrat-Bold" !important;
+    font-size: 1.2rem !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
+
+.valueDIalog{
+    color: #ffffff !important;
+    text-align: center !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1.2rem !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
+
+.btnseemore{
+    border-radius: 65.031px !important;
+    background: #2D2D2D !important;
+    color: #FFFFFF !important;
+    font-family: "Montserrat-Bold" !important;
+    font-size: 1rem !important;
+    font-style: normal !important;
+    width: 40% !important;
+    height: 30px !important;
+    border: none !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
 @media (max-width: 600px) {
     .title-flota {
         font-size: 32px !important;
@@ -54,5 +102,15 @@
     .descripcionAmenidad {
         font-size: 12px !important;
         width: 150px !important;
+    }
+    .titleDIalog{
+        font-size: 1.2rem !important;
+    }
+    
+    .subtitleDIalog{
+        font-size: 1rem !important;
+    }
+    .valueDIalog{
+        font-size: 1rem !important;
     }
 }

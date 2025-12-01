@@ -1,0 +1,147 @@
+.heliname{
+    color: #FFF !important;
+    font-family: "Montserrat-Bold" !important;
+    font-size: 3.58313rem !important;
+}
+.helidescription{
+    color: #FFF !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 2.09756rem !important;
+}
+.S2Tcontainer::before{
+    content: '';
+    top: 0;
+    left: 50%;
+    width: 1.5px;
+    height: 70px;
+    background-color: #ABA5A2;
+}
+.S2Tcontainer::after{
+    content: '';
+    top: 0;
+    left: 50%;
+    width: 1.5px;
+    height: 70px;
+    background-color: #ABA5A2;
+}
+.S2Tcontainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.S2Tprincipal{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 2.5rem !important;
+    color: #413F3F !important;
+    text-align: center !important;
+}
+.S2Tdescription{
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    color: #413F3F !important;
+    text-align: center !important;
+}
+.galleryTitle{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 1.5rem !important;
+    color: #ffffff !important;
+    text-align: center !important;
+}
+.galleryDescription{
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+.galleryDescription::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.35s ease;
+}
+.galleryCard:hover .galleryDescription::after{
+    width: 100%;
+}
+.galleryCard:hover{
+    opacity: 0.9;
+
+}
+
+@media (max-width: 600px) {
+    .heliname{
+        font-size: 2rem !important;
+    }
+    .helidescription{
+        font-size: 1rem !important;
+    }
+    .S2Tprincipal{
+        font-size: 1.5rem !important;
+    }
+    .S2Tdescription{
+        font-size: 0.8rem !important;
+    }
+    .S2Tcontainer{
+        width: 90% !important;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .heliname{
+        font-size: 3rem !important;
+    }
+    .helidescription{
+        font-size: 1.5rem !important;
+    }
+    .S2Tprincipal{
+        font-size: 1.5rem !important;
+    }
+    .S2Tdescription{
+        font-size: 0.8rem !important;
+    }
+    .S2Tcontainer{
+        width: 90% !important;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .heliname{
+        font-size: 3rem !important;
+    }
+    .helidescription{
+        font-size: 1.5rem !important;
+    }
+    .S2Tprincipal{
+        font-size: 1.5rem !important;
+    }
+    .S2Tdescription{
+        font-size: 0.8rem !important;
+    }
+    .S2Tcontainer{
+        width: 90% !important;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .heliname{
+        font-size: 3rem !important;
+    }
+    .helidescription{
+        font-size: 1.5rem !important;
+    }
+    .S2Tprincipal{
+        font-size: 3rem !important;
+    }
+    .S2Tdescription{
+        font-size: 1rem !important;
+    }
+    .S2Tcontainer{
+        width: 90% !important;
+    }
+}

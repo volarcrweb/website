@@ -79,6 +79,83 @@
         "titleForm1":"The adventure starts here",
         "titleForm2":"We adapt to your needs",
         "titleForm3":"Fill out the form to receive more information"
+      },
+      "heliDetail": {
+        "md902Explorer": {
+          "title": "MD 902 Explorer",
+          "description": {
+            "text1": "Luxury",
+            "text2": "Adventure",
+            "text3": "Trust",
+            "text4": "Safety",
+            "text5": "Quality",
+            "text6": "Exclusivity",
+            "text7": "Experience"
+          },
+          "description2": {
+            "title1": "Exclusivity, Security and Advanced Technology",
+            "text1": "The MD 902 Explorer is our most exclusive helicopter, recognized for its smooth, silent, and extremely safe flight. Thanks to its NOTAR® system, it operates without a tail rotor, increasing stability, reducing noise, and offering greater safety for passengers and ground personnel. Its bimotor configuration provides power and reliability in any condition, while its spacious and comfortable cabin makes it the ideal option for executive flights, private transfers, and VIP experiences.",
+            "title2": "State of the Art Avionics",
+            "text2": "The MD 902 Explorer is equipped with one of the most advanced avionics suites in its category, designed to offer maximum safety, precision, and efficiency in each flight. Its high-resolution digital screens provide clear and real-time information, allowing pilots to have greater situational awareness and total control of the aircraft.",
+            "title3": "Premium Interior and VIP Comfort",
+            "text3": "The interior of the MD 902 Explorer is designed to provide a comfortable, spacious, and silent flight experience. Its cabin offers ergonomic seats, excellent visibility, and a spacious environment that allows passengers to enjoy the journey with total tranquility.",
+            "title4": "NOTAR® Technology – Safety and Silence in Every Flight",
+            "text4": "The NOTAR® system eliminates the traditional tail rotor and uses directed air to control the stability of the helicopter. This offers greater safety, reduces the risk on the ground, and generates a smoother and quieter flight, providing passengers with a comfortable and reliable experience.",
+            "title5": "Contact our expert team today and see where it takes you.",
+            "text5": "Begin your adventure"
+           
+          }
+        },
+        "as350b2": {
+          "title": "AS350 B2",
+          "description": {
+            "text1": "Performance",
+            "text2": "Versatility",
+            "text3": "Trust",
+            "text4": "Safety",
+            "text5": "Quality",
+            "text6": "Adventure",
+            "text7": "Experience"
+          },
+          "description2": {
+            "title1": "Superior Performance",
+            "text1": "The AS350 B2 is equipped with a Safran/Turbomeca Arriel 1D1 turbine, recognized worldwide for its reliability, power, and efficiency. Manufactured in France, this propulsion system provides exceptional performance even under high temperature and altitude operations. Combining a comfortable cabin, excellent visibility, and large cargo capacity, the AS350 B2 has become a versatile and reliable aircraft for tourism, corporate, and operational missions.",
+            "title2": "An Elegant Interior Designed for Comfort",
+            "text2": "The AS350 B2 offers a refined interior that combines spaciousness, style, and comfort. Its padded seats made from high-quality materials, along with a thoughtfully designed layout, create an exclusive environment for each passenger. The cabin, bright and quiet, allows passengers to enjoy exceptional panoramic views while traveling smoothly.",
+            "title3": "",
+            "text3": "",
+            "title4": "",
+            "text4": "",
+            "title5": "Contact our expert team today and see where it takes you.",
+            "text5": "Begin your adventure"
+           
+          }
+        },
+        "robinson44": {
+          "title": "Robinson 44",
+          "description": {
+            "text1": "Performance",
+            "text2": "Versatility",
+            "text3": "Trust",
+            "text4": "Safety",
+            "text5": "Quality",
+            "text6": "Adventure",
+            "text7": "Experience"
+          },
+          "description2": {
+            "title1": "Efficiency, Reliability and Versatility in Every Flight",
+            "text1": "The Robinson R44 is one of the most recognized light helicopters for its reliability, low consumption and excellent cost-performance ratio. Its agile and stable design, combined with a spacious cabin and exceptional visibility, offers a safe and comfortable flight experience for both pilots and passengers. Ideal for tourist flights and corporate transfers",
+            "title2": "Panoramic Cabin for Impressive Tours",
+            "text2": "The cabin of the R44 offers exceptional visibility of 180°, making it one of the best helicopters for scenic tours. Its large windows allow each passenger to enjoy completely clear views of landscapes, coasts, volcanoes and forests from an incomparable perspective. Thanks to its comfortable, stable and silent design, tourist flights become an enveloping experience where every detail of the environment is appreciated with clarity and emotion.",
+            "title3": "",
+            "text3": "",
+            "title4": "",
+            "text4": "",
+            "title5": "Contact our expert team today and see where it takes you.",
+            "text5": "Begin your adventure"
+           
+          }
+        }
       }
     },
     "es": {
@@ -161,7 +238,83 @@
         "titleForm1":"La aventura empieza aquí",
         "titleForm2":"Nos adaptamos a tus necesidades",
         "titleForm3":"Llená el formulario para recibir más información"
+      },
+      "heliDetail": {
+        "md902Explorer": {
+          "title": "MD 902 Explorer",
+          "description": {
+            "text1": "Lujo",
+            "text2": "Aventura",
+            "text3": "Confianza",
+            "text4": "Seguridad",
+            "text5": "Calidad",
+            "text6": "Exclusividad",
+            "text7": "Experiencia"
+          },
+          "description2": {
+            "title1": "Exclusividad, Seguridad y Tecnología Avanzada",
+            "text1": "El MD 902 Explorer es nuestro helicóptero más exclusivo, reconocido por su vuelo suave, silencioso y extremadamente seguro. Gracias a su sistema NOTAR®, opera sin rotor de cola, lo que aumenta la estabilidad, reduce el ruido y ofrece mayor seguridad para pasajeros y personal en tierra. Su configuración bimotor brinda potencia y confiabilidad en cualquier condición, mientras que su cabina amplia y cómoda lo convierte en la opción ideal para vuelos ejecutivos, traslados privados y experiencias VIP.",
+            "title2": "Aviónica de última generación",
+            "text2": "El MD 902 Explorer está equipado con una de las suites avionicas más avanzadas de su categoría, diseñada para ofrecer máxima seguridad, precisión y eficiencia en cada vuelo. Sus pantallas digitales de alta resolución proporcionan información clara y en tiempo real, permitiendo a los pilotos una mayor conciencia situacional y un control total de la aeronave.",
+            "title3": "Interior Premium y Confort VIP",
+            "text3": "El interior del MD 902 Explorer está diseñado para brindar una experiencia de vuelo cómoda, amplia y silenciosa. Su cabina ofrece asientos ergonómicos, excelente visibilidad y un ambiente espacioso que permite a los pasajeros disfrutar del trayecto con total tranquilidad.",
+            "title4": "Tecnología NOTAR® – Seguridad y Silencio en Cada Vuelo",
+            "text4": "El sistema NOTAR® elimina el rotor de cola tradicional y utiliza aire direccionado para controlar la estabilidad del helicóptero. Esto ofrece mayor seguridad, reduce el riesgo en tierra y genera un vuelo más silencioso y suave, brindando a los pasajeros una experiencia cómoda y confiable.",
+            "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
+            "text5": "Comienza tu aventura"
+           
+          }
+        },
+        "as350b2": {
+          "title": "AS350 B2",
+          "description": {
+            "text1": "Rendimiento",
+            "text2": "Versatilidad",
+            "text3": "Confianza",
+            "text4": "Seguridad",
+            "text5": "Calidad",
+            "text6": "Aventura",
+            "text7": "Experiencia"
+          },
+          "description2": {
+            "title1": "Rendimiento Superior",
+            "text1": "El AS350 B2 está equipado con una turbina Safran/Turbomeca Arriel 1D1, reconocida mundialmente por su fiabilidad, potencia y eficiencia. Fabricada en Francia, esta planta motriz le brinda al helicóptero un desempeño excepcional incluso en operaciones de alta temperatura y altitud. Combinando una cabina cómoda, excelente visibilidad y gran capacidad de carga, el AS350 B2 se ha convertido en una aeronave versátil y confiable para misiones turísticas, corporativas y operativas.",
+            "title2": "Un Interior Elegante Diseñado para el Confort",
+            "text2": "El AS350 B2 ofrece un interior refinado que combina amplitud, estilo y comodidad. Sus asientos tapizados en materiales de alta calidad, junto con una distribución cuidadosamente pensada, crean un ambiente exclusivo para cada pasajero. La cabina, luminosa y silenciosa, permite disfrutar de vistas panorámicas excepcionales mientras se viaja con total suavidad.",
+            "title3": "",
+            "text3": "",
+            "title4": "",
+            "text4": "",
+            "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
+            "text5": "Comienza tu aventura"
+           
+          }
+        },
+        "robinson44": {
+          "title": "Robinson 44",
+          "description": {
+            "text1": "Rendimiento",
+            "text2": "Versatilidad",
+            "text3": "Confianza",
+            "text4": "Seguridad",
+            "text5": "Calidad",
+            "text6": "Aventura",
+            "text7": "Experiencia"
+          },
+          "description2": {
+            "title1": "Eficiencia, Confiabilidad y Versatilidad en Cada Vuelo",
+            "text1": "El Robinson R44 es uno de los helicópteros ligeros más reconocidos por su confiabilidad, bajo consumo y excelente relación costo-rendimiento. Su diseño ágil y estable, combinado con una cabina amplia y visibilidad excepcional, ofrece una experiencia de vuelo segura y cómoda tanto para pilotos como para pasajeros. Ideal para vuelos turísticos y traslados corporativos",
+            "title2": "Cabina Panorámica para Tours Impresionantes",
+            "text2": "La cabina del R44 ofrece una visibilidad excepcional de 180°, convirtiéndolo en uno de los mejores helicópteros para tours escénicos. Sus amplios ventanales permiten que cada pasajero disfrute vistas completamente despejadas de paisajes, costas, volcanes y selvas desde una perspectiva inigualable. Gracias a su diseño cómodo, estable y silencioso, los vuelos turísticos se convierten en una experiencia envolvente donde cada detalle del entorno se aprecia con claridad y emoción.",
+            "title3": "",
+            "text3": "",
+            "title4": "",
+            "text4": "",
+            "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
+            "text5": "Comienza tu aventura"
+           
+          }
+        }
       }
-
     }
   }
