@@ -101,9 +101,19 @@
             "text3": "The interior of the MD 902 Explorer is designed to provide a comfortable, spacious, and silent flight experience. Its cabin offers ergonomic seats, excellent visibility, and a spacious environment that allows passengers to enjoy the journey with total tranquility.",
             "title4": "NOTAR® Technology – Safety and Silence in Every Flight",
             "text4": "The NOTAR® system eliminates the traditional tail rotor and uses directed air to control the stability of the helicopter. This offers greater safety, reduces the risk on the ground, and generates a smoother and quieter flight, providing passengers with a comfortable and reliable experience.",
-            "title5": "Contact our expert team today and see where it takes you.",
-            "text5": "Begin your adventure"
+            "title5": "Contact our expert team today",
+            "text52": "and see where it takes you.",
+            "text5": "Begin your adventure",
+            "title6": "Twin-Engine Power & Safety",
+            "text6": "The MD 902 Explorer incorporates a solid twin-turbine Pratt & Whitney system that provides constant power, efficiency, and superior operational safety. Its two motors work in synchronization to offer reliable performance during takeoffs, climbs, and high-altitude operations, ensuring reserve power even under demanding conditions. The twin-engine configuration allows for safe flight even if one motor fails, a critical element for VIP, corporate, medical, and specialized transport missions. Thanks to its lightweight design and immediate response of its turbines, the MD 902 ensures stable, safe, and outstanding performance in any environment."
            
+          },
+          "dialog": {
+            "capacity": "2 pilots + 6 passengers",
+            "motor": "Twin Engine Pratt & Whitney",
+            "rotorPrincipal": "5 blades",
+            "categoria": "Ultra Luxury",
+            "carga": "?"
           }
         },
         "as350b2": {
@@ -129,6 +139,13 @@
             "title5": "Contact our expert team today and see where it takes you.",
             "text5": "Begin your adventure"
            
+          },
+          "dialog": {
+            "capacity": "1 pilot + 5 passengers",
+            "motor": "Single Engine SAFRAN",
+            "rotorPrincipal": "3 blades",
+            "categoria": "Normal",
+            "carga": "213 bags + some small bags"
           }
         },
         "robinson44": {
@@ -154,6 +171,13 @@
             "title5": "Contact our expert team today and see where it takes you.",
             "text5": "Begin your adventure"
            
+          },
+          "dialog": {
+            "capacity": "1 pilot + 3 passengers",
+            "motor": "Single Engine Lycoming",
+            "rotorPrincipal": "2 blades",
+            "categoria": "Normal - Tours",
+            "carga": "Small bags"
           }
         }
       }
@@ -260,9 +284,19 @@
             "text3": "El interior del MD 902 Explorer está diseñado para brindar una experiencia de vuelo cómoda, amplia y silenciosa. Su cabina ofrece asientos ergonómicos, excelente visibilidad y un ambiente espacioso que permite a los pasajeros disfrutar del trayecto con total tranquilidad.",
             "title4": "Tecnología NOTAR® – Seguridad y Silencio en Cada Vuelo",
             "text4": "El sistema NOTAR® elimina el rotor de cola tradicional y utiliza aire direccionado para controlar la estabilidad del helicóptero. Esto ofrece mayor seguridad, reduce el riesgo en tierra y genera un vuelo más silencioso y suave, brindando a los pasajeros una experiencia cómoda y confiable.",
-            "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
-            "text5": "Comienza tu aventura"
+            "title5": "Contacte hoy con nuestro equipo de expertos",
+            "text52": "y descubra a dónde le lleva.",
+            "text5": "Comienza tu aventura",
+            "title6": "Potencia y seguridad de dos motores",
+            "text6": "El MD 902 Explorer incorpora un sólido sistema bi-turbina Pratt & Whitney que proporciona potencia constante, eficiencia y un nivel superior de seguridad operacional. Sus dos motores trabajan de manera sincronizada para ofrecer un rendimiento confiable en despegues, ascensos y operaciones a gran altitud, garantizando reservas de potencia incluso en condiciones exigentes. La configuración de doble motor permite continuar el vuelo de forma segura aun ante la falla de uno de ellos, un elemento fundamental para misiones VIP, corporativas, médicas y de transporte especializado. Gracias a su diseño ligero y a la respuesta inmediata de sus turbinas, el MD 902 asegura operaciones más estables, seguras y con un desempeño sobresaliente en cualquier entorno."
            
+          },
+          "dialog": {
+            "capacity": "2 pilotos + 6 pasajeros",
+            "motor": "Biturbina Pratt & Whitney",
+            "rotorPrincipal": "5 palas",
+            "categoria": "Ultra Lujo",
+            "carga": "?"
           }
         },
         "as350b2": {
@@ -288,6 +322,13 @@
             "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
             "text5": "Comienza tu aventura"
            
+          },
+          "dialog": {
+            "capacity": "1 piloto + 5 pasajeros",
+            "motor": "Monoturbina SAFRAN",
+            "rotorPrincipal": "3 palas",
+            "categoria": "Normal",
+            "carga": "213 maletas + algunos bolsos"
           }
         },
         "robinson44": {
@@ -313,6 +354,13 @@
             "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
             "text5": "Comienza tu aventura"
            
+          },
+          "dialog": {
+            "capacity": "1 piloto + 3 pasajeros",
+            "motor": "Monoturbina Piston Lycoming",
+            "rotorPrincipal": "2 palas",
+            "categoria": "Normal - Tours",
+            "carga": "Bolsos Pequeños"
           }
         }
       }

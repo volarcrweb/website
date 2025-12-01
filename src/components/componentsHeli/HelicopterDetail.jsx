@@ -558,10 +558,73 @@ const HelicopterDetail = ({ heli }) => {
 
       
       </Stack>
+      <Stack
+        justifyContent="center"
+        alignItems="center"
+        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
+      >
+        <div className="S2Tcontainer">
+          <Stack alignItems="center" justifyContent="center" spacing={2}>
+            <Typography className="S2Tprincipal">
+              {heli.description2.title6}
+            </Typography>
+
+            <Typography className="S2Tdescription">
+              {heli.description2.text6}
+            </Typography>
+          </Stack>
+        </div>
+      </Stack>
+      <Stack
+        justifyContent="space-evenly"
+        alignItems="center"
+        direction="row"
+        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
+      >
+        {isMobile || isTablet ? (
+          <Stack
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+            style={{ width: "100%" }}
+          >
+            <Stack
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+              style={{ width: "100%" }}
+            >
+              <GalleryCard width="45%" image={heli.gallery.image15} />
+              <GalleryCard width="45%" image={heli.gallery.image16} />
+            </Stack>
+            <Stack
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+              style={{ width: "100%" }}
+            >
+              <GalleryCard width="45%" image={heli.gallery.image17} />
+              <GalleryCard width="45%" image={heli.gallery.image18} />
+            </Stack>
+          </Stack>
+        ) : (
+          <>
+            <GalleryCard width="24%" image={heli.gallery.image15} />
+            <GalleryCard width="24%" image={heli.gallery.image16} />
+            <GalleryCard width="24%" image={heli.gallery.image17} />
+            <GalleryCard width="24%" image={heli.gallery.image18} />
+          </>
+        )}
+      </Stack>
       </>
       ) : (
         null
       )}
+
+      
 
 
 
@@ -573,12 +636,12 @@ const HelicopterDetail = ({ heli }) => {
         <div className="S2Tcontainer">
           <Stack alignItems="center" justifyContent="center" spacing={2}>
             <Typography className="S2Tprincipal">
-              Contact our expert team today
+              {translation.heliDetail.md902Explorer.description2.title5}
               <br />
-              and see where it takes you.
+              {translation.heliDetail.md902Explorer.description2.text52}
             </Typography>
             <Typography className="S2Tdescription">
-              Begin your adventure
+              {translation.heliDetail.md902Explorer.description2.text5}
             </Typography>
           </Stack>
         </div>

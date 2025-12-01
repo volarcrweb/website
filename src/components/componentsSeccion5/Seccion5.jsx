@@ -101,11 +101,11 @@ const Seccion5 = () => {
       video: "/images/videonuevoMD.mp4",
       url: "/MD902Explorer",
       dialog: {
-        capacity: "2 pilotos + 6 pasajeros",
-        motor: "Biturbina Pratt & Whitney",
-        rotorPrincipal: "5 palas",
-        categoria: "Ultra Lujo",
-        carga: "?",
+        capacity: translation.heliDetail.md902Explorer.dialog.capacity,
+        motor: translation.heliDetail.md902Explorer.dialog.motor,
+        rotorPrincipal: translation.heliDetail.md902Explorer.dialog.rotorPrincipal,
+        categoria: translation.heliDetail.md902Explorer.dialog.categoria,
+        carga: translation.heliDetail.md902Explorer.dialog.carga,
       }
     },
     {
@@ -116,11 +116,11 @@ const Seccion5 = () => {
       video: "/images/video-vertical1.mp4",
       url: "/AS350B2",
       dialog: {
-        capacity: "1 piloto + 5 pasajeros",
-        motor: "Monoturbina SAFRAN",
-        rotorPrincipal: "3 palas",
-        categoria: "Normal",
-        carga: "213 maletas + algunos bolsos",
+        capacity: translation.heliDetail.as350b2.dialog.capacity,
+        motor: translation.heliDetail.as350b2.dialog.motor,
+        rotorPrincipal: translation.heliDetail.as350b2.dialog.rotorPrincipal,
+        categoria: translation.heliDetail.as350b2.dialog.categoria,
+        carga: translation.heliDetail.as350b2.dialog.carga,
       }
     },
     {
@@ -131,11 +131,11 @@ const Seccion5 = () => {
       video: "/images/video-vertical2.mp4",
       url: "/Robinson44",
       dialog: {
-        capacity: "1 piloto + 3 pasajeros",
-        motor: "Monoturbina Piston Lycoming",
-        rotorPrincipal: "2 palas",
-        categoria: "Normal - Tours",
-        carga: "Bolsos Pequeños",
+        capacity: translation.heliDetail.robinson44.dialog.capacity,
+        motor: translation.heliDetail.robinson44.dialog.motor,
+        rotorPrincipal: translation.heliDetail.robinson44.dialog.rotorPrincipal,
+        categoria: translation.heliDetail.robinson44.dialog.categoria,
+        carga: translation.heliDetail.robinson44.dialog.carga,
       }
     },
   ];
@@ -330,7 +330,7 @@ const Seccion5 = () => {
                   <Stack spacing={2}>
                     <Stack direction="row" alignItems="center" spacing={1}>
                       <Typography className="subtitleDIalog">
-                        Capacidad:
+                       {translation.type === "es" ? "Capacidad:" : "Capacity:"}
                       </Typography>
                       <Typography className="valueDIalog">{selectedAmenity.dialog.capacity}</Typography>
                     </Stack>
@@ -344,13 +344,13 @@ const Seccion5 = () => {
                   <Stack spacing={2}>
                   <Stack direction="row" alignItems="center" spacing={1}>
                       <Typography className="subtitleDIalog">
-                        Rotor Principal:
+                       {translation.type === "es" ? "Rotor Principal:" : "Main Rotor:"}
                       </Typography>
                       <Typography className="valueDIalog">{selectedAmenity.dialog.rotorPrincipal}</Typography>
                     </Stack>
                     <Stack direction="row" alignItems="center" spacing={1}>
                       <Typography className="subtitleDIalog">
-                        Categoria:
+                       {translation.type === "es" ? "Categoría:" : "Category:"}
                       </Typography>
                       <Typography className="valueDIalog">{selectedAmenity.dialog.categoria}</Typography>
                     </Stack>
@@ -370,7 +370,7 @@ const Seccion5 = () => {
                     className="btnseemore"
                     // onClick={handleAmenityDialogClose}
                   >
-                    {translation.seccion5?.seemoreLabel || "Ver más"}
+                    {translation.type === "es" ? "Ver más" : "See more"}
                   </NavLink>
                 </Stack>
               </DialogActions>

@@ -80,7 +80,7 @@ const Seccion1 = () => {
       <Box
         className="videobackground"
         component="video"
-        src="/images/video-horizontal.mp4"
+        src="/images/videohome.mp4"
         autoPlay
         loop
         muted

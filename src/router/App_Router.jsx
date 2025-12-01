@@ -33,7 +33,9 @@ export const App_Router = () => {
         title3: translation.heliDetail.md902Explorer.description2.title3,
         text3: translation.heliDetail.md902Explorer.description2.text3,
         title4: translation.heliDetail.md902Explorer.description2.title4,
-        text4: translation.heliDetail.md902Explorer.description2.text4
+        text4: translation.heliDetail.md902Explorer.description2.text4,
+        title6: translation.heliDetail.md902Explorer.description2.title6,
+        text6: translation.heliDetail.md902Explorer.description2.text6
       },
       image: "/images/blanco.svg",
       video: "/images/MDheli/video1.mp4",
@@ -52,7 +54,11 @@ export const App_Router = () => {
         image11: "/images/MDheli/11.jpeg",
         image12: "/images/MDheli/12.jpeg",
         image13: "/images/MDheli/13.jpeg",
-        image14: "/images/MDheli/14.jpeg"
+        image14: "/images/MDheli/14.jpeg",
+        image15: "/images/MDheli/15.jpeg",
+        image16: "/images/MDheli/16.jpeg",
+        image17: "/images/MDheli/17.jpeg",
+        image18: "/images/MDheli/18.jpeg"
       }
     },
     {
