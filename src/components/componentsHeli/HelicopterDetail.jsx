@@ -227,9 +227,9 @@ const HelicopterDetail = ({ heli }) => {
         alignItems="center"
         style={{
           width: "100%",
-          height: isMobile ? "auto" : "55vh",
+          height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh",
           backgroundColor: "#fff",
-          paddingTop: isMobile ? "5%" : "0%",
+          paddingTop: isMobile ? "15%" : "0%",
         }}
       >
         <div className="S2Tcontainer">
@@ -330,7 +330,7 @@ const HelicopterDetail = ({ heli }) => {
         alignItems="center"
         style={{
           width: "100%",
-          height: isMobile ? "auto" : "55vh",
+          height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh",
           backgroundColor: "#fff",
           paddingTop: isMobile ? "0%" : "0%",
         }}
@@ -437,7 +437,7 @@ const HelicopterDetail = ({ heli }) => {
       <Stack
         justifyContent="center"
         alignItems="center"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
+        style={{ width: "100%", height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh", backgroundColor: "#fff" }}
       >
         <div className="S2Tcontainer">
           <Stack alignItems="center" justifyContent="center" spacing={2}>
@@ -498,7 +498,7 @@ const HelicopterDetail = ({ heli }) => {
       <Stack
         justifyContent="center"
         alignItems="center"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
+        style={{ width: "100%", height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh", backgroundColor: "#fff" }}
       >
         <div className="S2Tcontainer">
           <Stack alignItems="center" justifyContent="center" spacing={2}>
@@ -561,7 +561,7 @@ const HelicopterDetail = ({ heli }) => {
       <Stack
         justifyContent="center"
         alignItems="center"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
+        style={{ width: "100%", height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh", backgroundColor: "#fff" }}
       >
         <div className="S2Tcontainer">
           <Stack alignItems="center" justifyContent="center" spacing={2}>
