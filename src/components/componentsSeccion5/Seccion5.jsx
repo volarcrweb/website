@@ -71,7 +71,7 @@ const AmenidadToggle2 = ({ title, title2, description, onClick }) => {
 
 const Seccion5 = () => {
   const [currentVideo, setCurrentVideo] = useState(
-    "/images/video-horizontal.mp4"
+    "/images/videonuevoMD.mp4"
   );
   const isMobile = useMediaQuery("(max-width: 600px)");
   const { translation } = useContext(LanguageContext);
