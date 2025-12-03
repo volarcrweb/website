@@ -119,7 +119,7 @@ export const App_Router = () => {
         text4: ""
       },
       image: "/images/blanco.svg",
-      video: "/images/Robinsonheli/video1.mp4",
+      video: "/images/Robinsonheli/video2.mp4",
       url: "/Robinson44",
       gallery: {
         image1: "/images/Robinsonheli/1.jpeg",
