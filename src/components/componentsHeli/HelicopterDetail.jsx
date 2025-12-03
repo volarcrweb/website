@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useContext, useEffect, useMemo, useState } from "react";
 import {
   Box,
+  Dialog,
   SpeedDial,
   SpeedDialAction,
   SpeedDialIcon,
@@ -15,21 +16,51 @@ import ShareIcon from "@mui/icons-material/Share";
 import Footer from "../componentsFooter/Footer";
 
 const GalleryCard = ({ width, image }) => {
+  const [open, setOpen] = useState(false);
   const isMobile = useMediaQuery("(max-width: 600px)");
   const isTablet = useMediaQuery("(min-width: 601px) and (max-width: 1024px)");
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
-    <Stack
-      justifyContent="center"
-      alignItems="center"
-      className="galleryCard"
-      style={{
-        width: width,
-        height: isMobile || isTablet ? "200px" : "400px",
-        backgroundImage: `url(${image})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    ></Stack>
+    <>
+      <Stack
+        justifyContent="center"
+        alignItems="center"
+        className="galleryCard"
+        onClick={handleOpen}
+        style={{
+          width: width,
+          height: isMobile || isTablet ? "200px" : "400px",
+          backgroundImage: `url(${image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          cursor: "pointer",
+        }}
+      ></Stack>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        maxWidth="lg"
+        fullWidth
+        PaperProps={{
+          sx: {
+            backgroundColor: "transparent",
+            boxShadow: "none",
+          },
+        }}
+      >
+        <Box
+          sx={{
+            width: "100%",
+            minHeight: isMobile || isTablet ? 300 : 600,
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            borderRadius: 2,
+          }}
+        />
+      </Dialog>
+    </>
   );
 };
 

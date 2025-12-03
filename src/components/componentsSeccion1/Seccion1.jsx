@@ -21,8 +21,8 @@ const Seccion1 = () => {
   const [isPeopleMenuOpen, setIsPeopleMenuOpen] = useState(false);
   const [dialogOpen, setDialogOpen] = useState(false);
 
-  const locationOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós",  "Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo"];
-  const dateOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós", "Papagayo", "Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo"];
+  const locationOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós", "Los sueños", "Papagayo", "Quepos", "Limón" ,"Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo", "Hacienda Altagracias", "Tortuguero"];
+  const dateOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós", "Los sueños", "Papagayo", "Quepos", "Limón" ,"Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo", "Hacienda Altagracias", "Tortuguero"];
   const peopleOptions = ["1 "+translation.filter.person, "2 "+translation.filter.people, "3 "+translation.filter.people, "4 "+translation.filter.people, "5 "+translation.filter.people, "6 "+translation.filter.people, "7 "+translation.filter.people];
 
   const handleOpenLocation = (event) => {

@@ -171,8 +171,8 @@ const Seccion5 = () => {
       {/* circulo grande */}
       <Stack
         style={{
-          width: isMobile ? "350px" : "719px",
-          height: isMobile ? "350px" : "719px",
+          width: isMobile ? "305px" : "708px",
+          height: isMobile ? "305px" : "708px",
           borderRadius: "50%",
           overflow: "hidden",
           position: "relative",

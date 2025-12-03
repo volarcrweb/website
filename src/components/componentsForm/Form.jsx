@@ -12,23 +12,8 @@ const Form = ({ location, destination, people, onClose }) => {
   const { translation } = useContext(LanguageContext);
   
   // Opciones para los selects (mismas que en Seccion1)
-  const locationOptions = [
-    translation.filter?.Aeropuerto + " Tobias Bolanos" || "Aeropuerto Tobias Bolanos", 
-    translation.filter?.Aeropuerto + " Juan Santamaría" || "Aeropuerto Juan Santamaría", 
-    translation.filter?.Aeropuerto + " Daniel Oduber Quirós" || "Aeropuerto Daniel Oduber Quirós", 
-    "Papagayo", "Santa Teresa", "Nosara", "Tamarindo", "Cobano", "Tango Mar", "Montezuma", 
-    "Jaco", "Uvita", "Palma Sur", "Drake", "Golfito", "Laurel", "San Vito", "Jimenez", 
-    "Fortuna", "Los Chiles", "Puerto Viejo"
-  ];
-  
-  const destinationOptions = [
-    translation.filter?.Aeropuerto + " Tobias Bolanos" || "Aeropuerto Tobias Bolanos", 
-    translation.filter?.Aeropuerto + " Juan Santamaría" || "Aeropuerto Juan Santamaría", 
-    translation.filter?.Aeropuerto + " Daniel Oduber Quirós" || "Aeropuerto Daniel Oduber Quirós", 
-    "Papagayo", "Santa Teresa", "Nosara", "Tamarindo", "Cobano", "Tango Mar", "Montezuma", 
-    "Jaco", "Uvita", "Palma Sur", "Drake", "Golfito", "Laurel", "San Vito", "Jimenez", 
-    "Fortuna", "Los Chiles", "Puerto Viejo"
-  ];
+  const locationOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós", "Los sueños", "Papagayo", "Quepos", "Limón" ,"Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo", "Hacienda Altagracias", "Tortuguero"];
+  const destinationOptions = [translation.filter.Aeropuerto+" Tobias Bolanos", translation.filter.Aeropuerto+" Juan Santamaría", translation.filter.Aeropuerto+" Daniel Oduber Quirós", "Los sueños", "Papagayo", "Quepos", "Limón" ,"Santa Teresa", "Nosara", "Tamarindo", "Cobano","Tango Mar","Montezuma","Jaco","Uvita", "Palma Sur","Drake","Golfito","Laurel","San Vito", "Jimenez","Fortuna", "Los Chiles", "Puerto Viejo", "Hacienda Altagracias", "Tortuguero"];
   
   const peopleOptions = [
     "1 " + (translation.filter?.person || "persona"), 
