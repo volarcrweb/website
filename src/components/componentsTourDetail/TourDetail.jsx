@@ -187,7 +187,7 @@ const TourDetail = ({ tour }) => {
         </Stack>
         <Stack
           direction="row"
-          gap={isMobile ? 2 : 4}
+          gap={isMobile ? 1 : 4}
           alignItems={isMobile || isTablet ? "center" : "flex-start"}
           justifyContent={isMobile || isTablet ? "center" : "flex-start"}
           style={{
@@ -207,7 +207,7 @@ const TourDetail = ({ tour }) => {
                   setActiveImage(image);
               }}
               style={{
-                width: isMobile ? "20vw" : (isTablet ? "15vw" : "5vw"),
+                width: isMobile ? "14vw" : (isTablet ? "15vw" : "5vw"),
                 height: "100%",
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",

@@ -153,13 +153,15 @@ export const App_Router = () => {
         p2: translation.tourDetail.poas.departure.p2,
         p3: translation.tourDetail.poas.departure.p3,
       },
-      video: "/images/tours/poas/videopoas.mp4",
+      video: "/images/tours/poas/videopoas2.mp4",
       url: "/poas",
       gallery: {
-        image1: "/images/tours/poas/1.jpeg",
-        image2: "/images/tours/poas/2.jpeg",
-        image3: "/images/tours/poas/3.jpeg",
-        image4: "/images/tours/poas/4.jpeg"
+        image1: "/images/tours/poas/1.png",
+        image2: "/images/tours/poas/2.png",
+        image3: "/images/tours/poas/3.png",
+        image4: "/images/tours/poas/4.png",
+        image5: "/images/tours/poas/5.png",
+        image6: "/images/tours/poas/6.png"
  
       }
     }
