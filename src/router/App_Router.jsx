@@ -3,11 +3,7 @@ import Landing from "../Landing";
 import HelicopterDetail from "../components/componentsHeli/HelicopterDetail";
 import { useContext } from "react";
 import { LanguageContext } from "../components/LanguageProvider";
-
-
-
-
-
+import TourDetail from "../components/componentsTourDetail/TourDetail";
 
 
 export const App_Router = () => {
@@ -132,6 +128,42 @@ export const App_Router = () => {
       }
     }
   ]
+
+  const dataTour = [
+    {
+      id: 1,
+      name: translation.tourDetail.poas.name,
+      description: {
+      text1: translation.tourDetail.poas.description.text1,
+      text2: translation.tourDetail.poas.description.text2,
+      },
+      highlight: {
+        txt1: translation.tourDetail.poas.highlight.txt1,
+        txt2: translation.tourDetail.poas.highlight.txt2,
+        txt3: translation.tourDetail.poas.highlight.txt3,
+      },
+      duration: {
+        d1: translation.tourDetail.poas.duration.d1,
+        d2: translation.tourDetail.poas.duration.d2,
+        d3: translation.tourDetail.poas.duration.d3,
+        d4: translation.tourDetail.poas.duration.d4,
+      },
+      departure:{
+        p1: translation.tourDetail.poas.departure.p1,
+        p2: translation.tourDetail.poas.departure.p2,
+        p3: translation.tourDetail.poas.departure.p3,
+      },
+      video: "/images/Robinsonheli/video2.mp4",
+      url: "/poas",
+      gallery: {
+        image1: "/images/tours/poas/1.jpeg",
+        image2: "/images/tours/poas/2.jpeg",
+        image3: "/images/tours/poas/3.jpeg",
+        image4: "/images/tours/poas/4.jpeg"
+ 
+      }
+    }
+  ]
     
     return (
         <Routes>
@@ -141,6 +173,10 @@ export const App_Router = () => {
           {dataHelicopeters.map((heli) => (
         <Route key={heli.id} path={`/${heli.url}`} element={<HelicopterDetail heli={heli}/>} />
       ))}
+
+          {dataTour.map((tour) => (
+            <Route key={tour.id} path={`/${tour.url}`} element={<TourDetail tour={tour}/>} />
+          ))}
 
           {/* <Route path="/politicas-privacidad" element={<PoliticasPrivacidad/>} />
           <Route path="/success" element={<FormSucces/>} />

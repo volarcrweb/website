@@ -1,0 +1,74 @@
+.textHighlight{
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    color: #2D2D2D !important;
+    line-height: 1.8 !important;
+}
+.titleHighlight{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 1rem !important;
+    color: #2D2D2D !important;
+}
+.titleTour{
+    font-family: "Montserrat-Bold" !important;
+    font-size: 3rem !important;
+    color: #2D2D2D !important;
+    text-transform: uppercase;
+}
+.descriptionTour{
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    color: #2D2D2D !important;
+}
+.buttonTour{
+    background-color: #2D2D2D !important;
+    color: #fff !important;
+    font-family: "Montserrat-Regular" !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    text-transform: none !important;
+    border-radius: 20px !important;
+    width: 15% !important;
+    height: 50px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+.buttonback{
+    background-color: #fff !important;
+    color: #2D2D2D !important;
+    font-family: "Montserrat-Regular" !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    text-transform: none !important;
+    border-radius: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-transform: uppercase !important;
+    width: 10% !important;
+}
+@media (max-width: 600px) {
+    .buttonTour {
+        width: 50% !important;
+    }
+    .titleTour {
+        font-size: 2rem !important;
+    }
+    .descriptionTour {
+        font-size: 0.8rem !important;
+    }
+    .textHighlight {
+        font-size: 0.8rem !important;
+    }
+    .titleHighlight {
+        font-size: 0.8rem !important;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .buttonTour {
+        width: 50% !important;
+    }
+}

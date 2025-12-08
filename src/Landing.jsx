@@ -1,4 +1,4 @@
-import { Button, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, useMediaQuery } from '@mui/material'
+import { SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, useMediaQuery } from '@mui/material'
 import ShareIcon from '@mui/icons-material/Share';
 import Seccion1 from './components/componentsSeccion1/Seccion1'
 import "./styles/fonts-import.css"
@@ -9,14 +9,23 @@ import Seccion5 from './components/componentsSeccion5/Seccion5'
 import Footer from './components/componentsFooter/Footer';
 import Galeria from './components/componentsGaleria/Galeria';
 import Servicios from './components/componentsServicios/Servicios'
-import Tours from './components/componentsTours/Tours';
 // import Seccion6 from './components/componentsSeccion6/Seccion6'
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { LanguageContext } from './components/LanguageProvider';
 
 const Landing = () => {
   const isMobile = useMediaQuery('(max-width: 600px)');
   const { translation, toggleLanguage } = useContext(LanguageContext);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto',
+    });
+  }, []);
+
+
+  
 
   const actions = [
     { icon: <img src="/images/email.svg" style={{width: isMobile ? "50%" : "60%"}} alt='WA'/>, name: 'Email', url: "mailto:reservations@volarcr.com" },
@@ -66,7 +75,6 @@ const Landing = () => {
       </SpeedDial>
     <Seccion1/>
     <Servicios/>
-    {/* <Tours/> */}
     {/* <Seccion2/> */}
     <Galeria/>
     {/* <Seccion3/> */}

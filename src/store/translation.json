@@ -180,6 +180,37 @@
             "carga": "Small bags"
           }
         }
+      },
+      "tourDetail": {
+        "txtHighlight": "HIGHLIGHTS",
+        "txtDuration": "DURATION OF THE TOUR",
+        "txtDeparture": "DEPARTURE POINT",
+        "txtWatchVideo": "WATCH VIDEO",
+        "txtBack": "Back",
+        "txtMoreInformation": "More information",
+        "poas" : {
+          "name": "Poas Volcano",
+          "description": {
+          "text1": "Experience an exceptional perspective of the Central Valley and the Poás Volcano with our helicopter tour designed to offer an optimal combination of comfort, safety, and unmatched views. During the journey, passengers enjoy a panoramic flight over characteristic landscapes of Costa Rica, including coffee plantations, cloud forests, and volcanic ranges.",
+          "text2": "Upon arrival at Poás, the helicopter performs a controlled overflight that allows clear observation of its active crater, turquoise lagoon, and geological formations surrounding it, providing a privileged viewpoint that cannot be obtained from the ground. This aerial experience stands out for its efficient operation, precise route, and high-quality service on board, making it an ideal option for travelers seeking an exclusive, safe, and high-level activity."
+          },
+          "highlight": {
+            "txt1": "Unique aerial view of the Poás Volcano's crater, including its turquoise lagoon and active fumaroles.",
+            "txt2": "Panoramic flight over the Central Valley, coffee plantations, mountains, and cloud forests.",
+            "txt3": "Exclusive and quick experience from San José, with perspectives that can only be appreciated from a helicopter."
+          },
+          "duration": {
+            "d1":"45 minutes of flight over the Central Valley and the Poás Volcano.",
+            "d2":"15 minutes of airport procedures for registration and pre-boarding control.",
+            "d3":"10 minutes of safety briefing before starting the experience.",
+            "d4":"10 minutes with the helicopter off to allow passengers to take photos with total comfort."
+          },
+          "departure":{
+            "p1":"The tour takes off from the International Airport Tobias Bolanos in San José.",
+            "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
+            "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
+          }
+        }
       }
     },
     "es": {
@@ -361,6 +392,37 @@
             "rotorPrincipal": "2 palas",
             "categoria": "Normal - Tours",
             "carga": "Bolsos Pequeños"
+          }
+        }
+      },
+      "tourDetail": {
+        "txtHighlight": "DESTACADOS",
+        "txtDuration": "DURACIÓN DEL TOUR",
+        "txtDeparture": "PUNTO DE SALIDA",
+        "txtWatchVideo": "VER VIDEO",
+        "txtBack": "Volver",
+        "txtMoreInformation": "Mas información",
+        "poas" : {
+          "name": "Volcan Poás",
+          "description": {
+          "text1": "Experimente una perspectiva excepcional del Valle Central y del Volcán Poás con nuestro tour en helicóptero diseñado para ofrecer una combinación óptima de confort, seguridad y vistas inigualables. Durante el recorrido, los pasajeros disfrutan un vuelo panorámico sobre paisajes característicos de Costa Rica, incluyendo cafetales, bosques nubosos y cordilleras volcánicas.",
+          "text2": "Al llegar al Poás, el helicóptero realiza un sobrevuelo controlado que permite observar con claridad su cráter activo, la laguna turquesa y las formaciones geológicas que lo rodean, brindando un punto de vista privilegiado que no es posible obtener desde tierra. Esta experiencia aérea destaca por su operación eficiente, su precisión en la ruta y la calidad del servicio a bordo, convirtiéndola en una opción ideal para viajeros que buscan una actividad exclusiva, segura y de alto nivel."
+          },
+          "highlight": {
+            "txt1": "Vista aérea única del cráter del Volcán Poás, incluyendo su laguna turquesa y fumarolas activas.",
+            "txt2": "Recorrido panorámico sobre el Valle Central, cafetales, montañas y bosques nubosos.",
+            "txt3": "Experiencia exclusiva y rápida desde San José, con perspectivas que solo se pueden apreciar desde un helicóptero."
+          },
+          "duration": {
+            "d1":"45 minutos de vuelo sobre el Valle Central y el Volcán Poás.",
+            "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
+            "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
+            "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
+          },
+          "departure":{
+            "p1":"El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
+            "p2":"Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
+            "p3":"En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
           }
         }
       }

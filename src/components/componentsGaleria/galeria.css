@@ -68,6 +68,17 @@
     -webkit-animation: scrollText 80s linear infinite;
 }
 
+.btnmas{
+    color: #FFF !important;
+    background-color: #2D2D2D !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    text-transform: none !important;
+    border-radius: 20px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    padding: 10px 20px !important;
+}
 @keyframes scrollText {
     0% {
         transform: translateX(0%);
