@@ -153,7 +153,7 @@ export const App_Router = () => {
         p2: translation.tourDetail.poas.departure.p2,
         p3: translation.tourDetail.poas.departure.p3,
       },
-      video: "/images/Robinsonheli/video2.mp4",
+      video: "/images/tours/poas/videopoas.mp4",
       url: "/poas",
       gallery: {
         image1: "/images/tours/poas/1.jpeg",

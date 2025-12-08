@@ -217,7 +217,7 @@ const HelicopterDetail = ({ heli }) => {
 
       <Stack
         alignItems="center"
-        style={{ width: "100%", height: isMobile ? "85vh" : "100vh" }}
+        style={{ width: "100%", height: isMobile ? "92vh" : "100vh" }}
       >
         <Stack spacing={35} style={{width: "100%"}}>
           <Stack alignItems="center" style={{ width: "100%" }}>

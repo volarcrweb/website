@@ -341,7 +341,7 @@ const TourDetail = ({ tour }) => {
           sx: {
             backgroundColor: "transparent",
             boxShadow: "none",
-            height: isMobile ? "30vh" : "65vh",
+            height: isMobile ? "50vh" : "65vh",
             overflow: "hidden",
           },
         }}
