@@ -77,6 +77,20 @@
 
 }
 
+.buttonbackHeli{
+    background-color: transparent !important;
+    color: #fff !important;
+    font-family: "Montserrat-Regular" !important;
+    font-size: 1rem !important;
+    text-transform: uppercase !important;
+    border-radius: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 10% !important;
+}
+
 @media (max-width: 600px) {
     .heliname{
         font-size: 2rem !important;
@@ -92,6 +106,9 @@
     }
     .S2Tcontainer{
         width: 90% !important;
+    }
+    .buttonbackHeli{
+        width: 30% !important;
     }
 }
 @media (min-width: 601px) and (max-width: 1024px) {

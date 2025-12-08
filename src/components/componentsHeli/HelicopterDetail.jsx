@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useContext, useEffect, useMemo, useState } from "react";
 import {
   Box,
+  Button,
   Dialog,
   SpeedDial,
   SpeedDialAction,
@@ -14,6 +15,7 @@ import "./HelicopterDetail.css";
 import { LanguageContext } from "../LanguageProvider";
 import ShareIcon from "@mui/icons-material/Share";
 import Footer from "../componentsFooter/Footer";
+import { useNavigate } from "react-router-dom";
 
 const GalleryCard = ({ width, image }) => {
   const [open, setOpen] = useState(false);
@@ -67,7 +69,7 @@ const GalleryCard = ({ width, image }) => {
 const HelicopterDetail = ({ heli }) => {
   const isMobile = useMediaQuery("(max-width: 600px)");
   const isTablet = useMediaQuery("(min-width: 601px) and (max-width: 1024px)");
-
+  const navigate = useNavigate();
   const { translation, toggleLanguage } = useContext(LanguageContext);
 
   useEffect(() => {
@@ -215,20 +217,35 @@ const HelicopterDetail = ({ heli }) => {
 
       <Stack
         alignItems="center"
-        style={{ width: "100%", height: isMobile ? "80vh" : "100vh" }}
+        style={{ width: "100%", height: isMobile ? "85vh" : "100vh" }}
       >
-        <Stack spacing={35}>
+        <Stack spacing={35} style={{width: "100%"}}>
           <Stack alignItems="center" style={{ width: "100%" }}>
             <img
               src="/images/logo.png"
               alt="logo"
-              style={{ width: isMobile ? "25%" : "12%" }}
+              style={{ width: isMobile ? "25%" : "8%" }}
             />
           </Stack>
           <Stack alignItems="center" style={{ width: "100%" }}>
             <Typography className="heliname">{heli.name}</Typography>
             <Typography className="helidescription">{typedText}</Typography>
           </Stack>
+
+<Stack>
+<Button
+          className="buttonbackHeli"
+          onClick={() => navigate("/")}
+        >
+
+<svg xmlns="http://www.w3.org/2000/svg" width={isMobile ? "20" : "30"} height={isMobile ? "18" : "26"} viewBox="0 0 30 26" fill="none">
+  <path d="M2 13L28 13M2 13L13.1429 2M2 13L13.1429 24" stroke="#fff" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+          {translation.tourDetail.txtBack}
+        </Button>
+</Stack>
+
+
         </Stack>
 
         <Box
