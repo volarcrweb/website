@@ -164,7 +164,143 @@ export const App_Router = () => {
         image6: "/images/tours/poas/6.png"
  
       }
+    }, 
+    {
+      id: 2,
+      name: translation.tourDetail.manuelantonio.name,
+      description: {
+      text1: translation.tourDetail.manuelantonio.description.text1,
+      text2: translation.tourDetail.manuelantonio.description.text2,
+      },
+      highlight: {
+        txt1: translation.tourDetail.manuelantonio.highlight.txt1,
+        txt2: translation.tourDetail.manuelantonio.highlight.txt2,
+        txt3: translation.tourDetail.manuelantonio.highlight.txt3,
+      },
+      duration: {
+        d1: translation.tourDetail.manuelantonio.duration.d1,
+        d2: translation.tourDetail.manuelantonio.duration.d2,
+        d3: translation.tourDetail.manuelantonio.duration.d3,
+        d4: translation.tourDetail.manuelantonio.duration.d4,
+      },
+      departure:{
+        p1: translation.tourDetail.manuelantonio.departure.p1,
+        p2: translation.tourDetail.manuelantonio.departure.p2,
+        p3: translation.tourDetail.manuelantonio.departure.p3,
+      },
+      video: "/images/tours/manuelantonio/videoMA.mp4",
+      url: "/manuel-antonio",
+      gallery: {
+        image1: "/images/tours/manuelantonio/1.png",
+        image2: "/images/tours/manuelantonio/2.png",
+        image3: "/images/tours/manuelantonio/3.png",
+        image4: "/images/tours/manuelantonio/4.png",
+        image5: "/images/tours/manuelantonio/5.png"
+ 
+      }
+    },
+    {
+      id: 3,
+      name: translation.tourDetail.tarcoles.name,
+      description: {
+      text1: translation.tourDetail.tarcoles.description.text1,
+      text2: translation.tourDetail.tarcoles.description.text2,
+      },
+      highlight: {
+        txt1: translation.tourDetail.tarcoles.highlight.txt1,
+        txt2: translation.tourDetail.tarcoles.highlight.txt2,
+        txt3: translation.tourDetail.tarcoles.highlight.txt3,
+      },
+      duration: {
+        d1: translation.tourDetail.tarcoles.duration.d1,
+        d2: translation.tourDetail.tarcoles.duration.d2,
+        d3: translation.tourDetail.tarcoles.duration.d3,
+        d4: translation.tourDetail.tarcoles.duration.d4,
+      },
+      departure:{
+        p1: translation.tourDetail.tarcoles.departure.p1,
+        p2: translation.tourDetail.tarcoles.departure.p2,
+        p3: translation.tourDetail.tarcoles.departure.p3,
+      },
+      video: "/images/tours/tarcoles/videoTC.mp4",
+      url: "/tarcoles-carara",
+      gallery: {
+        image1: "/images/tours/tarcoles/1.png",
+        image2: "/images/tours/tarcoles/2.png",
+        image3: "/images/tours/tarcoles/3.png",
+        image4: "/images/tours/tarcoles/4.png",
+        image5: "/images/tours/tarcoles/5.png",
+        image6: "/images/tours/tarcoles/6.png"
+ 
+      }
+    },
+    {
+      id: 4,
+      name: translation.tourDetail.citytour.name,
+      description: {
+      text1: translation.tourDetail.citytour.description.text1,
+      text2: translation.tourDetail.citytour.description.text2,
+      },
+      highlight: {
+        txt1: translation.tourDetail.citytour.highlight.txt1,
+        txt2: translation.tourDetail.citytour.highlight.txt2,
+        txt3: translation.tourDetail.citytour.highlight.txt3,
+      },
+      duration: {
+        d1: translation.tourDetail.citytour.duration.d1,
+        d2: translation.tourDetail.citytour.duration.d2,
+        d3: translation.tourDetail.citytour.duration.d3,
+        d4: translation.tourDetail.citytour.duration.d4,
+      },
+      departure:{
+        p1: translation.tourDetail.citytour.departure.p1,
+        p2: translation.tourDetail.citytour.departure.p2,
+        p3: translation.tourDetail.citytour.departure.p3,
+      },
+      video: "/images/tours/citytour/videoCity.mp4",
+      url: "/city-tour",
+      gallery: {
+        image1: "/images/tours/citytour/1.png",
+        image2: "/images/tours/citytour/2.png",
+        image3: "/images/tours/citytour/3.png",
+        image4: "/images/tours/citytour/4.png"
+ 
+      }
+    },
+    {
+      id: 5,
+      name: "Mini City Tour",
+      description: {
+      text1: translation.tourDetail.citytour.description.text1,
+      text2: translation.tourDetail.citytour.description.text2,
+      },
+      highlight: {
+        txt1: translation.tourDetail.citytour.highlight.txt1,
+        txt2: translation.tourDetail.citytour.highlight.txt2,
+        txt3: translation.tourDetail.citytour.highlight.txt3,
+      },
+      duration: {
+        d1: translation.tourDetail.citytour.duration.d1,
+        d2: translation.tourDetail.citytour.duration.d2,
+        d3: translation.tourDetail.citytour.duration.d3,
+        d4: translation.tourDetail.citytour.duration.d4,
+      },
+      departure:{
+        p1: translation.tourDetail.citytour.departure.p1,
+        p2: translation.tourDetail.citytour.departure.p2,
+        p3: translation.tourDetail.citytour.departure.p3,
+      },
+      video: "/images/tours/citytour/videoCity.mp4",
+      url: "/mini-city-tour",
+      gallery: {
+        image1: "/images/tours/citytour/1.png",
+        image2: "/images/tours/citytour/2.png",
+        image3: "/images/tours/citytour/3.png",
+        image4: "/images/tours/citytour/4.png"
+ 
+      }
     }
+    
   ]
     
     return (

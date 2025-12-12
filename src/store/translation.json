@@ -210,6 +210,75 @@
             "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
             "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
           }
+        },
+        "manuelantonio" : {
+          "name": "Manuel Antonio",
+          "description": {
+          "text1": "Live one of the most impressive aerial experiences in Costa Rica with our helicopter tour to Manuel Antonio National Park, departing from San José. During the journey, you'll enjoy spectacular views of the Central Pacific, crossing mountains, valleys, and extensive tropical forests until reaching one of the most beautiful coasts in the country.",
+          "text2": "As we approach Manuel Antonio, the aerial perspective reveals its white sand beaches, turquoise waters, small islands, cliffs, and the jungle that hugs the coastline. From the helicopter, you can appreciate the natural richness of the park and its iconic landscapes in a way that is simply not possible from the ground. This tour combines adventure, comfort, and exclusivity, offering a quick and panoramic journey from San José. Ideal for travelers seeking a memorable experience, perfect for photography, and to connect with the unique beauty of the Costa Rican coast from the skies."
+          },
+          "highlight": {
+            "txt1": "Unique aerial view of Manuel Antonio National Park, with its white sand beaches, tropical jungle, and turquoise waters.",
+            "txt2": "Panoramic flight over the Central Pacific, mountains, valleys, and extensive tropical forests.",
+            "txt3": "Exclusive, comfortable, and quick experience from San José, with angles and panoramas that can only be appreciated from a helicopter."
+          },
+          "duration": {
+            "d1":"1 hour flight departing from San José and flying to Manuel Antonio and returning to San José",
+            "d2":"15 minutes of airport procedures for registration and pre-boarding control.",
+            "d3":"10 minutes of safety briefing before starting the experience.",
+            "d4":"10 minutes with the helicopter off to allow passengers to take photos with total comfort."
+          },
+          "departure":{
+            "p1":"The tour takes off from the International Airport Tobias Bolanos in San José.",
+            "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
+            "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
+          }
+        },
+        "tarcoles" : {
+          "name": "Tárcoles / Carara",
+          "description": {
+          "text1": "Discover one of the most impressive areas of the Central Pacific from the air with our helicopter tour to Tárcoles and the National Park Carara, departing from San José. The flight starts by overflying mountains and valleys of the Central Valley until descending towards the coast, where the landscape transforms into extensive tropical forests and impressive rivers. The flight offers a privileged view of the Tárcoles River, known worldwide for its crocodile population and natural formations surrounding it. From the helicopter, you can appreciate its complete journey and the impressive transition towards the coast.",
+          "text2": "Continuing towards Carara, you'll enjoy spectacular panoramic views of one of the most biodiverse forests in the country. Its intense green tones, the mix of dry and wet forests, and the depth of its vegetation create a unique visual contrast from the sky. This tour combines nature, adventure, and comfort, offering quick access to one of the most vibrant scenarios in the Central Pacific. A perfect experience for photography, observation, and to enjoy Costa Rica from a truly special perspective."
+          },
+          "highlight": {
+            "txt1": "Unique aerial view of the Tárcoles River, known worldwide for its crocodile population and natural formations surrounding it.",
+            "txt2": "Panoramic flight over the National Park Carara, with its dense tropical forest, biodiversity, and the contrast between dry and wet forests.",
+            "txt3": "Exclusive, comfortable, and quick experience from San José, with unforgettable views of the Central Pacific and unique perspectives that can only be appreciated from a helicopter."
+          },
+          "duration": {
+            "d1":"1 hour flight departing from San José.",
+            "d2":"15 minutes of airport procedures for registration and pre-boarding control.",
+            "d3":"10 minutes of safety briefing before starting the experience.",
+            "d4":"10 minutes with the helicopter off to allow passengers to take photos with total comfort."
+          },
+          "departure":{
+            "p1":"The tour takes off from the International Airport Tobias Bolanos in San José.",
+            "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
+            "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
+          }
+        },
+        "citytour" : {
+          "name": "City Tour",
+          "description": {
+          "text1": "Discover the capital of Costa Rica from a completely new perspective with our exclusive helicopter tour over San José. This panoramic flight allows you to enjoy spectacular views of the Children's Museum, historic buildings in the center, the imposing National Stadium, and the extensive green areas of the Metropolitan Park La Sabana.",
+          "text2": "As we advance through the sky of the capital, you can appreciate the unique mix of modern architecture, traditional neighborhoods, and the mountainous landscape that surrounds the Central Valley."
+          },
+          "highlight": {
+            "txt1": "Unique aerial view of the heart of San José, including the Children's Museum, historic buildings, and the main landmarks of the city.",
+            "txt2": "Panoramic flight over the National Stadium, the Metropolitan Park La Sabana, and its extensive green areas.",
+            "txt3": "Exclusive, comfortable, and quick experience from San José, with angles and panoramas that can only be appreciated from a helicopter."
+          },
+          "duration": {
+            "d1":"15 minutes of flight over the Central Valley.",
+            "d2":"15 minutes of airport procedures for registration and pre-boarding control.",
+            "d3":"10 minutes of safety briefing before starting the experience.",
+            "d4":"10 minutes with the helicopter off to allow passengers to take photos with total comfort."
+          },
+          "departure":{
+            "p1":"The tour takes off from the International Airport Tobias Bolanos in San José.",
+            "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
+            "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
+          }
         }
       }
     },
@@ -415,6 +484,75 @@
           },
           "duration": {
             "d1":"45 minutos de vuelo sobre el Valle Central y el Volcán Poás.",
+            "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
+            "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
+            "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
+          },
+          "departure":{
+            "p1":"El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
+            "p2":"Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
+            "p3":"En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
+          }
+        },
+        "manuelantonio" : {
+          "name": "Manuel Antonio",
+          "description": {
+          "text1": "Vive una de las experiencias aéreas más impresionantes de Costa Rica con nuestro tour en helicóptero hacia el Parque Nacional Manuel Antonio, partiendo desde San José. Durante el recorrido, disfrutarás vistas espectaculares del Pacífico Central, atravesando montañas, valles y extensos bosques tropicales hasta llegar a una de las costas más hermosas del país.",
+          "text2": "Al acercarnos a Manuel Antonio, la perspectiva aérea revela sus playas de arena blanca, aguas turquesa, pequeñas islas, acantilados y la selva que abraza el litoral. Desde el helicóptero, podrás apreciar la riqueza natural del parque y sus paisajes icónicos de una forma que simplemente no es posible desde tierra. Este tour combina aventura, comodidad y exclusividad, ofreciéndote un trayecto rápido y panorámico desde San José. Ideal para viajeros que buscan una experiencia memorable, perfecta para fotografía y para conectar con la belleza única de la costa costarricense desde las alturas."
+          },
+          "highlight": {
+            "txt1": "Vista aérea única del Parque Nacional Manuel Antonio, con sus playas de arena blanca, selva tropical y aguas turquesa vistas desde el cielo.",
+            "txt2": "Sobrevuelo panorámico del Estadio Nacional, el Parque Metropolitano La Sabana y sus amplias áreas verdes.",
+            "txt3": "Experiencia exclusiva, cómoda y rápida desde San José, con ángulos y panoramas que solo se pueden disfrutar desde un helicóptero."
+          },
+          "duration": {
+            "d1":"1 hora de vuelo despegando de San José y volando hasta Manuel Antonio y de regreso a San José",
+            "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
+            "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
+            "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
+          },
+          "departure":{
+            "p1":"El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
+            "p2":"Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
+            "p3":"En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
+          }
+        },
+        "tarcoles" : {
+          "name": "Tárcoles / Carara",
+          "description": {
+          "text1": "Descubre desde el aire una de las zonas más impresionantes del Pacífico Central con nuestro tour en helicóptero hacia Tárcoles y el Parque Nacional Carara, saliendo desde San José. El recorrido inicia sobrevolando montañas y valles del Valle Central hasta descender hacia la costa, donde el paisaje se transforma en extensas selvas tropicales y ríos imponentes. El vuelo te ofrece una vista privilegiada del río Tárcoles, conocido mundialmente por su población de cocodrilos y por las formaciones naturales que lo rodean. Desde el helicóptero, podrás apreciar su recorrido completo y la impresionante transición hacia la costa.",
+          "text2": "Continuando hacia Carara, disfrutarás de panorámicas espectaculares de uno de los bosques más biodiversos del país. Sus tonos verdes intensos, la mezcla de bosque seco y húmedo, y la profundidad de su vegetación crean un contraste visual único desde el cielo. Este tour combina naturaleza, aventura y comodidad, brindándote un acceso rápido a uno de los escenarios más vibrantes del Pacífico Central. Una experiencia perfecta para fotografía, observación y para disfrutar Costa Rica desde una perspectiva verdaderamente especial."
+          },
+          "highlight": {
+            "txt1": "Vista aérea única del río Tárcoles, famoso por sus cocodrilos y paisajes ribereños que se aprecian de forma espectacular desde el cielo.",
+            "txt2": "Sobrevuelo panorámico del Parque Nacional Carara, con su densa selva tropical, biodiversidad y los contrastes entre bosque húmedo y seco.",
+            "txt3": "Experiencia exclusiva, cómoda y rápida saliendo desde San José, con vistas inolvidables del Pacífico Central y perspectivas únicas que solo se pueden disfrutar desde un helicóptero."
+          },
+          "duration": {
+            "d1":"1 hora de vuelo despegando de San José.",
+            "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
+            "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
+            "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
+          },
+          "departure":{
+            "p1":"El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
+            "p2":"Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
+            "p3":"En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
+          }
+        },
+        "citytour" : {
+          "name": "City Tour",
+          "description": {
+          "text1": "Explora la capital de Costa Rica desde una perspectiva completamente nueva con nuestro exclusivo tour en helicóptero sobre San José. Este vuelo panorámico te permite disfrutar vistas espectaculares del Museo de los Niños, los edificios históricos del centro, el imponente Estadio Nacional y las amplias áreas verdes del Parque Metropolitano La Sabana.",
+          "text2": "Mientras avanzamos por el cielo de la capital, podrás apreciar la mezcla única de arquitectura moderna, barrios tradicionales y el paisaje montañoso que rodea el Valle Central."
+          },
+          "highlight": {
+            "txt1": "Vista aérea única del corazón de San José, incluyendo el Museo de los Niños, edificios históricos y los principales hitos de la ciudad.",
+            "txt2": "Sobrevuelo panorámico del Estadio Nacional, el Parque Metropolitano La Sabana y sus amplias áreas verdes.",
+            "txt3": "Experiencia exclusiva, cómoda y rápida desde San José, con ángulos y panoramas que solo se pueden disfrutar desde un helicóptero."
+          },
+          "duration": {
+            "d1":"15 minutos de vuelo sobre el Valle Central.",
             "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
             "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
             "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
