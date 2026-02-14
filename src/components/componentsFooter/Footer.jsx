@@ -123,7 +123,7 @@ const Footer = () => {
             alignItems="center"
           >
             <Stack direction="row" justifyContent="space-evenly" spacing={2}>
-              <a href="https://www.facebook.com/ApartamentosFlats21">
+              <a href="https://www.facebook.com/VolarCR/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="52"
