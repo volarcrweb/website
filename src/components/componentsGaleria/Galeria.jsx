@@ -92,7 +92,7 @@ const Galeria = () => {
   ];
 
   return (
-    <Stack spacing={-14} style={{ width: "100%", height: "90vh" }}>
+    <Stack spacing={0} style={{ width: "100%", height: isMobile ? "90vh" : "115vh" }}>
       {/* <Stack style={{width: "100%", height: "25%", backgroundColor:"#F2F4F8"}}>
   <div className="movingtext-container">
     <Typography className="movingtext">
@@ -203,28 +203,18 @@ const Galeria = () => {
               relativePosition -= totalImages;
             }
 
-            // Reorganizar para que prev esté a la izquierda y el resto a la derecha
-            let finalPosition;
-            let translateX = 0;
-            if (relativePosition === 0) {
-              finalPosition = 0; // Activa en el centro
-              translateX = isMobile ? 0 : 100;
-            } else if (relativePosition === -1) {
-              finalPosition = -1; // Prev a la izquierda
-              translateX = finalPosition * 410;
-            } else if (relativePosition === 1) {
-              finalPosition = 1; // Next a la derecha
-              translateX = finalPosition * 600;
-            } else if (relativePosition === 2) {
-              finalPosition = 2; // Segunda a la derecha
-              translateX = finalPosition * 450;
-            } else if (relativePosition === -2) {
-              finalPosition = 3; // Reubicada a la derecha
-              translateX = finalPosition * 400;
-            } else {
-              finalPosition = 4; // Cualquier otra a la derecha
-              translateX = finalPosition * 350;
-            }
+            // Posicionar 2 a cada lado del centro
+            const clampedPosition = Math.max(-2, Math.min(2, relativePosition));
+            const translateX =
+              clampedPosition === 0
+                ? 0
+                : clampedPosition === -1
+                ? -430
+                : clampedPosition === 1
+                ? 430
+                : clampedPosition === -2
+                ? -720
+                : 720;
 
             // Calcular translateX basado en la posición final
             //  const translateX = finalPosition * 410;
@@ -259,13 +249,14 @@ const Galeria = () => {
                 key={amenidad.id}
                 style={{
                   position: "absolute",
+                  left: "50%",
                   width: width,
                   height: height,
                   backgroundImage: `url(${amenidad.imagen})`,
                   backgroundSize: isActive ? "auto" : "auto",
                   backgroundPosition: "center",
                   borderRadius: borderRadius,
-                  transform: `translateX(${translateX}px) scale(${scale})`,
+                  transform: `translateX(calc(${translateX}px - 50%)) scale(${scale})`,
                   transition: "all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
                   zIndex: zIndex,
                   opacity: opacity,

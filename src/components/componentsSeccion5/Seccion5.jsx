@@ -8,7 +8,6 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogContentText,
   DialogActions,
   Button,
 } from "@mui/material";
@@ -27,9 +26,20 @@ const AmenidadToggle = ({ title, title2, description, image, onClick }) => {
       alignItems="center"
       spacing={1}
       onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onClick?.();
+        }
+      }}
+      role="button"
+      tabIndex={0}
+      aria-label={labelParts}
+      className="amenidadToggle"
       style={{ cursor: "pointer" }}
     >
       <Box
+        className="amenidadToggleCircle"
         style={{
           width: "82px",
           height: "82px",
@@ -280,7 +290,7 @@ const Seccion5 = () => {
                 paddingRight: isMobile ? (index % 2 === 0 ? "0%" : "0%") : "0%",
               }}
             >
-              <Stack justifyContent="center" alignItems="center" spacing={1}>
+              <Stack justifyContent="center" alignItems="center" spacing={1.5}>
                 <AmenidadToggle
                   title={amenity.title}
                   title2={amenity.title2}
@@ -294,6 +304,9 @@ const Seccion5 = () => {
                   description={amenity.description}
                   onClick={() => handleAmenityDialogOpen(amenity)}
                 />
+                <Button className="btnseemore" onClick={() => handleAmenityDialogOpen(amenity)}>
+                  {translation.type === "es" ? "Ver más" : "See more"}
+                </Button>
               </Stack>
             </Grid>
           ))}
