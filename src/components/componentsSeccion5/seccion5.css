@@ -74,7 +74,7 @@
 
 .btnseemore{
     border-radius: 65.031px !important;
-    background: #2D2D2D !important;
+    background: #134A4B !important;
     color: #FFFFFF !important;
     font-family: "Montserrat-Bold" !important;
     font-size: 0.8rem !important;
@@ -117,6 +117,10 @@
 .amenidadToggle:focus-visible .amenidadToggleCircle{
     transform: scale(1.06);
     filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.18));
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
 }
 
 .amenidadToggle:focus-visible .amenidadToggleCircle::after{
