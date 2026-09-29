@@ -3,8 +3,8 @@
       "type" : "en",
       "buttonText": "/images/spanish.svg",
       "seccion1": {
-        "titulo1": "Discover New",
-        "titulo2": "Horizons",
+        "titulo1": "Helicopter Charter",
+        "titulo2": "Costa Rica",
         "descripcion": "From the cloud-kissed peaks of Arenal Volcano to the turquoise waters of the Pacific, Costa Rica beauty is meant to be seen from the sky.",
         "from": "From",
         "to": "To",
@@ -35,7 +35,7 @@
         "poas": "Poás Volcano"  
       },
       "seccion4": {
-        "titulo":"The best sights",
+        "titulo":"Helicopter ride",
         "subtitulo":"Within our tours",
         "tucan":"Tucan",
         "Monos":"Monkeys",
@@ -286,8 +286,8 @@
       "type" : "es",
       "buttonText": "/images/Ingles.svg",
       "seccion1": {
-        "titulo1": "Descubre Nuevos",
-        "titulo2": "Horizontes",
+        "titulo1": "Vuelos en Helicóptero",
+        "titulo2": "Costa Rica",
         "descripcion": "Desde los picos cubiertos de nubes del Volcán Arenal hasta los aguas turquesas del Pacífico, la belleza de Costa Rica debe ser vista desde el cielo.",
         "from": "Desde",
         "to": "Hasta",
@@ -318,7 +318,7 @@
         "poas": "Volcán Poás"
       },
       "seccion4": {
-        "titulo":"Las Mejores Vistas",
+        "titulo":"Paseos en Helicóptero",
         "subtitulo":"En nuestros tours",
         "tucan":"Tucan",
         "Monos":"Monos",
