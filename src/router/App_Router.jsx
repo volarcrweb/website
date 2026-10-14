@@ -1,10 +1,9 @@
-import { Route, Routes } from "react-router-dom";
-import Landing from "../Landing";
-import HelicopterDetail from "../components/componentsHeli/HelicopterDetail";
-import { useContext } from "react";
-import { LanguageContext } from "../components/LanguageProvider";
-import TourDetail from "../components/componentsTourDetail/TourDetail";
-
+import { Route, Routes } from 'react-router-dom';
+import Landing from '../Landing';
+import HelicopterDetail from '../components/componentsHeli/HelicopterDetail';
+import { useContext } from 'react';
+import { LanguageContext } from '../components/LanguageProvider';
+import TourDetail from '../components/componentsTourDetail/TourDetail';
 
 export const App_Router = () => {
   const { translation } = useContext(LanguageContext);
@@ -13,13 +12,13 @@ export const App_Router = () => {
       id: 1,
       name: translation.heliDetail.md902Explorer.title,
       description: {
-      text1: translation.heliDetail.md902Explorer.description.text1,
-      text2: translation.heliDetail.md902Explorer.description.text2,
-      text3: translation.heliDetail.md902Explorer.description.text3,
-      text4: translation.heliDetail.md902Explorer.description.text4,
-      text5: translation.heliDetail.md902Explorer.description.text5,
-      text6: translation.heliDetail.md902Explorer.description.text6,
-      text7: translation.heliDetail.md902Explorer.description.text7,
+        text1: translation.heliDetail.md902Explorer.description.text1,
+        text2: translation.heliDetail.md902Explorer.description.text2,
+        text3: translation.heliDetail.md902Explorer.description.text3,
+        text4: translation.heliDetail.md902Explorer.description.text4,
+        text5: translation.heliDetail.md902Explorer.description.text5,
+        text6: translation.heliDetail.md902Explorer.description.text6,
+        text7: translation.heliDetail.md902Explorer.description.text7,
       },
       description2: {
         title1: translation.heliDetail.md902Explorer.description2.title1,
@@ -31,43 +30,43 @@ export const App_Router = () => {
         title4: translation.heliDetail.md902Explorer.description2.title4,
         text4: translation.heliDetail.md902Explorer.description2.text4,
         title6: translation.heliDetail.md902Explorer.description2.title6,
-        text6: translation.heliDetail.md902Explorer.description2.text6
+        text6: translation.heliDetail.md902Explorer.description2.text6,
       },
-      image: "/images/blanco.svg",
-      video: "/images/MDheli/video1.mp4",
-      url: "/MD902Explorer",
+      image: '/images/blanco.svg',
+      video: '/images/MDheli/video1.mp4',
+      url: '/MD902Explorer',
       gallery: {
-        image1: "/images/MDheli/1.jpeg",
-        image2: "/images/MDheli/2.jpeg",
-        image3: "/images/MDheli/3.jpeg",
-        image4: "/images/MDheli/4.jpeg",
-        image5: "/images/MDheli/5.jpeg",
-        image6: "/images/MDheli/6.jpeg",
-        image7: "/images/MDheli/7.jpeg",
-        image8: "/images/MDheli/8.jpeg",
-        image9: "/images/MDheli/9.jpeg",
-        image10: "/images/MDheli/10.jpeg",
-        image11: "/images/MDheli/11.jpeg",
-        image12: "/images/MDheli/12.jpeg",
-        image13: "/images/MDheli/13.jpeg",
-        image14: "/images/MDheli/14.jpeg",
-        image15: "/images/MDheli/15.jpeg",
-        image16: "/images/MDheli/16.jpeg",
-        image17: "/images/MDheli/17.jpeg",
-        image18: "/images/MDheli/18.jpeg"
-      }
+        image1: '/images/MDheli/1.jpeg',
+        image2: '/images/MDheli/2.jpeg',
+        image3: '/images/MDheli/3.jpeg',
+        image4: '/images/MDheli/4.jpeg',
+        image5: '/images/MDheli/5.jpeg',
+        image6: '/images/MDheli/6.jpeg',
+        image7: '/images/MDheli/7.jpeg',
+        image8: '/images/MDheli/8.jpeg',
+        image9: '/images/MDheli/9.jpeg',
+        image10: '/images/MDheli/10.jpeg',
+        image11: '/images/MDheli/11.jpeg',
+        image12: '/images/MDheli/12.jpeg',
+        image13: '/images/MDheli/13.jpeg',
+        image14: '/images/MDheli/14.jpeg',
+        image15: '/images/MDheli/15.jpeg',
+        image16: '/images/MDheli/16.jpeg',
+        image17: '/images/MDheli/17.jpeg',
+        image18: '/images/MDheli/18.jpeg',
+      },
     },
     {
       id: 2,
       name: translation.heliDetail.as350b2.title,
       description: {
-      text1: translation.heliDetail.as350b2.description.text1,
-      text2: translation.heliDetail.as350b2.description.text2,
-      text3: translation.heliDetail.as350b2.description.text3,
-      text4: translation.heliDetail.as350b2.description.text4,
-      text5: translation.heliDetail.as350b2.description.text5,
-      text6: translation.heliDetail.as350b2.description.text6,
-      text7: translation.heliDetail.as350b2.description.text7,
+        text1: translation.heliDetail.as350b2.description.text1,
+        text2: translation.heliDetail.as350b2.description.text2,
+        text3: translation.heliDetail.as350b2.description.text3,
+        text4: translation.heliDetail.as350b2.description.text4,
+        text5: translation.heliDetail.as350b2.description.text5,
+        text6: translation.heliDetail.as350b2.description.text6,
+        text7: translation.heliDetail.as350b2.description.text7,
       },
       description2: {
         title1: translation.heliDetail.as350b2.description2.title1,
@@ -76,33 +75,32 @@ export const App_Router = () => {
         text2: translation.heliDetail.as350b2.description2.text2,
         title3: translation.heliDetail.as350b2.description2.title3,
         text3: translation.heliDetail.as350b2.description2.text3,
-        title4: "",
-        text4: ""
+        title4: '',
+        text4: '',
       },
-      image: "/images/blanco.svg",
-      video: "/images/ASheli/video1.mp4",
-      url: "/AS350B2",
+      image: '/images/blanco.svg',
+      video: '/images/ASheli/video1.mp4',
+      url: '/AS350B2',
       gallery: {
-        image1: "/images/ASheli/1.jpeg",
-        image2: "/images/ASheli/2.jpeg",
-        image3: "/images/ASheli/3.jpeg",
-        image4: "/images/ASheli/6.jpeg",
-        image5: "/images/ASheli/5.jpeg",
-        image6: "/images/ASheli/4.jpeg",
-   
-      }
+        image1: '/images/ASheli/1.jpeg',
+        image2: '/images/ASheli/2.jpeg',
+        image3: '/images/ASheli/3.jpeg',
+        image4: '/images/ASheli/6.jpeg',
+        image5: '/images/ASheli/5.jpeg',
+        image6: '/images/ASheli/4.jpeg',
+      },
     },
     {
       id: 3,
       name: translation.heliDetail.robinson44.title,
       description: {
-      text1: translation.heliDetail.robinson44.description.text1,
-      text2: translation.heliDetail.robinson44.description.text2,
-      text3: translation.heliDetail.robinson44.description.text3,
-      text4: translation.heliDetail.robinson44.description.text4,
-      text5: translation.heliDetail.robinson44.description.text5,
-      text6: translation.heliDetail.robinson44.description.text6,
-      text7: translation.heliDetail.robinson44.description.text7,
+        text1: translation.heliDetail.robinson44.description.text1,
+        text2: translation.heliDetail.robinson44.description.text2,
+        text3: translation.heliDetail.robinson44.description.text3,
+        text4: translation.heliDetail.robinson44.description.text4,
+        text5: translation.heliDetail.robinson44.description.text5,
+        text6: translation.heliDetail.robinson44.description.text6,
+        text7: translation.heliDetail.robinson44.description.text7,
       },
       description2: {
         title1: translation.heliDetail.robinson44.description2.title1,
@@ -111,31 +109,30 @@ export const App_Router = () => {
         text2: translation.heliDetail.robinson44.description2.text2,
         title3: translation.heliDetail.robinson44.description2.title3,
         text3: translation.heliDetail.robinson44.description2.text3,
-        title4: "",
-        text4: ""
+        title4: '',
+        text4: '',
       },
-      image: "/images/blanco.svg",
-      video: "/images/Robinsonheli/video2.mp4",
-      url: "/Robinson44",
+      image: '/images/blanco.svg',
+      video: '/images/Robinsonheli/video2.mp4',
+      url: '/Robinson44',
       gallery: {
-        image1: "/images/Robinsonheli/1.jpeg",
-        image2: "/images/Robinsonheli/2.jpeg",
-        image3: "/images/Robinsonheli/3.jpeg",
-        image4: "/images/Robinsonheli/5.jpeg",
-        image5: "/images/Robinsonheli/4.jpeg",
-        image6: "/images/Robinsonheli/6.jpeg",
-   
-      }
-    }
-  ]
+        image1: '/images/Robinsonheli/1.jpeg',
+        image2: '/images/Robinsonheli/2.jpeg',
+        image3: '/images/Robinsonheli/3.jpeg',
+        image4: '/images/Robinsonheli/5.jpeg',
+        image5: '/images/Robinsonheli/4.jpeg',
+        image6: '/images/Robinsonheli/6.jpeg',
+      },
+    },
+  ];
 
   const dataTour = [
     {
       id: 1,
       name: translation.tourDetail.poas.name,
       description: {
-      text1: translation.tourDetail.poas.description.text1,
-      text2: translation.tourDetail.poas.description.text2,
+        text1: translation.tourDetail.poas.description.text1,
+        text2: translation.tourDetail.poas.description.text2,
       },
       highlight: {
         txt1: translation.tourDetail.poas.highlight.txt1,
@@ -148,29 +145,28 @@ export const App_Router = () => {
         d3: translation.tourDetail.poas.duration.d3,
         d4: translation.tourDetail.poas.duration.d4,
       },
-      departure:{
+      departure: {
         p1: translation.tourDetail.poas.departure.p1,
         p2: translation.tourDetail.poas.departure.p2,
         p3: translation.tourDetail.poas.departure.p3,
       },
-      video: "/images/tours/poas/videopoas2.mp4",
-      url: "/poas",
+      video: '/images/tours/poas/videopoas2.mp4',
+      url: '/poas',
       gallery: {
-        image1: "/images/tours/poas/1.png",
-        image2: "/images/tours/poas/2.png",
-        image3: "/images/tours/poas/3.png",
-        image4: "/images/tours/poas/4.png",
-        image5: "/images/tours/poas/5.png",
-        image6: "/images/tours/poas/6.png"
- 
-      }
-    }, 
+        image1: '/images/tours/poas/1.png',
+        image2: '/images/tours/poas/2.png',
+        image3: '/images/tours/poas/3.png',
+        image4: '/images/tours/poas/4.png',
+        image5: '/images/tours/poas/5.png',
+        image6: '/images/tours/poas/6.png',
+      },
+    },
     {
       id: 2,
       name: translation.tourDetail.manuelantonio.name,
       description: {
-      text1: translation.tourDetail.manuelantonio.description.text1,
-      text2: translation.tourDetail.manuelantonio.description.text2,
+        text1: translation.tourDetail.manuelantonio.description.text1,
+        text2: translation.tourDetail.manuelantonio.description.text2,
       },
       highlight: {
         txt1: translation.tourDetail.manuelantonio.highlight.txt1,
@@ -183,28 +179,27 @@ export const App_Router = () => {
         d3: translation.tourDetail.manuelantonio.duration.d3,
         d4: translation.tourDetail.manuelantonio.duration.d4,
       },
-      departure:{
+      departure: {
         p1: translation.tourDetail.manuelantonio.departure.p1,
         p2: translation.tourDetail.manuelantonio.departure.p2,
         p3: translation.tourDetail.manuelantonio.departure.p3,
       },
-      video: "/images/tours/manuelantonio/videoMA.mp4",
-      url: "/manuel-antonio",
+      video: '/images/tours/manuelantonio/videoMA.mp4',
+      url: '/manuel-antonio',
       gallery: {
-        image1: "/images/tours/manuelantonio/1.png",
-        image2: "/images/tours/manuelantonio/2.png",
-        image3: "/images/tours/manuelantonio/3.png",
-        image4: "/images/tours/manuelantonio/4.png",
-        image5: "/images/tours/manuelantonio/5.png"
- 
-      }
+        image1: '/images/tours/manuelantonio/1.png',
+        image2: '/images/tours/manuelantonio/2.png',
+        image3: '/images/tours/manuelantonio/3.png',
+        image4: '/images/tours/manuelantonio/4.png',
+        image5: '/images/tours/manuelantonio/5.png',
+      },
     },
     {
       id: 3,
       name: translation.tourDetail.tarcoles.name,
       description: {
-      text1: translation.tourDetail.tarcoles.description.text1,
-      text2: translation.tourDetail.tarcoles.description.text2,
+        text1: translation.tourDetail.tarcoles.description.text1,
+        text2: translation.tourDetail.tarcoles.description.text2,
       },
       highlight: {
         txt1: translation.tourDetail.tarcoles.highlight.txt1,
@@ -217,29 +212,28 @@ export const App_Router = () => {
         d3: translation.tourDetail.tarcoles.duration.d3,
         d4: translation.tourDetail.tarcoles.duration.d4,
       },
-      departure:{
+      departure: {
         p1: translation.tourDetail.tarcoles.departure.p1,
         p2: translation.tourDetail.tarcoles.departure.p2,
         p3: translation.tourDetail.tarcoles.departure.p3,
       },
-      video: "/images/tours/tarcoles/videoTC.mp4",
-      url: "/tarcoles-carara",
+      video: '/images/tours/tarcoles/videoTC.mp4',
+      url: '/tarcoles-carara',
       gallery: {
-        image1: "/images/tours/tarcoles/1.png",
-        image2: "/images/tours/tarcoles/2.png",
-        image3: "/images/tours/tarcoles/3.png",
-        image4: "/images/tours/tarcoles/4.png",
-        image5: "/images/tours/tarcoles/5.png",
-        image6: "/images/tours/tarcoles/6.png"
- 
-      }
+        image1: '/images/tours/tarcoles/1.png',
+        image2: '/images/tours/tarcoles/2.png',
+        image3: '/images/tours/tarcoles/3.png',
+        image4: '/images/tours/tarcoles/4.png',
+        image5: '/images/tours/tarcoles/5.png',
+        image6: '/images/tours/tarcoles/6.png',
+      },
     },
     {
       id: 4,
       name: translation.tourDetail.citytour.name,
       description: {
-      text1: translation.tourDetail.citytour.description.text1,
-      text2: translation.tourDetail.citytour.description.text2,
+        text1: translation.tourDetail.citytour.description.text1,
+        text2: translation.tourDetail.citytour.description.text2,
       },
       highlight: {
         txt1: translation.tourDetail.citytour.highlight.txt1,
@@ -252,27 +246,26 @@ export const App_Router = () => {
         d3: translation.tourDetail.citytour.duration.d3,
         d4: translation.tourDetail.citytour.duration.d4,
       },
-      departure:{
+      departure: {
         p1: translation.tourDetail.citytour.departure.p1,
         p2: translation.tourDetail.citytour.departure.p2,
         p3: translation.tourDetail.citytour.departure.p3,
       },
-      video: "/images/tours/citytour/videoCity.mp4",
-      url: "/city-tour",
+      video: '/images/tours/citytour/videoCity.mp4',
+      url: '/city-tour',
       gallery: {
-        image1: "/images/tours/citytour/1.png",
-        image2: "/images/tours/citytour/2.png",
-        image3: "/images/tours/citytour/3.png",
-        image4: "/images/tours/citytour/4.png"
- 
-      }
+        image1: '/images/tours/citytour/1.png',
+        image2: '/images/tours/citytour/2.png',
+        image3: '/images/tours/citytour/3.png',
+        image4: '/images/tours/citytour/4.png',
+      },
     },
     {
       id: 5,
-      name: "Mini City Tour",
+      name: 'Mini City Tour',
       description: {
-      text1: translation.tourDetail.citytour.description.text1,
-      text2: translation.tourDetail.citytour.description.text2,
+        text1: translation.tourDetail.citytour.description.text1,
+        text2: translation.tourDetail.citytour.description.text2,
       },
       highlight: {
         txt1: translation.tourDetail.citytour.highlight.txt1,
@@ -285,44 +278,37 @@ export const App_Router = () => {
         d3: translation.tourDetail.citytour.duration.d3,
         d4: translation.tourDetail.citytour.duration.d4,
       },
-      departure:{
+      departure: {
         p1: translation.tourDetail.citytour.departure.p1,
         p2: translation.tourDetail.citytour.departure.p2,
         p3: translation.tourDetail.citytour.departure.p3,
       },
-      video: "/images/tours/citytour/videoCity.mp4",
-      url: "/mini-city-tour",
+      video: '/images/tours/citytour/videoCity.mp4',
+      url: '/mini-city-tour',
       gallery: {
-        image1: "/images/tours/citytour/1.png",
-        image2: "/images/tours/citytour/2.png",
-        image3: "/images/tours/citytour/3.png",
-        image4: "/images/tours/citytour/4.png"
- 
-      }
-    }
-    
-  ]
-    
-    return (
-        <Routes>
-          
-          <Route path="/*" element={<Landing/>} />
+        image1: '/images/tours/citytour/1.png',
+        image2: '/images/tours/citytour/2.png',
+        image3: '/images/tours/citytour/3.png',
+        image4: '/images/tours/citytour/4.png',
+      },
+    },
+  ];
 
-          {dataHelicopeters.map((heli) => (
-        <Route key={heli.id} path={`/${heli.url}`} element={<HelicopterDetail heli={heli}/>} />
+  return (
+    <Routes>
+      <Route path="/*" element={<Landing />} />
+
+      {dataHelicopeters.map((heli) => (
+        <Route key={heli.id} path={`/${heli.url}`} element={<HelicopterDetail heli={heli} />} />
       ))}
 
-          {dataTour.map((tour) => (
-            <Route key={tour.id} path={`/${tour.url}`} element={<TourDetail tour={tour}/>} />
-          ))}
+      {dataTour.map((tour) => (
+        <Route key={tour.id} path={`/${tour.url}`} element={<TourDetail tour={tour} />} />
+      ))}
 
-          {/* <Route path="/politicas-privacidad" element={<PoliticasPrivacidad/>} />
+      {/* <Route path="/politicas-privacidad" element={<PoliticasPrivacidad/>} />
           <Route path="/success" element={<FormSucces/>} />
           <Route path="/contactos" element={<LinkTree/>} /> */}
-
-          
-    
-            
-        </Routes>
-    );
+    </Routes>
+  );
 };

@@ -1,62 +1,51 @@
-import { SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, useMediaQuery } from '@mui/material'
+import { SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, useMediaQuery } from '@mui/material';
 import ShareIcon from '@mui/icons-material/Share';
-import Seccion1 from './components/componentsSeccion1/Seccion1'
-import "./styles/fonts-import.css"
-// import Seccion2 from './components/componentsSeccion2/Seccion2'
-// import Seccion3 from './components/componentsSeccion3/Seccion3'
-import Seccion5 from './components/componentsSeccion5/Seccion5'
-// import Seccion4 from './components/componentsSeccion4/Seccion4'
+import Navbar from './components/componentsNavbar/Navbar';
+import Seccion1 from './components/componentsSeccion1/Seccion1';
+import './styles/fonts-import.css';
+import Seccion5 from './components/componentsSeccion5/Seccion5';
 import Footer from './components/componentsFooter/Footer';
-import Galeria from './components/componentsGaleria/Galeria';
-import Servicios from './components/componentsServicios/Servicios'
-// import Seccion6 from './components/componentsSeccion6/Seccion6'
-import { useContext, useEffect } from 'react';
-import { LanguageContext } from './components/LanguageProvider';
+import Destinations from './components/componentsDestinations/Destinations';
+import Servicios from './components/componentsServicios/Servicios';
+import { useEffect } from 'react';
 
 const Landing = () => {
   const isMobile = useMediaQuery('(max-width: 600px)');
-  const { translation, toggleLanguage } = useContext(LanguageContext);
 
   useEffect(() => {
+    const section = document.getElementById(window.location.hash.slice(1));
+    if (section) {
+      section.scrollIntoView({ behavior: 'auto' });
+      return;
+    }
     window.scrollTo({
       top: 0,
       behavior: 'auto',
     });
   }, []);
 
-
-  
-
   const actions = [
-    { icon: <img src="/images/email.svg" style={{width: isMobile ? "50%" : "60%"}} alt='WA'/>, name: 'Email', url: "mailto:reservations@volarcr.com" },
-    { icon: <img src="/images/WANegro.svg" style={{width: isMobile ? "50%" : "60%"}} alt='WA'/>, name: 'Whatsapp', url: "https://api.whatsapp.com/send?phone=50685959741" },
+    {
+      icon: <img src="/images/email.svg" style={{ width: isMobile ? '50%' : '60%' }} alt="WA" />,
+      name: 'Email',
+      url: 'mailto:reservations@volarcr.com',
+    },
+    {
+      icon: <img src="/images/WANegro.svg" style={{ width: isMobile ? '50%' : '60%' }} alt="WA" />,
+      name: 'Whatsapp',
+      url: 'https://api.whatsapp.com/send?phone=50685959741',
+    },
   ];
   return (
-<Stack justifyContent={"center"} alignItems={"center"} style={{overflowX:isMobile ? "hidden" : "visible"}}>
-<SpeedDial
-        ariaLabel="Language toggle"
-        sx={{ position: 'fixed', top: isMobile ? "3%" : "2%", right: isMobile ? "3%" : "2%", zIndex: 1000 }}
-        FabProps={{ 
-          sx: { 
-            bgcolor: '#F2F4F8', 
-            color: '#134A4B', 
-            boxShadow: 'none',
-            width: isMobile ? 44 : 64,
-            height: isMobile ? 28 : 40,
-            borderRadius: 2, // Esto lo hace cuadrado con bordes redondeados
-            '&:hover': { 
-              bgcolor: '#C3C5C8',
-            } 
-          } 
-        }}
-        icon={<img src={translation.buttonText} style={{width:"40%"}} alt="Language"/>}
-        onClick={toggleLanguage}
-        open={false}
-      />
-
-<SpeedDial
+    <Stack
+      justifyContent={'center'}
+      alignItems={'center'}
+      style={{ overflowX: isMobile ? 'hidden' : 'visible' }}
+    >
+      <Navbar />
+      <SpeedDial
         ariaLabel="SpeedDial openIcon example"
-        sx={{ position: 'fixed', bottom: isMobile ? "5%" : "16%", right: isMobile ? "8%" : "2%" }}
+        sx={{ position: 'fixed', bottom: isMobile ? '5%' : '16%', right: isMobile ? '8%' : '2%' }}
         FabProps={{ sx: { bgcolor: '#134A4B', color: '#fff', '&:hover': { bgcolor: '#0f3a3b' } } }}
         icon={<SpeedDialIcon openIcon={<ShareIcon />} />}
       >
@@ -73,17 +62,21 @@ const Landing = () => {
           />
         ))}
       </SpeedDial>
-    <Seccion1/>
-    <Servicios/>
-    {/* <Seccion2/> */}
-    <Galeria/>
-    {/* <Seccion3/> */}
-    <Seccion5/>
-    {/* <Seccion4/> */}
-    {/* <Seccion6/> */}
-    <Footer/>
-</Stack>
-  )
-}
+      <Seccion1 />
+      <section id="servicios" style={{ width: '100%', zIndex: -1 }}>
+        <Servicios />
+      </section>
+      <section id="experiencias" style={{ width: '100%' }}>
+        <Destinations />
+      </section>
+      <section id="flota" style={{ width: '100%' }}>
+        <Seccion5 />
+      </section>
+      <section id="contacto" style={{ width: '100%' }}>
+        <Footer />
+      </section>
+    </Stack>
+  );
+};
 
-export default Landing
+export default Landing;

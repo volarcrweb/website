@@ -1,14 +1,11 @@
-import { App_Router } from "./router/App_Router";
-
-
+import { App_Router } from './router/App_Router';
 
 const App = () => {
-  return <>
-  <App_Router/>
-  </>;
-}
+  return (
+    <>
+      <App_Router />
+    </>
+  );
+};
 
-export default App
-
-
-
+export default App;

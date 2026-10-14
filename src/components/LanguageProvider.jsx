@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import { createContext, useState } from 'react';
 import translation from '../store/translation.json';
 
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en'); // Por defecto en español
+  const [language, setLanguage] = useState('en'); // Idioma inicial
 
   const toggleLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'es' : 'en'));
@@ -17,9 +18,4 @@ export const LanguageProvider = ({ children }) => {
   );
 };
 
-// const { translation, toggleLanguage } = useContext(LanguageContext);
-
-
-{/* <Button className='btnTranslate' onClick={toggleLanguage}>
-<img src={translation.buttonText} style={{width:"69%"}} alt='language'/>
-</Button> */}
+LanguageProvider.propTypes = { children: PropTypes.node };

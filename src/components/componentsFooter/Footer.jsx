@@ -1,124 +1,134 @@
-import { Stack, Typography, useMediaQuery } from "@mui/material";
+import { Stack, Typography, useMediaQuery } from '@mui/material';
 
-import { useContext } from "react";
-import { LanguageContext } from "../LanguageProvider";
-import { NavLink, useLocation } from "react-router-dom";
-import "./footer.css";
+import { useContext } from 'react';
+import { LanguageContext } from '../LanguageProvider';
+import './footer.css';
 
 const Footer = () => {
   const { translation } = useContext(LanguageContext);
-  const isMobile = useMediaQuery("(max-width: 600px)");
-
-  
-
+  const isMobile = useMediaQuery('(max-width: 600px)');
 
   return (
-    <Stack style={{ backgroundColor: "#134A4B", padding: isMobile ? "10% 0% 4% 0%"  : "2% 0px 2% 0px", width: "100%" }}>
+    <Stack
+      style={{
+        backgroundColor: '#134A4B',
+        padding: isMobile ? '10% 0% 4% 0%' : '2% 0px 2% 0px',
+        width: '100%',
+      }}
+    >
       {isMobile ? (
         <Stack spacing={2}>
-
-
           {/* info  */}
           <Stack
-            direction={isMobile ? "column" : "row"}
+            direction={isMobile ? 'column' : 'row'}
             justifyContent="space-evenly"
             spacing={4}
             alignItems="center"
-           
           >
             <Stack spacing={4}>
-              <Stack spacing={4} alignItems={"center"}>
+              <Stack spacing={4} alignItems={'center'}>
+                <Stack>
+                  <Typography className="derechos-UP">Volar Air Charter</Typography>
 
-              <Stack>
-                <Typography className="derechos-UP">
-                Volar Air Charter
-                </Typography>
-                
-
-                <Typography className="derechos">
-                {translation.footer.allRightsReserved}
-              </Typography>
-
+                  <Typography className="derechos">
+                    {translation.footer.allRightsReserved}
+                  </Typography>
                 </Stack>
-
-            
-
-
-              
 
                 {/* disclaimer */}
 
-                <Stack alignItems={"center"} spacing={1}>
-            <Stack direction="row" justifyContent="center" spacing={1} style={{width: "90%"}}>
-            
-          
-              <Stack direction="row" justifyContent="center" spacing={1}>
-                  <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
-              <a href="tel:+50685959741" className="disclaimer">
-          +506 8595-9741
-                  </a>
-              </Stack>
-              <Stack direction="row" justifyContent="center" spacing={1}>
-                <img src="images/icons/mailF.svg" alt="phone" style={{width:"8%"}}/>
-              <a href="mailto:reservations@volarcr.com" className="disclaimer">
-          reservations@volarcr.com
-                  </a>
-              </Stack>
+                <Stack alignItems={'center'} spacing={1}>
+                  <Stack
+                    direction="row"
+                    justifyContent="center"
+                    spacing={1}
+                    style={{ width: '90%' }}
+                  >
+                    <Stack direction="row" justifyContent="center" spacing={1}>
+                      <img src="images/icons/phoneF.svg" alt="phone" style={{ width: '10%' }} />
+                      <a href="tel:+50685959741" className="disclaimer">
+                        +506 8595-9741
+                      </a>
+                    </Stack>
+                    <Stack direction="row" justifyContent="center" spacing={1}>
+                      <img src="images/icons/mailF.svg" alt="phone" style={{ width: '8%' }} />
+                      <a href="mailto:reservations@volarcr.com" className="disclaimer">
+                        reservations@volarcr.com
+                      </a>
+                    </Stack>
                   </Stack>
-            <Typography className="disclaimer">
-            Tobías Bolaños Palma International Airport (MRPV), Hangar #04, 35 & 36, Pavas, San José, Costa Rica
-            </Typography>
-          </Stack>
+                  <Typography className="disclaimer">
+                    Tobías Bolaños Palma International Airport (MRPV), Hangar #04, 35 & 36, Pavas,
+                    San José, Costa Rica
+                  </Typography>
+                </Stack>
 
                 <Stack direction="row" justifyContent="center" spacing={2}>
                   <a href="https://www.facebook.com/VolarCR/">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
-  <g clipPath="url(#clip0_1258_2166)">
-    <path d="M21.0238 -1.07732e-05C26.3125 -1.07732e-05 31.6011 -0.00328243 36.8897 -1.07732e-05C39.9111 0.00326089 41.9968 2.07095 41.9968 5.0727C42.0001 15.7056 42.0017 26.3368 41.9968 36.9697C41.9968 39.8782 39.898 41.9934 37.0075 41.995C26.3485 42.0015 15.6894 41.9999 5.0287 41.995C2.12019 41.995 0.00506614 39.8962 0.00343031 37.0057C0.000158648 26.3467 0.000158648 15.6876 0.00343031 5.02853C0.00506614 2.08731 2.10874 0.00653254 5.07614 0.00326089C10.3909 -0.00328243 15.7074 -1.07732e-05 21.0238 -1.07732e-05ZM3.39451 20.9239C3.39451 26.1029 3.39123 31.2836 3.39614 36.4626C3.39778 37.9332 3.98995 38.5957 5.36568 38.6007C10.8457 38.6154 16.3241 38.6007 21.8041 38.6154C22.3489 38.6154 22.5877 38.4698 22.5861 37.8793C22.5681 33.9811 22.5681 30.0829 22.5861 26.1847C22.5893 25.5844 22.326 25.442 21.7943 25.4519C20.677 25.4731 19.5581 25.4437 18.4409 25.46C17.8912 25.4682 17.6524 25.2605 17.6638 24.6912C17.6884 23.4382 17.6933 22.1835 17.6622 20.9304C17.6459 20.299 17.9419 20.1338 18.5063 20.142C19.6236 20.1616 20.7425 20.1305 21.8597 20.1518C22.3799 20.1616 22.5991 19.9718 22.5844 19.4353C22.5582 18.5094 22.5746 17.5819 22.5795 16.6544C22.5991 13.1701 24.9793 10.1552 28.3703 9.35203C29.9293 8.98233 31.5193 9.21789 33.0963 9.17699C33.5412 9.16554 33.6295 9.47471 33.6312 9.83459C33.6328 11.1154 33.6263 12.3963 33.6344 13.6788C33.6377 14.1597 33.4234 14.3658 32.9409 14.3577C32.0968 14.3429 31.2494 14.3315 30.4053 14.3675C28.7335 14.4395 27.8567 15.3114 27.7815 16.9799C27.7455 17.7684 27.8011 18.5617 27.7618 19.3502C27.7307 19.9604 27.9679 20.1665 28.5683 20.155C30.0127 20.1272 31.4572 20.155 32.9032 20.1452C33.4578 20.142 33.7097 20.335 33.6034 20.9304C33.3776 22.19 33.1731 23.4529 32.9768 24.7174C32.8967 25.2343 32.6448 25.4715 32.1033 25.4617C30.9582 25.4404 29.8132 25.4846 28.6697 25.447C28.0203 25.4257 27.7536 25.6089 27.7585 26.3156C27.788 30.132 27.788 33.9484 27.7585 37.7647C27.752 38.4829 28.0366 38.6252 28.6763 38.6186C31.238 38.5925 33.8013 38.6105 36.363 38.6056C38.043 38.6023 38.609 38.0298 38.6106 36.3301C38.6123 26.1078 38.6123 15.8855 38.6106 5.66159C38.6106 3.96688 38.043 3.39597 36.3548 3.39434C26.1325 3.39106 15.9102 3.3927 5.6863 3.39434C3.95069 3.39434 3.39941 3.95542 3.39941 5.71231C3.39614 10.7834 3.39941 15.8528 3.39941 20.9239H3.39451Z" fill="white"/>
-  </g>
-  <defs>
-    <clipPath id="clip0_1258_2166">
-      <rect width="41.9999" height="41.9999" fill="white"/>
-    </clipPath>
-  </defs>
-</svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                      fill="none"
+                    >
+                      <g clipPath="url(#clip0_1258_2166)">
+                        <path
+                          d="M21.0238 -1.07732e-05C26.3125 -1.07732e-05 31.6011 -0.00328243 36.8897 -1.07732e-05C39.9111 0.00326089 41.9968 2.07095 41.9968 5.0727C42.0001 15.7056 42.0017 26.3368 41.9968 36.9697C41.9968 39.8782 39.898 41.9934 37.0075 41.995C26.3485 42.0015 15.6894 41.9999 5.0287 41.995C2.12019 41.995 0.00506614 39.8962 0.00343031 37.0057C0.000158648 26.3467 0.000158648 15.6876 0.00343031 5.02853C0.00506614 2.08731 2.10874 0.00653254 5.07614 0.00326089C10.3909 -0.00328243 15.7074 -1.07732e-05 21.0238 -1.07732e-05ZM3.39451 20.9239C3.39451 26.1029 3.39123 31.2836 3.39614 36.4626C3.39778 37.9332 3.98995 38.5957 5.36568 38.6007C10.8457 38.6154 16.3241 38.6007 21.8041 38.6154C22.3489 38.6154 22.5877 38.4698 22.5861 37.8793C22.5681 33.9811 22.5681 30.0829 22.5861 26.1847C22.5893 25.5844 22.326 25.442 21.7943 25.4519C20.677 25.4731 19.5581 25.4437 18.4409 25.46C17.8912 25.4682 17.6524 25.2605 17.6638 24.6912C17.6884 23.4382 17.6933 22.1835 17.6622 20.9304C17.6459 20.299 17.9419 20.1338 18.5063 20.142C19.6236 20.1616 20.7425 20.1305 21.8597 20.1518C22.3799 20.1616 22.5991 19.9718 22.5844 19.4353C22.5582 18.5094 22.5746 17.5819 22.5795 16.6544C22.5991 13.1701 24.9793 10.1552 28.3703 9.35203C29.9293 8.98233 31.5193 9.21789 33.0963 9.17699C33.5412 9.16554 33.6295 9.47471 33.6312 9.83459C33.6328 11.1154 33.6263 12.3963 33.6344 13.6788C33.6377 14.1597 33.4234 14.3658 32.9409 14.3577C32.0968 14.3429 31.2494 14.3315 30.4053 14.3675C28.7335 14.4395 27.8567 15.3114 27.7815 16.9799C27.7455 17.7684 27.8011 18.5617 27.7618 19.3502C27.7307 19.9604 27.9679 20.1665 28.5683 20.155C30.0127 20.1272 31.4572 20.155 32.9032 20.1452C33.4578 20.142 33.7097 20.335 33.6034 20.9304C33.3776 22.19 33.1731 23.4529 32.9768 24.7174C32.8967 25.2343 32.6448 25.4715 32.1033 25.4617C30.9582 25.4404 29.8132 25.4846 28.6697 25.447C28.0203 25.4257 27.7536 25.6089 27.7585 26.3156C27.788 30.132 27.788 33.9484 27.7585 37.7647C27.752 38.4829 28.0366 38.6252 28.6763 38.6186C31.238 38.5925 33.8013 38.6105 36.363 38.6056C38.043 38.6023 38.609 38.0298 38.6106 36.3301C38.6123 26.1078 38.6123 15.8855 38.6106 5.66159C38.6106 3.96688 38.043 3.39597 36.3548 3.39434C26.1325 3.39106 15.9102 3.3927 5.6863 3.39434C3.95069 3.39434 3.39941 3.95542 3.39941 5.71231C3.39614 10.7834 3.39941 15.8528 3.39941 20.9239H3.39451Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1258_2166">
+                          <rect width="41.9999" height="41.9999" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
                   </a>
 
                   <a href="https://www.instagram.com/volarcr/?hl=es-la">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
-  <g clipPath="url(#clip0_1258_2168)">
-    <path d="M20.9671 0.00353284C24.7272 0.00353284 28.4888 -0.00300946 32.2489 0.00353284C37.6068 0.0133463 41.9851 4.37542 41.9916 9.72375C41.9998 17.2458 42.0014 24.7661 41.9916 32.2881C41.9851 37.5923 37.6068 41.9838 32.3143 41.9904C24.7664 42.0002 17.2169 42.0018 9.66903 41.9904C4.41904 41.9838 0.0162403 37.5923 0.00969823 32.3536C-0.00175035 24.7776 -0.00338586 17.2016 0.00969823 9.62562C0.0178758 4.43103 4.41904 0.0247953 9.60361 0.00680399C13.3914 -0.00628061 17.1793 0.00353284 20.9671 0.00353284ZM38.6029 20.9651C38.6029 17.4764 38.5996 13.9877 38.6061 10.4974C38.6061 9.7303 38.5276 8.97139 38.3379 8.23211C37.5872 5.31424 35.0047 3.40716 31.7402 3.40062C24.5996 3.3859 17.4573 3.38427 10.3167 3.40062C6.1723 3.41044 3.40829 6.19582 3.40175 10.3616C3.3903 17.4486 3.40011 24.5355 3.39684 31.6225C3.39684 32.3356 3.48189 33.0405 3.65362 33.7258C4.38306 36.6453 6.97043 38.5884 10.2218 38.5966C17.4181 38.6162 24.6143 38.6096 31.8089 38.5917C32.4566 38.5917 33.1173 38.4935 33.747 38.3365C36.6713 37.6054 38.5816 35.0196 38.6012 31.7599C38.6208 28.1616 38.6061 24.5633 38.6061 20.9651H38.6029Z" fill="white"/>
-    <path d="M20.9492 31.6907C15.0745 31.6875 10.307 26.9557 10.3086 21.1331C10.3102 14.9637 14.9093 10.317 21.0081 10.3203C27.1445 10.3236 31.7027 14.9817 31.6896 21.2345C31.6765 27.0163 26.8698 31.6956 20.9492 31.6924V31.6907ZM21.031 28.1808C24.6111 28.2609 28.1766 25.7569 28.2649 20.8436C28.3336 17.0098 24.8221 13.6111 20.9705 13.7207C16.7672 13.8401 13.7137 17.0033 13.7579 20.9041C13.8151 25.9679 17.5997 28.2969 21.031 28.1808Z" fill="white"/>
-    <path d="M34.632 9.46841C34.632 10.6836 33.7439 11.5701 32.5303 11.5701C31.3168 11.5701 30.4287 10.682 30.4287 9.46841C30.4287 8.25318 31.3152 7.3667 32.5303 7.3667C33.7455 7.3667 34.632 8.25482 34.632 9.46841Z" fill="white"/>
-  </g>
-  <defs>
-    <clipPath id="clip0_1258_2168">
-      <rect width="41.9999" height="41.9999" fill="white"/>
-    </clipPath>
-  </defs>
-</svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                      fill="none"
+                    >
+                      <g clipPath="url(#clip0_1258_2168)">
+                        <path
+                          d="M20.9671 0.00353284C24.7272 0.00353284 28.4888 -0.00300946 32.2489 0.00353284C37.6068 0.0133463 41.9851 4.37542 41.9916 9.72375C41.9998 17.2458 42.0014 24.7661 41.9916 32.2881C41.9851 37.5923 37.6068 41.9838 32.3143 41.9904C24.7664 42.0002 17.2169 42.0018 9.66903 41.9904C4.41904 41.9838 0.0162403 37.5923 0.00969823 32.3536C-0.00175035 24.7776 -0.00338586 17.2016 0.00969823 9.62562C0.0178758 4.43103 4.41904 0.0247953 9.60361 0.00680399C13.3914 -0.00628061 17.1793 0.00353284 20.9671 0.00353284ZM38.6029 20.9651C38.6029 17.4764 38.5996 13.9877 38.6061 10.4974C38.6061 9.7303 38.5276 8.97139 38.3379 8.23211C37.5872 5.31424 35.0047 3.40716 31.7402 3.40062C24.5996 3.3859 17.4573 3.38427 10.3167 3.40062C6.1723 3.41044 3.40829 6.19582 3.40175 10.3616C3.3903 17.4486 3.40011 24.5355 3.39684 31.6225C3.39684 32.3356 3.48189 33.0405 3.65362 33.7258C4.38306 36.6453 6.97043 38.5884 10.2218 38.5966C17.4181 38.6162 24.6143 38.6096 31.8089 38.5917C32.4566 38.5917 33.1173 38.4935 33.747 38.3365C36.6713 37.6054 38.5816 35.0196 38.6012 31.7599C38.6208 28.1616 38.6061 24.5633 38.6061 20.9651H38.6029Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M20.9492 31.6907C15.0745 31.6875 10.307 26.9557 10.3086 21.1331C10.3102 14.9637 14.9093 10.317 21.0081 10.3203C27.1445 10.3236 31.7027 14.9817 31.6896 21.2345C31.6765 27.0163 26.8698 31.6956 20.9492 31.6924V31.6907ZM21.031 28.1808C24.6111 28.2609 28.1766 25.7569 28.2649 20.8436C28.3336 17.0098 24.8221 13.6111 20.9705 13.7207C16.7672 13.8401 13.7137 17.0033 13.7579 20.9041C13.8151 25.9679 17.5997 28.2969 21.031 28.1808Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M34.632 9.46841C34.632 10.6836 33.7439 11.5701 32.5303 11.5701C31.3168 11.5701 30.4287 10.682 30.4287 9.46841C30.4287 8.25318 31.3152 7.3667 32.5303 7.3667C33.7455 7.3667 34.632 8.25482 34.632 9.46841Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1258_2168">
+                          <rect width="41.9999" height="41.9999" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
                   </a>
                 </Stack>
-
-           
-
-   
               </Stack>
-
-     
             </Stack>
 
-            <Stack justifyContent={"center"} alignItems={"center"}>
-            <img src="images/logo.svg" alt="logo" style={{width:"200%"}}/>
+            <Stack justifyContent={'center'} alignItems={'center'}>
+              <img src="images/logo.svg" alt="logo" style={{ width: '200%' }} />
             </Stack>
           </Stack>
         </Stack>
       ) : (
         <Stack spacing={2}>
-    
           {/* info */}
           <Stack
-            direction={isMobile ? "column" : "row"}
+            direction={isMobile ? 'column' : 'row'}
             justifyContent="space-evenly"
             alignItems="center"
           >
@@ -183,50 +193,40 @@ const Footer = () => {
 
             <Stack spacing={2}>
               <Stack spacing={0}>
-       
-                <Typography className="derechos-UP">
-                Volar Air Charter
-                </Typography>
-                <Typography className="derechos">
-                {translation.footer.allRightsReserved}
-              </Typography>
+                <Typography className="derechos-UP">Volar Air Charter</Typography>
+                <Typography className="derechos">{translation.footer.allRightsReserved}</Typography>
               </Stack>
 
-                {/* <NavLink className={"politicaslink"} to="/politicas-privacidad" target="_blank" rel="noopener noreferrer">
+              {/* <NavLink className={"politicaslink"} to="/politicas-privacidad" target="_blank" rel="noopener noreferrer">
                 cccc
                 </NavLink> */}
-
-           
-
-       
             </Stack>
 
             <Stack>
-             <img src="images/logo.svg" alt="logo" style={{width:"200%"}}/>
+              <img src="images/logo.svg" alt="logo" style={{ width: '200%' }} />
             </Stack>
           </Stack>
 
           {/* disclaimer */}
 
-          <Stack alignItems={"center"} style={{marginLeft:"2%"}}>
-            <Stack direction="row" justifyContent="center" spacing={2} style={{width: "50%"}}>
-           
-          
+          <Stack alignItems={'center'} style={{ marginLeft: '2%' }}>
+            <Stack direction="row" justifyContent="center" spacing={2} style={{ width: '50%' }}>
               <Stack direction="row" justifyContent="center" spacing={1}>
-                  <img src="images/icons/phoneF.svg" alt="phone" style={{width:"10%"}}/>
-              <a href="tel:+50685959741" className="disclaimer">
-          +506 8595-9741
-                  </a>
+                <img src="images/icons/phoneF.svg" alt="phone" style={{ width: '10%' }} />
+                <a href="tel:+50685959741" className="disclaimer">
+                  +506 8595-9741
+                </a>
               </Stack>
               <Stack direction="row" justifyContent="center" spacing={1}>
-                <img src="images/icons/mailF.svg" alt="phone" style={{width:"8%"}}/>
-              <a href="mailto:reservations@volarcr.com" className="disclaimer">
-          reservations@volarcr.com
-                  </a>
+                <img src="images/icons/mailF.svg" alt="phone" style={{ width: '8%' }} />
+                <a href="mailto:reservations@volarcr.com" className="disclaimer">
+                  reservations@volarcr.com
+                </a>
               </Stack>
-                  </Stack>
+            </Stack>
             <Typography className="disclaimer">
-            Tobías Bolaños Palma International Airport (MRPV), Hangar #04, 35 & 36, Pavas, San José, Costa Rica
+              Tobías Bolaños Palma International Airport (MRPV), Hangar #04, 35 & 36, Pavas, San
+              José, Costa Rica
             </Typography>
           </Stack>
         </Stack>

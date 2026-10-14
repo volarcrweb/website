@@ -1,568 +1,562 @@
 {
-    "en": {
-      "type" : "en",
-      "buttonText": "/images/spanish.svg",
-      "seccion1": {
-        "titulo1": "Helicopter Charter",
-        "titulo2": "Costa Rica",
-        "descripcion": "From the cloud-kissed peaks of Arenal Volcano to the turquoise waters of the Pacific, Costa Rica beauty is meant to be seen from the sky.",
-        "from": "From",
-        "to": "To",
-        "people": "People",
-        "request": "Request a Quote",
-        "yourOrigin": "Your Origin",
-        "yourDestination": "Your Destination",
-        "howManyPeople": "How Many People?"
-      },
-      "seccion2": {
-        "titulo": "Our Services",
-        "service1": "Helicopter Tours",
-        "service2": "VIP Charter Flights",
-        "service3": "Weddings & Events",
-        "service4": "Aerial Filming & Photography",
-        "service5": "Lidar Mapping & Survey",
-        "service6": "External Loads"
-      },
-      "seccion3": {
-        "titulo": "Popular Tours",
-        "sanjose": "San José",
-        "liberia": "Liberia",
-        "otros": "Others",
-        "city": "City Tour",
-        "miniCity": "Mini City Tour",
-        "tarcooles": "Tárcoles / Carara",
-        "rinconytenorio": "Rincón de la Vieja and Tenorio",
-        "poas": "Poás Volcano"  
-      },
-      "seccion4": {
-        "titulo":"Helicopter ride",
-        "subtitulo":"Within our tours",
-        "tucan":"Tucan",
-        "Monos":"Monkeys",
-        "ballenas":"Whales",
-        "delfines":"Dolphins",
-        "tortugas":"Turtles",
-        "pelicano":"Pelican",
-        "perezoso":"Sloth",
-        "ranas":"Frogs",
-        "armadillo":"Armadillo",
-        "danta":"Tapir",
-        "extraordinario":"EXTRAORDINARY VIEWS , AMAZING EXPERIENCES"
-      },
-      "seccion5": {
-        "titulo":"Our Fleet",
-        "subtitulo":"Unique in Costa Rica, the most versatile and reliable helicopters for tourism, corporate, and air services in Costa Rica.",
-        "singleEngine":"Single Engine",
-        "twinEngine":"Twin Engine",
-        "upTo6Passengers":"Up to 7 passengers + 1 Pilots",
-        "upTo5Passengers":"Up to 5 passengers + 1 Pilot",
-        "upTo3Passengers":"Up to 3 passengers + 1 Pilot"
-      },
-      "footer": {
-        "volarAirCharter":"Volar Air Charter",
-        "allRightsReserved":"All Rights Reserved © 2025"
-      },
-      "filter": {
-        "Aeropuerto":"International Airport",
-        "person":"Person",
-        "people":"People"
-      },
-      "form": {
-        "flightInfo":"Flight Information",
-        "contactInfo":"Contact Information",
-        "name":"Full Name",
-        "email":"Email",
-        "phone":"Phone",
-        "message":"Tell us more details about your trip...",
-        "btnSend":"Send",
-        "confidencial":"Your information is 100% confidential",
-        "titleForm1":"The adventure starts here",
-        "titleForm2":"We adapt to your needs",
-        "titleForm3":"Fill out the form to receive more information"
-      },
-      "heliDetail": {
-        "md902Explorer": {
-          "title": "MD 902 Explorer",
-          "description": {
-            "text1": "Luxury",
-            "text2": "Adventure",
-            "text3": "Trust",
-            "text4": "Safety",
-            "text5": "Quality",
-            "text6": "Exclusivity",
-            "text7": "Experience"
-          },
-          "description2": {
-            "title1": "Exclusivity, Security and Advanced Technology",
-            "text1": "The MD 902 Explorer is our most exclusive helicopter, recognized for its smooth, silent, and extremely safe flight. Thanks to its NOTAR® system, it operates without a tail rotor, increasing stability, reducing noise, and offering greater safety for passengers and ground personnel. Its bimotor configuration provides power and reliability in any condition, while its spacious and comfortable cabin makes it the ideal option for executive flights, private transfers, and VIP experiences.",
-            "title2": "State of the Art Avionics",
-            "text2": "The MD 902 Explorer is equipped with one of the most advanced avionics suites in its category, designed to offer maximum safety, precision, and efficiency in each flight. Its high-resolution digital screens provide clear and real-time information, allowing pilots to have greater situational awareness and total control of the aircraft.",
-            "title3": "Premium Interior and VIP Comfort",
-            "text3": "The interior of the MD 902 Explorer is designed to provide a comfortable, spacious, and silent flight experience. Its cabin offers ergonomic seats, excellent visibility, and a spacious environment that allows passengers to enjoy the journey with total tranquility.",
-            "title4": "NOTAR® Technology – Safety and Silence in Every Flight",
-            "text4": "The NOTAR® system eliminates the traditional tail rotor and uses directed air to control the stability of the helicopter. This offers greater safety, reduces the risk on the ground, and generates a smoother and quieter flight, providing passengers with a comfortable and reliable experience.",
-            "title5": "Contact our expert team today",
-            "text52": "and see where it takes you.",
-            "text5": "Begin your adventure",
-            "title6": "Twin-Engine Power & Safety",
-            "text6": "The MD 902 Explorer features an efficient Pratt & Whitney twin-turbine system that delivers consistent power, high performance, and enhanced operational safety. Its two engines work together to ensure reliable takeoffs and climbs, even at high altitudes, and allow for safe continuation of flight in the event of an engine failure. Its lightweight design and the turbines' rapid response provide more stable, safer operations with superior performance in any environment."
-           
-          },
-          "dialog": {
-            "capacity": "1 pilot + 7 passengers",
-            "motor": "Twin Engine Pratt & Whitney",
-            "rotorPrincipal": "5 blades",
-            "categoria": "Ultra Luxury",
-            "carga": "?"
-          }
+  "en": {
+    "type": "en",
+    "buttonText": "/images/spanish.svg",
+    "seccion1": {
+      "titulo1": "Helicopter Charter",
+      "titulo2": "Costa Rica",
+      "descripcion": "From the cloud-kissed peaks of Arenal Volcano to the turquoise waters of the Pacific, Costa Rica beauty is meant to be seen from the sky.",
+      "from": "From",
+      "to": "To",
+      "people": "People",
+      "request": "Request a Quote",
+      "yourOrigin": "Your Origin",
+      "yourDestination": "Your Destination",
+      "howManyPeople": "How Many People?"
+    },
+    "seccion2": {
+      "titulo": "Our Services",
+      "service1": "Helicopter Tours",
+      "service2": "VIP Charter Flights",
+      "service3": "Weddings & Events",
+      "service4": "Aerial Filming & Photography",
+      "service5": "Lidar Mapping & Survey",
+      "service6": "External Loads"
+    },
+    "seccion3": {
+      "titulo": "Popular Tours",
+      "sanjose": "San José",
+      "liberia": "Liberia",
+      "otros": "Others",
+      "city": "City Tour",
+      "miniCity": "Mini City Tour",
+      "tarcooles": "Tárcoles / Carara",
+      "rinconytenorio": "Rincón de la Vieja and Tenorio",
+      "poas": "Poás Volcano"
+    },
+    "seccion4": {
+      "titulo": "Helicopter ride",
+      "subtitulo": "Within our tours",
+      "tucan": "Tucan",
+      "Monos": "Monkeys",
+      "ballenas": "Whales",
+      "delfines": "Dolphins",
+      "tortugas": "Turtles",
+      "pelicano": "Pelican",
+      "perezoso": "Sloth",
+      "ranas": "Frogs",
+      "armadillo": "Armadillo",
+      "danta": "Tapir",
+      "extraordinario": "EXTRAORDINARY VIEWS , AMAZING EXPERIENCES"
+    },
+    "seccion5": {
+      "titulo": "Our Fleet",
+      "subtitulo": "Unique in Costa Rica, the most versatile and reliable helicopters for tourism, corporate, and air services in Costa Rica.",
+      "singleEngine": "Single Engine",
+      "twinEngine": "Twin Engine",
+      "upTo6Passengers": "Up to 7 passengers + 1 Pilots",
+      "upTo5Passengers": "Up to 5 passengers + 1 Pilot",
+      "upTo3Passengers": "Up to 3 passengers + 1 Pilot"
+    },
+    "footer": {
+      "volarAirCharter": "Volar Air Charter",
+      "allRightsReserved": "All Rights Reserved © 2025"
+    },
+    "filter": {
+      "Aeropuerto": "International Airport",
+      "person": "Person",
+      "people": "People"
+    },
+    "form": {
+      "flightInfo": "Flight Information",
+      "contactInfo": "Contact Information",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Tell us more details about your trip...",
+      "btnSend": "Send",
+      "confidencial": "Your information is 100% confidential",
+      "titleForm1": "The adventure starts here",
+      "titleForm2": "We adapt to your needs",
+      "titleForm3": "Fill out the form to receive more information"
+    },
+    "heliDetail": {
+      "md902Explorer": {
+        "title": "MD 902 Explorer",
+        "description": {
+          "text1": "Luxury",
+          "text2": "Adventure",
+          "text3": "Trust",
+          "text4": "Safety",
+          "text5": "Quality",
+          "text6": "Exclusivity",
+          "text7": "Experience"
         },
-        "as350b2": {
-          "title": "AS350 B2",
-          "description": {
-            "text1": "Performance",
-            "text2": "Versatility",
-            "text3": "Trust",
-            "text4": "Safety",
-            "text5": "Quality",
-            "text6": "Adventure",
-            "text7": "Experience"
-          },
-          "description2": {
-            "title1": "Superior Performance",
-            "text1": "The AS350 B2 is equipped with a Safran/Turbomeca Arriel 1D1 turbine, recognized worldwide for its reliability, power, and efficiency. Manufactured in France, this propulsion system provides exceptional performance even under high temperature and altitude operations. Combining a comfortable cabin, excellent visibility, and large cargo capacity, the AS350 B2 has become a versatile and reliable aircraft for tourism, corporate, and operational missions.",
-            "title2": "An Elegant Interior Designed for Comfort",
-            "text2": "The AS350 B2 offers a refined interior that combines spaciousness, style, and comfort. Its padded seats made from high-quality materials, along with a thoughtfully designed layout, create an exclusive environment for each passenger. The cabin, bright and quiet, allows passengers to enjoy exceptional panoramic views while traveling smoothly.",
-            "title3": "",
-            "text3": "",
-            "title4": "",
-            "text4": "",
-            "title5": "Contact our expert team today and see where it takes you.",
-            "text5": "Begin your adventure"
-           
-          },
-          "dialog": {
-            "capacity": "1 pilot + 5 passengers",
-            "motor": "Single Engine SAFRAN",
-            "rotorPrincipal": "3 blades",
-            "categoria": "Normal",
-            "carga": "213 bags + some small bags"
-          }
+        "description2": {
+          "title1": "Exclusivity, Security and Advanced Technology",
+          "text1": "The MD 902 Explorer is our most exclusive helicopter, recognized for its smooth, silent, and extremely safe flight. Thanks to its NOTAR® system, it operates without a tail rotor, increasing stability, reducing noise, and offering greater safety for passengers and ground personnel. Its bimotor configuration provides power and reliability in any condition, while its spacious and comfortable cabin makes it the ideal option for executive flights, private transfers, and VIP experiences.",
+          "title2": "State of the Art Avionics",
+          "text2": "The MD 902 Explorer is equipped with one of the most advanced avionics suites in its category, designed to offer maximum safety, precision, and efficiency in each flight. Its high-resolution digital screens provide clear and real-time information, allowing pilots to have greater situational awareness and total control of the aircraft.",
+          "title3": "Premium Interior and VIP Comfort",
+          "text3": "The interior of the MD 902 Explorer is designed to provide a comfortable, spacious, and silent flight experience. Its cabin offers ergonomic seats, excellent visibility, and a spacious environment that allows passengers to enjoy the journey with total tranquility.",
+          "title4": "NOTAR® Technology – Safety and Silence in Every Flight",
+          "text4": "The NOTAR® system eliminates the traditional tail rotor and uses directed air to control the stability of the helicopter. This offers greater safety, reduces the risk on the ground, and generates a smoother and quieter flight, providing passengers with a comfortable and reliable experience.",
+          "title5": "Contact our expert team today",
+          "text52": "and see where it takes you.",
+          "text5": "Begin your adventure",
+          "title6": "Twin-Engine Power & Safety",
+          "text6": "The MD 902 Explorer features an efficient Pratt & Whitney twin-turbine system that delivers consistent power, high performance, and enhanced operational safety. Its two engines work together to ensure reliable takeoffs and climbs, even at high altitudes, and allow for safe continuation of flight in the event of an engine failure. Its lightweight design and the turbines' rapid response provide more stable, safer operations with superior performance in any environment."
         },
-        "robinson44": {
-          "title": "Robinson 44",
-          "description": {
-            "text1": "Performance",
-            "text2": "Versatility",
-            "text3": "Trust",
-            "text4": "Safety",
-            "text5": "Quality",
-            "text6": "Adventure",
-            "text7": "Experience"
-          },
-          "description2": {
-            "title1": "Efficiency, Reliability and Versatility in Every Flight",
-            "text1": "The Robinson R44 is one of the most recognized light helicopters for its reliability, low consumption and excellent cost-performance ratio. Its agile and stable design, combined with a spacious cabin and exceptional visibility, offers a safe and comfortable flight experience for both pilots and passengers. Ideal for tourist flights and corporate transfers",
-            "title2": "Panoramic Cabin for Impressive Tours",
-            "text2": "The cabin of the R44 offers exceptional visibility of 180°, making it one of the best helicopters for scenic tours. Its large windows allow each passenger to enjoy completely clear views of landscapes, coasts, volcanoes and forests from an incomparable perspective. Thanks to its comfortable, stable and silent design, tourist flights become an enveloping experience where every detail of the environment is appreciated with clarity and emotion.",
-            "title3": "",
-            "text3": "",
-            "title4": "",
-            "text4": "",
-            "title5": "Contact our expert team today and see where it takes you.",
-            "text5": "Begin your adventure"
-           
-          },
-          "dialog": {
-            "capacity": "1 pilot + 3 passengers",
-            "motor": "Single Engine Lycoming",
-            "rotorPrincipal": "2 blades",
-            "categoria": "Normal - Tours",
-            "carga": "Small bags"
-          }
+        "dialog": {
+          "capacity": "1 pilot + 7 passengers",
+          "motor": "Twin Engine Pratt & Whitney",
+          "rotorPrincipal": "5 blades",
+          "categoria": "Ultra Luxury",
+          "carga": "?"
         }
       },
-      "tourDetail": {
-        "txtHighlight": "HIGHLIGHTS",
-        "txtDuration": "DURATION OF THE TOUR",
-        "txtDeparture": "DEPARTURE POINT",
-        "txtWatchVideo": "WATCH VIDEO",
-        "txtBack": "Back",
-        "txtMoreInformation": "More information",
-        "poas" : {
-          "name": "Poas Volcano",
-          "description": {
-          "text1": "Experience an exceptional perspective of the Central Valley and the Poás Volcano with our helicopter tour designed to offer an optimal combination of comfort, safety, and unmatched views. During the journey, passengers enjoy a panoramic flight over characteristic landscapes of Costa Rica, including coffee plantations, cloud forests, and volcanic ranges.",
-          "text2": "Upon arrival at Poás, the helicopter performs a controlled overflight that allows clear observation of its active crater, turquoise lagoon, and geological formations surrounding it, providing a privileged viewpoint that cannot be obtained from the ground. This aerial experience stands out for its efficient operation, precise route, and high-quality service on board, making it an ideal option for travelers seeking an exclusive, safe, and high-level activity."
-          },
-          "highlight": {
-            "txt1": "Unique aerial view of the Poás Volcano's crater, including its turquoise lagoon and active fumaroles.",
-            "txt2": "Panoramic flight over the Central Valley, coffee plantations, mountains, and cloud forests.",
-            "txt3": "Exclusive and quick experience from San José, with perspectives that can only be appreciated from a helicopter."
-          },
-          "duration": {
-            "d1":"45 minutes of flight over the Central Valley and the Poás Volcano.",
-            "d2":"15 minutes of airport procedures for registration and pre-boarding control.",
-            "d3":"10 minutes of safety briefing before starting the experience.",
-            "d4":"10 minutes with the helicopter off to allow passengers to take photos with total comfort."
-          },
-          "departure":{
-            "p1":"The tour takes off from the International Airport Tobias Bolanos in San José.",
-            "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
-            "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
-          }
+      "as350b2": {
+        "title": "AS350 B2",
+        "description": {
+          "text1": "Performance",
+          "text2": "Versatility",
+          "text3": "Trust",
+          "text4": "Safety",
+          "text5": "Quality",
+          "text6": "Adventure",
+          "text7": "Experience"
         },
-        "manuelantonio" : {
-          "name": "Manuel Antonio",
-          "description": {
-          "text1": "Live one of the most impressive aerial experiences in Costa Rica with our helicopter tour to Manuel Antonio National Park, departing from San José. During the journey, you'll enjoy spectacular views of the Central Pacific, crossing mountains, valleys, and extensive tropical forests until reaching one of the most beautiful coasts in the country.",
-          "text2": "As we approach Manuel Antonio, the aerial perspective reveals its white sand beaches, turquoise waters, small islands, cliffs, and the jungle that hugs the coastline. From the helicopter, you can appreciate the natural richness of the park and its iconic landscapes in a way that is simply not possible from the ground. This tour combines adventure, comfort, and exclusivity, offering a quick and panoramic journey from San José. Ideal for travelers seeking a memorable experience, perfect for photography, and to connect with the unique beauty of the Costa Rican coast from the skies."
-          },
-          "highlight": {
-            "txt1": "Unique aerial view of Manuel Antonio National Park, with its white sand beaches, tropical jungle, and turquoise waters.",
-            "txt2": "Panoramic flight over the Central Pacific, mountains, valleys, and extensive tropical forests.",
-            "txt3": "Exclusive, comfortable, and quick experience from San José, with angles and panoramas that can only be appreciated from a helicopter."
-          },
-          "duration": {
-            "d1":"1 hour flight departing from San José and flying to Manuel Antonio and returning to San José",
-            "d2":"15 minutes of airport procedures for registration and pre-boarding control.",
-            "d3":"10 minutes of safety briefing before starting the experience.",
-            "d4":"10 minutes with the helicopter off to allow passengers to take photos with total comfort."
-          },
-          "departure":{
-            "p1":"The tour takes off from the International Airport Tobias Bolanos in San José.",
-            "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
-            "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
-          }
+        "description2": {
+          "title1": "Superior Performance",
+          "text1": "The AS350 B2 is equipped with a Safran/Turbomeca Arriel 1D1 turbine, recognized worldwide for its reliability, power, and efficiency. Manufactured in France, this propulsion system provides exceptional performance even under high temperature and altitude operations. Combining a comfortable cabin, excellent visibility, and large cargo capacity, the AS350 B2 has become a versatile and reliable aircraft for tourism, corporate, and operational missions.",
+          "title2": "An Elegant Interior Designed for Comfort",
+          "text2": "The AS350 B2 offers a refined interior that combines spaciousness, style, and comfort. Its padded seats made from high-quality materials, along with a thoughtfully designed layout, create an exclusive environment for each passenger. The cabin, bright and quiet, allows passengers to enjoy exceptional panoramic views while traveling smoothly.",
+          "title3": "",
+          "text3": "",
+          "title4": "",
+          "text4": "",
+          "title5": "Contact our expert team today and see where it takes you.",
+          "text5": "Begin your adventure"
         },
-        "tarcoles" : {
-          "name": "Tárcoles / Carara",
-          "description": {
-          "text1": "Discover one of the most impressive areas of the Central Pacific from the air with our helicopter tour to Tárcoles and the National Park Carara, departing from San José. The flight starts by overflying mountains and valleys of the Central Valley until descending towards the coast, where the landscape transforms into extensive tropical forests and impressive rivers. The flight offers a privileged view of the Tárcoles River, known worldwide for its crocodile population and natural formations surrounding it. From the helicopter, you can appreciate its complete journey and the impressive transition towards the coast.",
-          "text2": "Continuing towards Carara, you'll enjoy spectacular panoramic views of one of the most biodiverse forests in the country. Its intense green tones, the mix of dry and wet forests, and the depth of its vegetation create a unique visual contrast from the sky. This tour combines nature, adventure, and comfort, offering quick access to one of the most vibrant scenarios in the Central Pacific. A perfect experience for photography, observation, and to enjoy Costa Rica from a truly special perspective."
-          },
-          "highlight": {
-            "txt1": "Unique aerial view of the Tárcoles River, known worldwide for its crocodile population and natural formations surrounding it.",
-            "txt2": "Panoramic flight over the National Park Carara, with its dense tropical forest, biodiversity, and the contrast between dry and wet forests.",
-            "txt3": "Exclusive, comfortable, and quick experience from San José, with unforgettable views of the Central Pacific and unique perspectives that can only be appreciated from a helicopter."
-          },
-          "duration": {
-            "d1":"1 hour flight departing from San José.",
-            "d2":"15 minutes of airport procedures for registration and pre-boarding control.",
-            "d3":"10 minutes of safety briefing before starting the experience.",
-            "d4":"10 minutes with the helicopter off to allow passengers to take photos with total comfort."
-          },
-          "departure":{
-            "p1":"The tour takes off from the International Airport Tobias Bolanos in San José.",
-            "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
-            "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
-          }
+        "dialog": {
+          "capacity": "1 pilot + 5 passengers",
+          "motor": "Single Engine SAFRAN",
+          "rotorPrincipal": "3 blades",
+          "categoria": "Normal",
+          "carga": "213 bags + some small bags"
+        }
+      },
+      "robinson44": {
+        "title": "Robinson 44",
+        "description": {
+          "text1": "Performance",
+          "text2": "Versatility",
+          "text3": "Trust",
+          "text4": "Safety",
+          "text5": "Quality",
+          "text6": "Adventure",
+          "text7": "Experience"
         },
-        "citytour" : {
-          "name": "City Tour",
-          "description": {
-          "text1": "Discover the capital of Costa Rica from a completely new perspective with our exclusive helicopter tour over San José. This panoramic flight allows you to enjoy spectacular views of the Children's Museum, historic buildings in the center, the imposing National Stadium, and the extensive green areas of the Metropolitan Park La Sabana.",
-          "text2": "As we advance through the sky of the capital, you can appreciate the unique mix of modern architecture, traditional neighborhoods, and the mountainous landscape that surrounds the Central Valley."
-          },
-          "highlight": {
-            "txt1": "Unique aerial view of the heart of San José, including the Children's Museum, historic buildings, and the main landmarks of the city.",
-            "txt2": "Panoramic flight over the National Stadium, the Metropolitan Park La Sabana, and its extensive green areas.",
-            "txt3": "Exclusive, comfortable, and quick experience from San José, with angles and panoramas that can only be appreciated from a helicopter."
-          },
-          "duration": {
-            "d1":"15 minutes of flight over the Central Valley.",
-            "d2":"15 minutes of airport procedures for registration and pre-boarding control.",
-            "d3":"10 minutes of safety briefing before starting the experience.",
-            "d4":"10 minutes with the helicopter off to allow passengers to take photos with total comfort."
-          },
-          "departure":{
-            "p1":"The tour takes off from the International Airport Tobias Bolanos in San José.",
-            "p2":"However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
-            "p3":"In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
-          }
+        "description2": {
+          "title1": "Efficiency, Reliability and Versatility in Every Flight",
+          "text1": "The Robinson R44 is one of the most recognized light helicopters for its reliability, low consumption and excellent cost-performance ratio. Its agile and stable design, combined with a spacious cabin and exceptional visibility, offers a safe and comfortable flight experience for both pilots and passengers. Ideal for tourist flights and corporate transfers",
+          "title2": "Panoramic Cabin for Impressive Tours",
+          "text2": "The cabin of the R44 offers exceptional visibility of 180°, making it one of the best helicopters for scenic tours. Its large windows allow each passenger to enjoy completely clear views of landscapes, coasts, volcanoes and forests from an incomparable perspective. Thanks to its comfortable, stable and silent design, tourist flights become an enveloping experience where every detail of the environment is appreciated with clarity and emotion.",
+          "title3": "",
+          "text3": "",
+          "title4": "",
+          "text4": "",
+          "title5": "Contact our expert team today and see where it takes you.",
+          "text5": "Begin your adventure"
+        },
+        "dialog": {
+          "capacity": "1 pilot + 3 passengers",
+          "motor": "Single Engine Lycoming",
+          "rotorPrincipal": "2 blades",
+          "categoria": "Normal - Tours",
+          "carga": "Small bags"
         }
       }
     },
-    "es": {
-      "type" : "es",
-      "buttonText": "/images/Ingles.svg",
-      "seccion1": {
-        "titulo1": "Vuelos en Helicóptero",
-        "titulo2": "Costa Rica",
-        "descripcion": "Desde los picos cubiertos de nubes del Volcán Arenal hasta los aguas turquesas del Pacífico, la belleza de Costa Rica debe ser vista desde el cielo.",
-        "from": "Desde",
-        "to": "Hasta",
-        "people": "Personas",
-        "request": "Cotizar",
-        "yourOrigin": "Tu Origen",
-        "yourDestination": "Tu Destino",
-        "howManyPeople": "Cuantas Personas?"
-      },
-      "seccion2": {
-        "titulo": "Nuestros Servicios",
-        "service1": "Tours de Helicóptero",
-        "service2": "Vuelos VIP Charters",
-        "service3": "Bodas y Eventos",
-        "service4": "Filmación y Fotografía Aérea",
-        "service5": "Mapeo Lidar y Encuestas",
-        "service6": "Carga Externa"
-      },
-      "seccion3": {
-        "titulo": "Tours Populares",
-        "sanjose": "San José",
-        "liberia": "Liberia",
-        "otros": "Otros",
-        "city": "City Tour",
-        "miniCity": "Mini City Tour",
-        "tarcooles": "Tárcoles / Carara",
-        "rinconytenorio": "Rincón de la Vieja y Tenorio",
-        "poas": "Volcán Poás"
-      },
-      "seccion4": {
-        "titulo":"Paseos en Helicóptero",
-        "subtitulo":"En nuestros tours",
-        "tucan":"Tucan",
-        "Monos":"Monos",
-        "ballenas":"Ballenas",
-        "delfines":"Delfines",
-        "tortugas":"Tortugas",
-        "pelicano":"Pelicano",
-        "perezoso":"Perezoso",
-        "ranas":"Ranas",
-        "armadillo":"Armadillo",
-        "danta":"Danta",
-        "extraordinario":"VISTAS EXTRAORDINARIAS, EXPERIENCIAS INCREÍBLES"
-      },
-      "seccion5": {
-        "titulo":"Nuestro Flota",
-        "subtitulo":"Única en Costa Rica, los helicópteros más versátiles y confiables para turismo, corporativos y servicios aéreos en Costa Rica.",
-        "singleEngine":"Motor Simple",
-        "twinEngine":"Motor Doble",
-        "upTo6Passengers":"Hasta 7 pasajeros + 1 Piloto",
-        "upTo5Passengers":"Hasta 5 pasajeros + 1 Piloto",
-        "upTo3Passengers":"Hasta 3 pasajeros + 1 Piloto"
-      },
-      "footer": {
-        "volarAirCharter":"Volar Air Charter",
-        "allRightsReserved":"Todos los derechos reservados © 2025"
-      },
-      "filter": {
-        "Aeropuerto":"Aeropuerto Internacional",
-        "person":"Persona",
-        "people":"Personas"
-      },
-      "form": {
-        "flightInfo":"Información del Vuelo",
-        "contactInfo":"Información de Contacto",
-        "name":"Nombre completo",
-        "email":"Correo electrónico",
-        "phone":"Teléfono",
-        "message":"Cuéntanos más detalles sobre tu viaje...",
-        "btnSend":"Enviar",
-        "confidencial":"Su información es 100% confidencial",
-        "titleForm1":"La aventura empieza aquí",
-        "titleForm2":"Nos adaptamos a tus necesidades",
-        "titleForm3":"Llená el formulario para recibir más información"
-      },
-      "heliDetail": {
-        "md902Explorer": {
-          "title": "MD 902 Explorer",
-          "description": {
-            "text1": "Lujo",
-            "text2": "Aventura",
-            "text3": "Confianza",
-            "text4": "Seguridad",
-            "text5": "Calidad",
-            "text6": "Exclusividad",
-            "text7": "Experiencia"
-          },
-          "description2": {
-            "title1": "Exclusividad, Seguridad y Tecnología Avanzada",
-            "text1": "El MD 902 Explorer es nuestro helicóptero más exclusivo, reconocido por su vuelo suave, silencioso y extremadamente seguro. Gracias a su sistema NOTAR®, opera sin rotor de cola, lo que aumenta la estabilidad, reduce el ruido y ofrece mayor seguridad para pasajeros y personal en tierra. Su configuración bimotor brinda potencia y confiabilidad en cualquier condición, mientras que su cabina amplia y cómoda lo convierte en la opción ideal para vuelos ejecutivos, traslados privados y experiencias VIP.",
-            "title2": "Aviónica de última generación",
-            "text2": "El MD 902 Explorer está equipado con una de las suites avionicas más avanzadas de su categoría, diseñada para ofrecer máxima seguridad, precisión y eficiencia en cada vuelo. Sus pantallas digitales de alta resolución proporcionan información clara y en tiempo real, permitiendo a los pilotos una mayor conciencia situacional y un control total de la aeronave.",
-            "title3": "Interior Premium y Confort VIP",
-            "text3": "El interior del MD 902 Explorer está diseñado para brindar una experiencia de vuelo cómoda, amplia y silenciosa. Su cabina ofrece asientos ergonómicos, excelente visibilidad y un ambiente espacioso que permite a los pasajeros disfrutar del trayecto con total tranquilidad.",
-            "title4": "Tecnología NOTAR® – Seguridad y Silencio en Cada Vuelo",
-            "text4": "El sistema NOTAR® elimina el rotor de cola tradicional y utiliza aire direccionado para controlar la estabilidad del helicóptero. Esto ofrece mayor seguridad, reduce el riesgo en tierra y genera un vuelo más silencioso y suave, brindando a los pasajeros una experiencia cómoda y confiable.",
-            "title5": "Contacte hoy con nuestro equipo de expertos",
-            "text52": "y descubra a dónde le lleva.",
-            "text5": "Comienza tu aventura",
-            "title6": "Potencia y seguridad de dos motores",
-            "text6": "El MD 902 Explorer cuenta con un eficiente sistema bi-turbina Pratt & Whitney que ofrece potencia constante, alto rendimiento y mayor seguridad operacional. Sus dos motores trabajan en conjunto para asegurar despegues y ascensos confiables, incluso en altitud, y permiten continuar el vuelo de forma segura en caso de falla de uno de ellos. Su diseño ligero y la rápida respuesta de las turbinas brindan operaciones más estables, seguras y con desempeño superior en cualquier entorno."
-           
-          },
-          "dialog": {
-            "capacity": "1 piloto + 7 pasajeros",
-            "motor": "Biturbina Pratt & Whitney",
-            "rotorPrincipal": "5 palas",
-            "categoria": "Ultra Lujo",
-            "carga": "?"
-          }
+    "tourDetail": {
+      "txtHighlight": "HIGHLIGHTS",
+      "txtDuration": "DURATION OF THE TOUR",
+      "txtDeparture": "DEPARTURE POINT",
+      "txtWatchVideo": "WATCH VIDEO",
+      "txtBack": "Back",
+      "txtMoreInformation": "More information",
+      "poas": {
+        "name": "Poas Volcano",
+        "description": {
+          "text1": "Experience an exceptional perspective of the Central Valley and the Poás Volcano with our helicopter tour designed to offer an optimal combination of comfort, safety, and unmatched views. During the journey, passengers enjoy a panoramic flight over characteristic landscapes of Costa Rica, including coffee plantations, cloud forests, and volcanic ranges.",
+          "text2": "Upon arrival at Poás, the helicopter performs a controlled overflight that allows clear observation of its active crater, turquoise lagoon, and geological formations surrounding it, providing a privileged viewpoint that cannot be obtained from the ground. This aerial experience stands out for its efficient operation, precise route, and high-quality service on board, making it an ideal option for travelers seeking an exclusive, safe, and high-level activity."
         },
-        "as350b2": {
-          "title": "AS350 B2",
-          "description": {
-            "text1": "Rendimiento",
-            "text2": "Versatilidad",
-            "text3": "Confianza",
-            "text4": "Seguridad",
-            "text5": "Calidad",
-            "text6": "Aventura",
-            "text7": "Experiencia"
-          },
-          "description2": {
-            "title1": "Rendimiento Superior",
-            "text1": "El AS350 B2 está equipado con una turbina Safran/Turbomeca Arriel 1D1, reconocida mundialmente por su fiabilidad, potencia y eficiencia. Fabricada en Francia, esta planta motriz le brinda al helicóptero un desempeño excepcional incluso en operaciones de alta temperatura y altitud. Combinando una cabina cómoda, excelente visibilidad y gran capacidad de carga, el AS350 B2 se ha convertido en una aeronave versátil y confiable para misiones turísticas, corporativas y operativas.",
-            "title2": "Un Interior Elegante Diseñado para el Confort",
-            "text2": "El AS350 B2 ofrece un interior refinado que combina amplitud, estilo y comodidad. Sus asientos tapizados en materiales de alta calidad, junto con una distribución cuidadosamente pensada, crean un ambiente exclusivo para cada pasajero. La cabina, luminosa y silenciosa, permite disfrutar de vistas panorámicas excepcionales mientras se viaja con total suavidad.",
-            "title3": "",
-            "text3": "",
-            "title4": "",
-            "text4": "",
-            "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
-            "text5": "Comienza tu aventura"
-           
-          },
-          "dialog": {
-            "capacity": "1 piloto + 5 pasajeros",
-            "motor": "Monoturbina SAFRAN",
-            "rotorPrincipal": "3 palas",
-            "categoria": "Normal",
-            "carga": "213 maletas + algunos bolsos"
-          }
+        "highlight": {
+          "txt1": "Unique aerial view of the Poás Volcano's crater, including its turquoise lagoon and active fumaroles.",
+          "txt2": "Panoramic flight over the Central Valley, coffee plantations, mountains, and cloud forests.",
+          "txt3": "Exclusive and quick experience from San José, with perspectives that can only be appreciated from a helicopter."
         },
-        "robinson44": {
-          "title": "Robinson 44",
-          "description": {
-            "text1": "Rendimiento",
-            "text2": "Versatilidad",
-            "text3": "Confianza",
-            "text4": "Seguridad",
-            "text5": "Calidad",
-            "text6": "Aventura",
-            "text7": "Experiencia"
-          },
-          "description2": {
-            "title1": "Eficiencia, Confiabilidad y Versatilidad en Cada Vuelo",
-            "text1": "El Robinson R44 es uno de los helicópteros ligeros más reconocidos por su confiabilidad, bajo consumo y excelente relación costo-rendimiento. Su diseño ágil y estable, combinado con una cabina amplia y visibilidad excepcional, ofrece una experiencia de vuelo segura y cómoda tanto para pilotos como para pasajeros. Ideal para vuelos turísticos y traslados corporativos",
-            "title2": "Cabina Panorámica para Tours Impresionantes",
-            "text2": "La cabina del R44 ofrece una visibilidad excepcional de 180°, convirtiéndolo en uno de los mejores helicópteros para tours escénicos. Sus amplios ventanales permiten que cada pasajero disfrute vistas completamente despejadas de paisajes, costas, volcanes y selvas desde una perspectiva inigualable. Gracias a su diseño cómodo, estable y silencioso, los vuelos turísticos se convierten en una experiencia envolvente donde cada detalle del entorno se aprecia con claridad y emoción.",
-            "title3": "",
-            "text3": "",
-            "title4": "",
-            "text4": "",
-            "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
-            "text5": "Comienza tu aventura"
-           
-          },
-          "dialog": {
-            "capacity": "1 piloto + 3 pasajeros",
-            "motor": "Monoturbina Piston Lycoming",
-            "rotorPrincipal": "2 palas",
-            "categoria": "Normal - Tours",
-            "carga": "Bolsos Pequeños"
-          }
+        "duration": {
+          "d1": "45 minutes of flight over the Central Valley and the Poás Volcano.",
+          "d2": "15 minutes of airport procedures for registration and pre-boarding control.",
+          "d3": "10 minutes of safety briefing before starting the experience.",
+          "d4": "10 minutes with the helicopter off to allow passengers to take photos with total comfort."
+        },
+        "departure": {
+          "p1": "The tour takes off from the International Airport Tobias Bolanos in San José.",
+          "p2": "However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
+          "p3": "In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
         }
       },
-      "tourDetail": {
-        "txtHighlight": "DESTACADOS",
-        "txtDuration": "DURACIÓN DEL TOUR",
-        "txtDeparture": "PUNTO DE SALIDA",
-        "txtWatchVideo": "VER VIDEO",
-        "txtBack": "Volver",
-        "txtMoreInformation": "Mas información",
-        "poas" : {
-          "name": "Volcan Poás",
-          "description": {
+      "manuelantonio": {
+        "name": "Manuel Antonio",
+        "description": {
+          "text1": "Live one of the most impressive aerial experiences in Costa Rica with our helicopter tour to Manuel Antonio National Park, departing from San José. During the journey, you'll enjoy spectacular views of the Central Pacific, crossing mountains, valleys, and extensive tropical forests until reaching one of the most beautiful coasts in the country.",
+          "text2": "As we approach Manuel Antonio, the aerial perspective reveals its white sand beaches, turquoise waters, small islands, cliffs, and the jungle that hugs the coastline. From the helicopter, you can appreciate the natural richness of the park and its iconic landscapes in a way that is simply not possible from the ground. This tour combines adventure, comfort, and exclusivity, offering a quick and panoramic journey from San José. Ideal for travelers seeking a memorable experience, perfect for photography, and to connect with the unique beauty of the Costa Rican coast from the skies."
+        },
+        "highlight": {
+          "txt1": "Unique aerial view of Manuel Antonio National Park, with its white sand beaches, tropical jungle, and turquoise waters.",
+          "txt2": "Panoramic flight over the Central Pacific, mountains, valleys, and extensive tropical forests.",
+          "txt3": "Exclusive, comfortable, and quick experience from San José, with angles and panoramas that can only be appreciated from a helicopter."
+        },
+        "duration": {
+          "d1": "1 hour flight departing from San José and flying to Manuel Antonio and returning to San José",
+          "d2": "15 minutes of airport procedures for registration and pre-boarding control.",
+          "d3": "10 minutes of safety briefing before starting the experience.",
+          "d4": "10 minutes with the helicopter off to allow passengers to take photos with total comfort."
+        },
+        "departure": {
+          "p1": "The tour takes off from the International Airport Tobias Bolanos in San José.",
+          "p2": "However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
+          "p3": "In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
+        }
+      },
+      "tarcoles": {
+        "name": "Tárcoles / Carara",
+        "description": {
+          "text1": "Discover one of the most impressive areas of the Central Pacific from the air with our helicopter tour to Tárcoles and the National Park Carara, departing from San José. The flight starts by overflying mountains and valleys of the Central Valley until descending towards the coast, where the landscape transforms into extensive tropical forests and impressive rivers. The flight offers a privileged view of the Tárcoles River, known worldwide for its crocodile population and natural formations surrounding it. From the helicopter, you can appreciate its complete journey and the impressive transition towards the coast.",
+          "text2": "Continuing towards Carara, you'll enjoy spectacular panoramic views of one of the most biodiverse forests in the country. Its intense green tones, the mix of dry and wet forests, and the depth of its vegetation create a unique visual contrast from the sky. This tour combines nature, adventure, and comfort, offering quick access to one of the most vibrant scenarios in the Central Pacific. A perfect experience for photography, observation, and to enjoy Costa Rica from a truly special perspective."
+        },
+        "highlight": {
+          "txt1": "Unique aerial view of the Tárcoles River, known worldwide for its crocodile population and natural formations surrounding it.",
+          "txt2": "Panoramic flight over the National Park Carara, with its dense tropical forest, biodiversity, and the contrast between dry and wet forests.",
+          "txt3": "Exclusive, comfortable, and quick experience from San José, with unforgettable views of the Central Pacific and unique perspectives that can only be appreciated from a helicopter."
+        },
+        "duration": {
+          "d1": "1 hour flight departing from San José.",
+          "d2": "15 minutes of airport procedures for registration and pre-boarding control.",
+          "d3": "10 minutes of safety briefing before starting the experience.",
+          "d4": "10 minutes with the helicopter off to allow passengers to take photos with total comfort."
+        },
+        "departure": {
+          "p1": "The tour takes off from the International Airport Tobias Bolanos in San José.",
+          "p2": "However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
+          "p3": "In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
+        }
+      },
+      "citytour": {
+        "name": "City Tour",
+        "description": {
+          "text1": "Discover the capital of Costa Rica from a completely new perspective with our exclusive helicopter tour over San José. This panoramic flight allows you to enjoy spectacular views of the Children's Museum, historic buildings in the center, the imposing National Stadium, and the extensive green areas of the Metropolitan Park La Sabana.",
+          "text2": "As we advance through the sky of the capital, you can appreciate the unique mix of modern architecture, traditional neighborhoods, and the mountainous landscape that surrounds the Central Valley."
+        },
+        "highlight": {
+          "txt1": "Unique aerial view of the heart of San José, including the Children's Museum, historic buildings, and the main landmarks of the city.",
+          "txt2": "Panoramic flight over the National Stadium, the Metropolitan Park La Sabana, and its extensive green areas.",
+          "txt3": "Exclusive, comfortable, and quick experience from San José, with angles and panoramas that can only be appreciated from a helicopter."
+        },
+        "duration": {
+          "d1": "15 minutes of flight over the Central Valley.",
+          "d2": "15 minutes of airport procedures for registration and pre-boarding control.",
+          "d3": "10 minutes of safety briefing before starting the experience.",
+          "d4": "10 minutes with the helicopter off to allow passengers to take photos with total comfort."
+        },
+        "departure": {
+          "p1": "The tour takes off from the International Airport Tobias Bolanos in San José.",
+          "p2": "However, if the client or the agency requires departure from another point in the country, we can coordinate it beforehand.",
+          "p3": "In these cases, the rate may vary depending on the location and operational conditions of the helicopter."
+        }
+      }
+    }
+  },
+  "es": {
+    "type": "es",
+    "buttonText": "/images/Ingles.svg",
+    "seccion1": {
+      "titulo1": "Vuelos en Helicóptero",
+      "titulo2": "Costa Rica",
+      "descripcion": "Desde los picos cubiertos de nubes del Volcán Arenal hasta los aguas turquesas del Pacífico, la belleza de Costa Rica debe ser vista desde el cielo.",
+      "from": "Desde",
+      "to": "Hasta",
+      "people": "Personas",
+      "request": "Cotizar",
+      "yourOrigin": "Tu Origen",
+      "yourDestination": "Tu Destino",
+      "howManyPeople": "Cuantas Personas?"
+    },
+    "seccion2": {
+      "titulo": "Nuestros Servicios",
+      "service1": "Tours de Helicóptero",
+      "service2": "Vuelos VIP Charters",
+      "service3": "Bodas y Eventos",
+      "service4": "Filmación y Fotografía Aérea",
+      "service5": "Mapeo Lidar y Encuestas",
+      "service6": "Carga Externa"
+    },
+    "seccion3": {
+      "titulo": "Tours Populares",
+      "sanjose": "San José",
+      "liberia": "Liberia",
+      "otros": "Otros",
+      "city": "City Tour",
+      "miniCity": "Mini City Tour",
+      "tarcooles": "Tárcoles / Carara",
+      "rinconytenorio": "Rincón de la Vieja y Tenorio",
+      "poas": "Volcán Poás"
+    },
+    "seccion4": {
+      "titulo": "Paseos en Helicóptero",
+      "subtitulo": "En nuestros tours",
+      "tucan": "Tucan",
+      "Monos": "Monos",
+      "ballenas": "Ballenas",
+      "delfines": "Delfines",
+      "tortugas": "Tortugas",
+      "pelicano": "Pelicano",
+      "perezoso": "Perezoso",
+      "ranas": "Ranas",
+      "armadillo": "Armadillo",
+      "danta": "Danta",
+      "extraordinario": "VISTAS EXTRAORDINARIAS, EXPERIENCIAS INCREÍBLES"
+    },
+    "seccion5": {
+      "titulo": "Nuestro Flota",
+      "subtitulo": "Única en Costa Rica, los helicópteros más versátiles y confiables para turismo, corporativos y servicios aéreos en Costa Rica.",
+      "singleEngine": "Motor Simple",
+      "twinEngine": "Motor Doble",
+      "upTo6Passengers": "Hasta 7 pasajeros + 1 Piloto",
+      "upTo5Passengers": "Hasta 5 pasajeros + 1 Piloto",
+      "upTo3Passengers": "Hasta 3 pasajeros + 1 Piloto"
+    },
+    "footer": {
+      "volarAirCharter": "Volar Air Charter",
+      "allRightsReserved": "Todos los derechos reservados © 2025"
+    },
+    "filter": {
+      "Aeropuerto": "Aeropuerto Internacional",
+      "person": "Persona",
+      "people": "Personas"
+    },
+    "form": {
+      "flightInfo": "Información del Vuelo",
+      "contactInfo": "Información de Contacto",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "message": "Cuéntanos más detalles sobre tu viaje...",
+      "btnSend": "Enviar",
+      "confidencial": "Su información es 100% confidencial",
+      "titleForm1": "La aventura empieza aquí",
+      "titleForm2": "Nos adaptamos a tus necesidades",
+      "titleForm3": "Llená el formulario para recibir más información"
+    },
+    "heliDetail": {
+      "md902Explorer": {
+        "title": "MD 902 Explorer",
+        "description": {
+          "text1": "Lujo",
+          "text2": "Aventura",
+          "text3": "Confianza",
+          "text4": "Seguridad",
+          "text5": "Calidad",
+          "text6": "Exclusividad",
+          "text7": "Experiencia"
+        },
+        "description2": {
+          "title1": "Exclusividad, Seguridad y Tecnología Avanzada",
+          "text1": "El MD 902 Explorer es nuestro helicóptero más exclusivo, reconocido por su vuelo suave, silencioso y extremadamente seguro. Gracias a su sistema NOTAR®, opera sin rotor de cola, lo que aumenta la estabilidad, reduce el ruido y ofrece mayor seguridad para pasajeros y personal en tierra. Su configuración bimotor brinda potencia y confiabilidad en cualquier condición, mientras que su cabina amplia y cómoda lo convierte en la opción ideal para vuelos ejecutivos, traslados privados y experiencias VIP.",
+          "title2": "Aviónica de última generación",
+          "text2": "El MD 902 Explorer está equipado con una de las suites avionicas más avanzadas de su categoría, diseñada para ofrecer máxima seguridad, precisión y eficiencia en cada vuelo. Sus pantallas digitales de alta resolución proporcionan información clara y en tiempo real, permitiendo a los pilotos una mayor conciencia situacional y un control total de la aeronave.",
+          "title3": "Interior Premium y Confort VIP",
+          "text3": "El interior del MD 902 Explorer está diseñado para brindar una experiencia de vuelo cómoda, amplia y silenciosa. Su cabina ofrece asientos ergonómicos, excelente visibilidad y un ambiente espacioso que permite a los pasajeros disfrutar del trayecto con total tranquilidad.",
+          "title4": "Tecnología NOTAR® – Seguridad y Silencio en Cada Vuelo",
+          "text4": "El sistema NOTAR® elimina el rotor de cola tradicional y utiliza aire direccionado para controlar la estabilidad del helicóptero. Esto ofrece mayor seguridad, reduce el riesgo en tierra y genera un vuelo más silencioso y suave, brindando a los pasajeros una experiencia cómoda y confiable.",
+          "title5": "Contacte hoy con nuestro equipo de expertos",
+          "text52": "y descubra a dónde le lleva.",
+          "text5": "Comienza tu aventura",
+          "title6": "Potencia y seguridad de dos motores",
+          "text6": "El MD 902 Explorer cuenta con un eficiente sistema bi-turbina Pratt & Whitney que ofrece potencia constante, alto rendimiento y mayor seguridad operacional. Sus dos motores trabajan en conjunto para asegurar despegues y ascensos confiables, incluso en altitud, y permiten continuar el vuelo de forma segura en caso de falla de uno de ellos. Su diseño ligero y la rápida respuesta de las turbinas brindan operaciones más estables, seguras y con desempeño superior en cualquier entorno."
+        },
+        "dialog": {
+          "capacity": "1 piloto + 7 pasajeros",
+          "motor": "Biturbina Pratt & Whitney",
+          "rotorPrincipal": "5 palas",
+          "categoria": "Ultra Lujo",
+          "carga": "?"
+        }
+      },
+      "as350b2": {
+        "title": "AS350 B2",
+        "description": {
+          "text1": "Rendimiento",
+          "text2": "Versatilidad",
+          "text3": "Confianza",
+          "text4": "Seguridad",
+          "text5": "Calidad",
+          "text6": "Aventura",
+          "text7": "Experiencia"
+        },
+        "description2": {
+          "title1": "Rendimiento Superior",
+          "text1": "El AS350 B2 está equipado con una turbina Safran/Turbomeca Arriel 1D1, reconocida mundialmente por su fiabilidad, potencia y eficiencia. Fabricada en Francia, esta planta motriz le brinda al helicóptero un desempeño excepcional incluso en operaciones de alta temperatura y altitud. Combinando una cabina cómoda, excelente visibilidad y gran capacidad de carga, el AS350 B2 se ha convertido en una aeronave versátil y confiable para misiones turísticas, corporativas y operativas.",
+          "title2": "Un Interior Elegante Diseñado para el Confort",
+          "text2": "El AS350 B2 ofrece un interior refinado que combina amplitud, estilo y comodidad. Sus asientos tapizados en materiales de alta calidad, junto con una distribución cuidadosamente pensada, crean un ambiente exclusivo para cada pasajero. La cabina, luminosa y silenciosa, permite disfrutar de vistas panorámicas excepcionales mientras se viaja con total suavidad.",
+          "title3": "",
+          "text3": "",
+          "title4": "",
+          "text4": "",
+          "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
+          "text5": "Comienza tu aventura"
+        },
+        "dialog": {
+          "capacity": "1 piloto + 5 pasajeros",
+          "motor": "Monoturbina SAFRAN",
+          "rotorPrincipal": "3 palas",
+          "categoria": "Normal",
+          "carga": "213 maletas + algunos bolsos"
+        }
+      },
+      "robinson44": {
+        "title": "Robinson 44",
+        "description": {
+          "text1": "Rendimiento",
+          "text2": "Versatilidad",
+          "text3": "Confianza",
+          "text4": "Seguridad",
+          "text5": "Calidad",
+          "text6": "Aventura",
+          "text7": "Experiencia"
+        },
+        "description2": {
+          "title1": "Eficiencia, Confiabilidad y Versatilidad en Cada Vuelo",
+          "text1": "El Robinson R44 es uno de los helicópteros ligeros más reconocidos por su confiabilidad, bajo consumo y excelente relación costo-rendimiento. Su diseño ágil y estable, combinado con una cabina amplia y visibilidad excepcional, ofrece una experiencia de vuelo segura y cómoda tanto para pilotos como para pasajeros. Ideal para vuelos turísticos y traslados corporativos",
+          "title2": "Cabina Panorámica para Tours Impresionantes",
+          "text2": "La cabina del R44 ofrece una visibilidad excepcional de 180°, convirtiéndolo en uno de los mejores helicópteros para tours escénicos. Sus amplios ventanales permiten que cada pasajero disfrute vistas completamente despejadas de paisajes, costas, volcanes y selvas desde una perspectiva inigualable. Gracias a su diseño cómodo, estable y silencioso, los vuelos turísticos se convierten en una experiencia envolvente donde cada detalle del entorno se aprecia con claridad y emoción.",
+          "title3": "",
+          "text3": "",
+          "title4": "",
+          "text4": "",
+          "title5": "Contacte hoy con nuestro equipo de expertos y descubra a dónde le lleva.",
+          "text5": "Comienza tu aventura"
+        },
+        "dialog": {
+          "capacity": "1 piloto + 3 pasajeros",
+          "motor": "Monoturbina Piston Lycoming",
+          "rotorPrincipal": "2 palas",
+          "categoria": "Normal - Tours",
+          "carga": "Bolsos Pequeños"
+        }
+      }
+    },
+    "tourDetail": {
+      "txtHighlight": "DESTACADOS",
+      "txtDuration": "DURACIÓN DEL TOUR",
+      "txtDeparture": "PUNTO DE SALIDA",
+      "txtWatchVideo": "VER VIDEO",
+      "txtBack": "Volver",
+      "txtMoreInformation": "Mas información",
+      "poas": {
+        "name": "Volcan Poás",
+        "description": {
           "text1": "Experimente una perspectiva excepcional del Valle Central y del Volcán Poás con nuestro tour en helicóptero diseñado para ofrecer una combinación óptima de confort, seguridad y vistas inigualables. Durante el recorrido, los pasajeros disfrutan un vuelo panorámico sobre paisajes característicos de Costa Rica, incluyendo cafetales, bosques nubosos y cordilleras volcánicas.",
           "text2": "Al llegar al Poás, el helicóptero realiza un sobrevuelo controlado que permite observar con claridad su cráter activo, la laguna turquesa y las formaciones geológicas que lo rodean, brindando un punto de vista privilegiado que no es posible obtener desde tierra. Esta experiencia aérea destaca por su operación eficiente, su precisión en la ruta y la calidad del servicio a bordo, convirtiéndola en una opción ideal para viajeros que buscan una actividad exclusiva, segura y de alto nivel."
-          },
-          "highlight": {
-            "txt1": "Vista aérea única del cráter del Volcán Poás, incluyendo su laguna turquesa y fumarolas activas.",
-            "txt2": "Recorrido panorámico sobre el Valle Central, cafetales, montañas y bosques nubosos.",
-            "txt3": "Experiencia exclusiva y rápida desde San José, con perspectivas que solo se pueden apreciar desde un helicóptero."
-          },
-          "duration": {
-            "d1":"45 minutos de vuelo sobre el Valle Central y el Volcán Poás.",
-            "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
-            "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
-            "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
-          },
-          "departure":{
-            "p1":"El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
-            "p2":"Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
-            "p3":"En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
-          }
         },
-        "manuelantonio" : {
-          "name": "Manuel Antonio",
-          "description": {
+        "highlight": {
+          "txt1": "Vista aérea única del cráter del Volcán Poás, incluyendo su laguna turquesa y fumarolas activas.",
+          "txt2": "Recorrido panorámico sobre el Valle Central, cafetales, montañas y bosques nubosos.",
+          "txt3": "Experiencia exclusiva y rápida desde San José, con perspectivas que solo se pueden apreciar desde un helicóptero."
+        },
+        "duration": {
+          "d1": "45 minutos de vuelo sobre el Valle Central y el Volcán Poás.",
+          "d2": "15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
+          "d3": "10 minutos de briefing de seguridad antes de iniciar la experiencia.",
+          "d4": "10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
+        },
+        "departure": {
+          "p1": "El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
+          "p2": "Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
+          "p3": "En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
+        }
+      },
+      "manuelantonio": {
+        "name": "Manuel Antonio",
+        "description": {
           "text1": "Vive una de las experiencias aéreas más impresionantes de Costa Rica con nuestro tour en helicóptero hacia el Parque Nacional Manuel Antonio, partiendo desde San José. Durante el recorrido, disfrutarás vistas espectaculares del Pacífico Central, atravesando montañas, valles y extensos bosques tropicales hasta llegar a una de las costas más hermosas del país.",
           "text2": "Al acercarnos a Manuel Antonio, la perspectiva aérea revela sus playas de arena blanca, aguas turquesa, pequeñas islas, acantilados y la selva que abraza el litoral. Desde el helicóptero, podrás apreciar la riqueza natural del parque y sus paisajes icónicos de una forma que simplemente no es posible desde tierra. Este tour combina aventura, comodidad y exclusividad, ofreciéndote un trayecto rápido y panorámico desde San José. Ideal para viajeros que buscan una experiencia memorable, perfecta para fotografía y para conectar con la belleza única de la costa costarricense desde las alturas."
-          },
-          "highlight": {
-            "txt1": "Vista aérea única del Parque Nacional Manuel Antonio, con sus playas de arena blanca, selva tropical y aguas turquesa vistas desde el cielo.",
-            "txt2": "Sobrevuelo panorámico del Estadio Nacional, el Parque Metropolitano La Sabana y sus amplias áreas verdes.",
-            "txt3": "Experiencia exclusiva, cómoda y rápida desde San José, con ángulos y panoramas que solo se pueden disfrutar desde un helicóptero."
-          },
-          "duration": {
-            "d1":"1 hora de vuelo despegando de San José y volando hasta Manuel Antonio y de regreso a San José",
-            "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
-            "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
-            "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
-          },
-          "departure":{
-            "p1":"El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
-            "p2":"Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
-            "p3":"En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
-          }
         },
-        "tarcoles" : {
-          "name": "Tárcoles / Carara",
-          "description": {
+        "highlight": {
+          "txt1": "Vista aérea única del Parque Nacional Manuel Antonio, con sus playas de arena blanca, selva tropical y aguas turquesa vistas desde el cielo.",
+          "txt2": "Sobrevuelo panorámico del Estadio Nacional, el Parque Metropolitano La Sabana y sus amplias áreas verdes.",
+          "txt3": "Experiencia exclusiva, cómoda y rápida desde San José, con ángulos y panoramas que solo se pueden disfrutar desde un helicóptero."
+        },
+        "duration": {
+          "d1": "1 hora de vuelo despegando de San José y volando hasta Manuel Antonio y de regreso a San José",
+          "d2": "15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
+          "d3": "10 minutos de briefing de seguridad antes de iniciar la experiencia.",
+          "d4": "10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
+        },
+        "departure": {
+          "p1": "El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
+          "p2": "Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
+          "p3": "En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
+        }
+      },
+      "tarcoles": {
+        "name": "Tárcoles / Carara",
+        "description": {
           "text1": "Descubre desde el aire una de las zonas más impresionantes del Pacífico Central con nuestro tour en helicóptero hacia Tárcoles y el Parque Nacional Carara, saliendo desde San José. El recorrido inicia sobrevolando montañas y valles del Valle Central hasta descender hacia la costa, donde el paisaje se transforma en extensas selvas tropicales y ríos imponentes. El vuelo te ofrece una vista privilegiada del río Tárcoles, conocido mundialmente por su población de cocodrilos y por las formaciones naturales que lo rodean. Desde el helicóptero, podrás apreciar su recorrido completo y la impresionante transición hacia la costa.",
           "text2": "Continuando hacia Carara, disfrutarás de panorámicas espectaculares de uno de los bosques más biodiversos del país. Sus tonos verdes intensos, la mezcla de bosque seco y húmedo, y la profundidad de su vegetación crean un contraste visual único desde el cielo. Este tour combina naturaleza, aventura y comodidad, brindándote un acceso rápido a uno de los escenarios más vibrantes del Pacífico Central. Una experiencia perfecta para fotografía, observación y para disfrutar Costa Rica desde una perspectiva verdaderamente especial."
-          },
-          "highlight": {
-            "txt1": "Vista aérea única del río Tárcoles, famoso por sus cocodrilos y paisajes ribereños que se aprecian de forma espectacular desde el cielo.",
-            "txt2": "Sobrevuelo panorámico del Parque Nacional Carara, con su densa selva tropical, biodiversidad y los contrastes entre bosque húmedo y seco.",
-            "txt3": "Experiencia exclusiva, cómoda y rápida saliendo desde San José, con vistas inolvidables del Pacífico Central y perspectivas únicas que solo se pueden disfrutar desde un helicóptero."
-          },
-          "duration": {
-            "d1":"1 hora de vuelo despegando de San José.",
-            "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
-            "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
-            "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
-          },
-          "departure":{
-            "p1":"El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
-            "p2":"Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
-            "p3":"En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
-          }
         },
-        "citytour" : {
-          "name": "City Tour",
-          "description": {
+        "highlight": {
+          "txt1": "Vista aérea única del río Tárcoles, famoso por sus cocodrilos y paisajes ribereños que se aprecian de forma espectacular desde el cielo.",
+          "txt2": "Sobrevuelo panorámico del Parque Nacional Carara, con su densa selva tropical, biodiversidad y los contrastes entre bosque húmedo y seco.",
+          "txt3": "Experiencia exclusiva, cómoda y rápida saliendo desde San José, con vistas inolvidables del Pacífico Central y perspectivas únicas que solo se pueden disfrutar desde un helicóptero."
+        },
+        "duration": {
+          "d1": "1 hora de vuelo despegando de San José.",
+          "d2": "15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
+          "d3": "10 minutos de briefing de seguridad antes de iniciar la experiencia.",
+          "d4": "10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
+        },
+        "departure": {
+          "p1": "El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
+          "p2": "Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
+          "p3": "En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
+        }
+      },
+      "citytour": {
+        "name": "City Tour",
+        "description": {
           "text1": "Explora la capital de Costa Rica desde una perspectiva completamente nueva con nuestro exclusivo tour en helicóptero sobre San José. Este vuelo panorámico te permite disfrutar vistas espectaculares del Museo de los Niños, los edificios históricos del centro, el imponente Estadio Nacional y las amplias áreas verdes del Parque Metropolitano La Sabana.",
           "text2": "Mientras avanzamos por el cielo de la capital, podrás apreciar la mezcla única de arquitectura moderna, barrios tradicionales y el paisaje montañoso que rodea el Valle Central."
-          },
-          "highlight": {
-            "txt1": "Vista aérea única del corazón de San José, incluyendo el Museo de los Niños, edificios históricos y los principales hitos de la ciudad.",
-            "txt2": "Sobrevuelo panorámico del Estadio Nacional, el Parque Metropolitano La Sabana y sus amplias áreas verdes.",
-            "txt3": "Experiencia exclusiva, cómoda y rápida desde San José, con ángulos y panoramas que solo se pueden disfrutar desde un helicóptero."
-          },
-          "duration": {
-            "d1":"15 minutos de vuelo sobre el Valle Central.",
-            "d2":"15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
-            "d3":"10 minutos de briefing de seguridad antes de iniciar la experiencia.",
-            "d4":"10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
-          },
-          "departure":{
-            "p1":"El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
-            "p2":"Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
-            "p3":"En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
-          }
+        },
+        "highlight": {
+          "txt1": "Vista aérea única del corazón de San José, incluyendo el Museo de los Niños, edificios históricos y los principales hitos de la ciudad.",
+          "txt2": "Sobrevuelo panorámico del Estadio Nacional, el Parque Metropolitano La Sabana y sus amplias áreas verdes.",
+          "txt3": "Experiencia exclusiva, cómoda y rápida desde San José, con ángulos y panoramas que solo se pueden disfrutar desde un helicóptero."
+        },
+        "duration": {
+          "d1": "15 minutos de vuelo sobre el Valle Central.",
+          "d2": "15 minutos de proceso aeroportuario para registro y control previo al abordaje.",
+          "d3": "10 minutos de briefing de seguridad antes de iniciar la experiencia.",
+          "d4": "10 minutos con el helicóptero apagado para que los pasajeros puedan realizar fotos con total comodidad."
+        },
+        "departure": {
+          "p1": "El tour despega desde el Aeropuerto Internacional Tobías Bolaños en San José.",
+          "p2": "Sin embargo, si el cliente o la agencia requiere salir desde otro punto del país, podemos coordinarlo previamente.",
+          "p3": "En estos casos, la tarifa puede variar según la ubicación y las condiciones operativas del helicóptero."
         }
       }
     }
   }
+}

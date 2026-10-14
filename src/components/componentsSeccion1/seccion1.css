@@ -1,106 +1,233 @@
-.videobackground {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Asegura que el video quede detrás del contenido */
-    object-fit: cover; /* Escala el video para cubrir todo el área */
-    min-width: 100%;
-    min-height: 100%;
-    /* border-radius: 10px;  */
-  
+.volar-hero {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  height: clamp(540px, 44.8vw, 710px);
+  /* margin-bottom: 50px; */
+  color: #fff;
+}
+
+.volar-hero .videobackground {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /* background: linear-gradient(90deg, rgba(7, 28, 30, .65), rgba(7, 28, 30, .23) 58%, rgba(7, 28, 30, .08)); */
+}
+
+.hero-content {
+  width: 86%;
+  max-width: 1376px;
+  margin: auto;
+  padding-top: clamp(120px, 12vw, 270px);
+  box-sizing: border-box;
+}
+
+.hero-eyebrow {
+  font:
+    10px 'Montserrat-Regular',
+    sans-serif;
+  letter-spacing: 0.3em;
+  margin: 0 0 12px;
+}
+
+.hero-title {
+  font:
+    600 clamp(48px, 5.5vw, 86px)/0.98 'Montserrat-Regular',
+    sans-serif;
+  margin: 0 0 18px;
+}
+
+.hero-description {
+  font:
+    16px/1.35 'Montserrat-Regular',
+    sans-serif;
+  max-width: 365px;
+  margin: 0 0 22px;
+}
+
+.hero-plan {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 44px;
+  padding: 0 30px;
+  border: 1px solid #dedfda;
+  border-radius: 6px;
+  background: #fff;
+  color: #134a4b;
+  font:
+    600 13px 'Montserrat-Regular',
+    sans-serif;
+  cursor: pointer;
+}
+
+.hero-plan:hover {
+  background: #edf2ef;
+}
+
+.hero-quote {
+  position: absolute;
+  bottom: -28px;
+  left: 7%;
+  width: 86%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr 1.3fr;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid #e4e7e4;
+  border-radius: 10px;
+  background: #fffffff7;
+  box-shadow: 0 10px 25px #1636381a;
+}
+
+.quote-field {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 7px;
+  min-width: 0;
+  padding: 5px 14px;
+  background: none;
+  border: 0;
+  border-right: 1px solid #b8c7c8;
+  color: #134a4b;
+  cursor: pointer;
+}
+
+.quote-field svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.quote-field span {
+  min-width: 0;
+}
+
+.quote-field strong {
+  display: block;
+  font:
+    600 13px/1.4 'Montserrat-Regular',
+    sans-serif;
+}
+
+.quote-field small {
+  display: block;
+  font:
+    11px/1.5 'Montserrat-Regular',
+    sans-serif;
+  color: #869092;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hero-quote .hero-request {
+  background: #003b3f;
+  color: #fff;
+  font:
+    500 13px 'Montserrat-Regular',
+    sans-serif;
+  text-transform: none;
+  min-height: 48px;
+  border-radius: 7px;
+  margin-left: 24px;
+  gap: 12px;
+}
+
+.hero-quote .hero-request:hover {
+  background: #135459;
+}
+
+.hero-plan:focus-visible,
+.quote-field:focus-visible,
+.navbar-links a:focus-visible,
+.navbar-actions button:focus-visible {
+  outline: 2px solid #b7aa7b;
+  outline-offset: 4px;
+}
+
+@media (min-width: 1600px) {
+  .hero-quote {
+    width: 1376px;
+    left: calc((100% - 1376px) / 2);
+  }
+}
+
+@media (max-width: 850px) {
+  .volar-hero {
+    height: 640px;
+    margin-bottom: 130px;
   }
 
-  .title1{
-    font-family: "Montserrat-Bold" !important;
-    font-size: 4rem !important;
-    color: #fff !important;
+  .hero-content {
+    width: 88%;
+    padding-top: 130px;
   }
 
-  .title2{
-    font-family: "Montserrat-Bold" !important;
-    font-size: 4rem !important;
-    color: #fff !important;
+  .hero-title {
+    font-size: clamp(44px, 7vw, 64px);
   }
 
-  .title3{
-    font-family: "Montserrat-Light" !important;
-    font-size: 1rem !important;
-    color: #fff !important;
+  .hero-quote {
+    left: 6%;
+    width: 88%;
+    bottom: -100px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 0;
+    padding: 18px 10px;
   }
 
-  .btnExplore{
-    background-color: #134A4B !important;
-    color: #fff !important;
-    font-family: "Montserrat-Regular" !important;
-    font-weight: 600 !important;
-    font-size: 1rem !important;
-    text-transform: none !important;
-    border-radius: 10px !important;
-    width: 20% !important;
-    height: 115% !important;
+  .quote-field:nth-child(2) {
+    border: 0;
   }
 
-  .btnExplore:hover{
-    background-color: #134a4b88 !important;
+  .hero-quote .hero-request {
+    margin: 0 6px 0 12px;
+    font-size: 12px;
+  }
+}
 
+@media (max-width: 480px) {
+  .volar-hero {
+    height: 590px;
   }
 
-  
-  @media (min-width: 600px) and (max-width: 1024px) {
-    .title1{
-      font-size: 2rem !important;
-    }
-
-    .title2{
-      font-size: 2rem !important;
-    }
-
-    .title3{
-      font-size: 0.8rem !important;
-      width: 90% !important;
-    }
-
-    .btnExplore{
-      width: 10% !important;
-      height: 70% !important;
-      font-size: 0.8rem !important;
-      padding: 0% !important;
-      min-width: 10% !important;
-    }
-    
-    .MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters{
-      font-size: 0.8rem !important;
-      padding: 6px 9px !important;
-    }
+  .hero-eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.22em;
   }
 
-  @media (max-width: 600px) {
-
-    .title1{
-      font-size: 2rem !important;
-    }
-
-    .title2{
-      font-size: 2rem !important;
-    }
-
-    .title3{
-      font-size: 0.8rem !important;
-      width: 90% !important;
-    }
-
-    .btnExplore{
-      width: 10% !important;
-      height: 70% !important;
-      font-size: 0.8rem !important;
-      padding: 0% !important;
-      min-width: 10% !important;
-    }
-    
-    .MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters{
-      font-size: 0.8rem !important;
-      padding: 6px 9px !important;
-    }
-  
-    
+  .hero-title {
+    font-size: 48px;
   }
+
+  .hero-description {
+    font-size: 14px;
+    max-width: 290px;
+  }
+
+  .quote-field {
+    padding: 5px 8px;
+    gap: 3px;
+  }
+
+  .quote-field strong {
+    font-size: 12px;
+  }
+
+  .quote-field small {
+    font-size: 10px;
+  }
+}

@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import { useContext, useEffect, useMemo, useState } from "react";
+import Navbar from '../componentsNavbar/Navbar';
+import PropTypes from 'prop-types';
+import { useContext, useEffect, useMemo, useState } from 'react';
 import {
   Box,
-  Button,
   Dialog,
   SpeedDial,
   SpeedDialAction,
@@ -10,17 +10,16 @@ import {
   Stack,
   Typography,
   useMediaQuery,
-} from "@mui/material";
-import "./HelicopterDetail.css";
-import { LanguageContext } from "../LanguageProvider";
-import ShareIcon from "@mui/icons-material/Share";
-import Footer from "../componentsFooter/Footer";
-import { useNavigate } from "react-router-dom";
+} from '@mui/material';
+import './HelicopterDetail.css';
+import { LanguageContext } from '../LanguageProvider';
+import ShareIcon from '@mui/icons-material/Share';
+import Footer from '../componentsFooter/Footer';
 
 const GalleryCard = ({ width, image }) => {
   const [open, setOpen] = useState(false);
-  const isMobile = useMediaQuery("(max-width: 600px)");
-  const isTablet = useMediaQuery("(min-width: 601px) and (max-width: 1024px)");
+  const isMobile = useMediaQuery('(max-width: 600px)');
+  const isTablet = useMediaQuery('(min-width: 601px) and (max-width: 1024px)');
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
@@ -32,11 +31,11 @@ const GalleryCard = ({ width, image }) => {
         onClick={handleOpen}
         style={{
           width: width,
-          height: isMobile || isTablet ? "200px" : "400px",
+          height: isMobile || isTablet ? '200px' : '400px',
           backgroundImage: `url(${image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          cursor: "pointer",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          cursor: 'pointer',
         }}
       ></Stack>
       <Dialog
@@ -46,18 +45,18 @@ const GalleryCard = ({ width, image }) => {
         fullWidth
         PaperProps={{
           sx: {
-            backgroundColor: "transparent",
-            boxShadow: "none",
+            backgroundColor: 'transparent',
+            boxShadow: 'none',
           },
         }}
       >
         <Box
           sx={{
-            width: "100%",
+            width: '100%',
             minHeight: isMobile || isTablet ? 300 : 600,
             backgroundImage: `url(${image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
             borderRadius: 2,
           }}
         />
@@ -67,46 +66,30 @@ const GalleryCard = ({ width, image }) => {
 };
 
 const HelicopterDetail = ({ heli }) => {
-  const isMobile = useMediaQuery("(max-width: 600px)");
-  const isTablet = useMediaQuery("(min-width: 601px) and (max-width: 1024px)");
-  const navigate = useNavigate();
-  const { translation, toggleLanguage } = useContext(LanguageContext);
+  const isMobile = useMediaQuery('(max-width: 600px)');
+  const isTablet = useMediaQuery('(min-width: 601px) and (max-width: 1024px)');
+  const { translation } = useContext(LanguageContext);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }, [heli?.id]);
 
   const actions = [
     {
-      icon: (
-        <img
-          src="/images/email.svg"
-          style={{ width: isMobile ? "50%" : "60%" }}
-          alt="WA"
-        />
-      ),
-      name: "Email",
-      url: "mailto:reservations@volarcr.com",
+      icon: <img src="/images/email.svg" style={{ width: isMobile ? '50%' : '60%' }} alt="WA" />,
+      name: 'Email',
+      url: 'mailto:reservations@volarcr.com',
     },
     {
-      icon: (
-        <img
-          src="/images/WANegro.svg"
-          style={{ width: isMobile ? "50%" : "60%" }}
-          alt="WA"
-        />
-      ),
-      name: "Whatsapp",
-      url: "https://api.whatsapp.com/send?phone=50685959741",
+      icon: <img src="/images/WANegro.svg" style={{ width: isMobile ? '50%' : '60%' }} alt="WA" />,
+      name: 'Whatsapp',
+      url: 'https://api.whatsapp.com/send?phone=50685959741',
     },
   ];
 
-  const descriptionItems = useMemo(
-    () => Object.values(heli.description ?? {}),
-    [heli.description]
-  );
+  const descriptionItems = useMemo(() => Object.values(heli.description ?? {}), [heli.description]);
   const [currentDescriptionIndex, setCurrentDescriptionIndex] = useState(0);
-  const [typedText, setTypedText] = useState("");
+  const [typedText, setTypedText] = useState('');
   const [isTypingComplete, setTypingComplete] = useState(false);
 
   useEffect(() => {
@@ -114,8 +97,8 @@ const HelicopterDetail = ({ heli }) => {
   }, [heli.id]);
 
   useEffect(() => {
-    const textToType = descriptionItems[currentDescriptionIndex] ?? "";
-    setTypedText("");
+    const textToType = descriptionItems[currentDescriptionIndex] ?? '';
+    setTypedText('');
 
     if (!textToType) {
       setTypingComplete(true);
@@ -143,60 +126,27 @@ const HelicopterDetail = ({ heli }) => {
     }
 
     const holdTimeout = setTimeout(() => {
-      setCurrentDescriptionIndex(
-        (prev) => (prev + 1) % descriptionItems.length
-      );
+      setCurrentDescriptionIndex((prev) => (prev + 1) % descriptionItems.length);
     }, 1500);
 
     return () => clearTimeout(holdTimeout);
   }, [descriptionItems, isTypingComplete]);
 
   return (
-    <Stack style={{ width: "100%", height: "100%" }}>
-      <SpeedDial
-        ariaLabel="Language toggle"
-        sx={{
-          position: "fixed",
-          top: isMobile ? "3%" : "2%",
-          right: isMobile ? "3%" : "2%",
-          zIndex: 1000,
-        }}
-        FabProps={{
-          sx: {
-            bgcolor: "#F2F4F8",
-            color: "#134A4B",
-            boxShadow: "none",
-            width: isMobile ? 44 : 64,
-            height: isMobile ? 28 : 40,
-            borderRadius: 2, // Esto lo hace cuadrado con bordes redondeados
-            "&:hover": {
-              bgcolor: "#C3C5C8",
-            },
-          },
-        }}
-        icon={
-          <img
-            src={translation.buttonText}
-            style={{ width: "40%" }}
-            alt="Language"
-          />
-        }
-        onClick={toggleLanguage}
-        open={false}
-      />
-
+    <Stack style={{ width: '100%', height: '100%' }}>
+      <Navbar />
       <SpeedDial
         ariaLabel="SpeedDial openIcon example"
         sx={{
-          position: "fixed",
-          bottom: isMobile ? "5%" : "16%",
-          right: isMobile ? "8%" : "2%",
+          position: 'fixed',
+          bottom: isMobile ? '5%' : '16%',
+          right: isMobile ? '8%' : '2%',
         }}
         FabProps={{
           sx: {
-            bgcolor: "#134A4B",
-            color: "#fff",
-            "&:hover": { bgcolor: "#0f3a3b" },
+            bgcolor: '#134A4B',
+            color: '#fff',
+            '&:hover': { bgcolor: '#0f3a3b' },
           },
         }}
         icon={<SpeedDialIcon openIcon={<ShareIcon />} />}
@@ -205,7 +155,7 @@ const HelicopterDetail = ({ heli }) => {
           <SpeedDialAction
             key={action.name}
             icon={action.icon}
-            onClick={() => window.open(action.url, "_blank")}
+            onClick={() => window.open(action.url, '_blank')}
             slotProps={{
               tooltip: {
                 title: action.name,
@@ -216,40 +166,52 @@ const HelicopterDetail = ({ heli }) => {
       </SpeedDial>
 
       <Stack
+        className="helicopter-hero"
         alignItems="center"
-        style={{ width: "100%", height: isMobile ? "85vh" : "100vh" }}
+        style={{ width: '100%', height: isMobile ? '85vh' : '100vh' }}
       >
-        <Stack spacing={isMobile ? 22 : 35} style={{width: "100%"}}>
-          <Stack alignItems="center" style={{ width: "100%" }}>
+        <Stack
+          className="helicopter-hero-content"
+          spacing={isMobile ? 22 : 35}
+          style={{ width: '100%' }}
+        >
+          <Stack alignItems="center" style={{ width: '100%' }}>
             <img
               src="/images/logo.png"
-              alt="logo"
-              style={{ width: isMobile ? "25%" : "8%" }}
+              alt=""
+              aria-hidden="true"
+              style={{ width: isMobile ? '25%' : '8%', visibility: 'hidden' }}
             />
           </Stack>
-          <Stack alignItems="center" style={{ width: "100%" }}>
+          <Stack alignItems="center" style={{ width: '100%' }}>
             <Typography className="heliname">{heli.name}</Typography>
             <Typography className="helidescription">{typedText}</Typography>
           </Stack>
 
-<Stack>
-<Button
-          className="buttonbackHeli"
-          onClick={() => navigate("/")}
-        >
-
-<svg xmlns="http://www.w3.org/2000/svg" width={isMobile ? "20" : "30"} height={isMobile ? "18" : "26"} viewBox="0 0 30 26" fill="none">
-  <path d="M2 13L28 13M2 13L13.1429 2M2 13L13.1429 24" stroke="#fff" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
-          {translation.tourDetail.txtBack}
-        </Button>
-</Stack>
-
-
+          {/* <Stack>
+            <Button className="buttonbackHeli" onClick={() => navigate('/')}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width={isMobile ? '20' : '30'}
+                height={isMobile ? '18' : '26'}
+                viewBox="0 0 30 26"
+                fill="none"
+              >
+                <path
+                  d="M2 13L28 13M2 13L13.1429 2M2 13L13.1429 24"
+                  stroke="#fff"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              {translation.tourDetail.txtBack}
+            </Button>
+          </Stack> */}
         </Stack>
 
         <Box
-          className="videobackground"
+          className="helicopter-hero-video"
           component="video"
           src={heli.video}
           autoPlay
@@ -257,38 +219,24 @@ const HelicopterDetail = ({ heli }) => {
           muted
           playsInline
         />
-        <Box
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.45)",
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            zIndex: -1,
-          }}
-        />
+        <Box className="helicopter-hero-shade" aria-hidden="true" />
       </Stack>
 
       <Stack
         justifyContent="center"
         alignItems="center"
         style={{
-          width: "100%",
-          height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh",
-          backgroundColor: "#fff",
-          paddingTop: isMobile ? "15%" : "0%",
+          width: '100%',
+          height: isMobile ? (heli.id === 1 ? '60vh' : 'auto') : '55vh',
+          backgroundColor: '#fff',
+          paddingTop: isMobile ? '15%' : '0%',
         }}
       >
         <div className="S2Tcontainer">
           <Stack alignItems="center" justifyContent="center" spacing={2}>
-            <Typography className="S2Tprincipal">
-              {heli.description2.title1}
-            </Typography>
+            <Typography className="S2Tprincipal">{heli.description2.title1}</Typography>
 
-            <Typography className="S2Tdescription">
-              {heli.description2.text1}
-            </Typography>
+            <Typography className="S2Tdescription">{heli.description2.text1}</Typography>
           </Stack>
         </div>
       </Stack>
@@ -296,7 +244,7 @@ const HelicopterDetail = ({ heli }) => {
         justifyContent="space-evenly"
         alignItems="center"
         direction="row"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
+        style={{ width: '100%', height: '55vh', backgroundColor: '#fff' }}
       >
         {heli.id === 1 ? (
           isMobile || isTablet ? (
@@ -305,14 +253,14 @@ const HelicopterDetail = ({ heli }) => {
               justifyContent="center"
               alignItems="center"
               spacing={2}
-              style={{ width: "100%" }}
+              style={{ width: '100%' }}
             >
               <Stack
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
                 spacing={2}
-                style={{ width: "100%" }}
+                style={{ width: '100%' }}
               >
                 <GalleryCard width="45%" image={heli.gallery.image2} />
                 <GalleryCard width="45%" image={heli.gallery.image1} />
@@ -322,7 +270,7 @@ const HelicopterDetail = ({ heli }) => {
                 justifyContent="center"
                 alignItems="center"
                 spacing={2}
-                style={{ width: "100%" }}
+                style={{ width: '100%' }}
               >
                 <GalleryCard width="45%" image={heli.gallery.image3} />
                 <GalleryCard width="45%" image={heli.gallery.image4} />
@@ -338,32 +286,32 @@ const HelicopterDetail = ({ heli }) => {
           )
         ) : isMobile || isTablet ? (
           <Stack
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-          spacing={2}
-          style={{ width: "100%" }}
-        >
-          <Stack
-            direction="row"
+            direction="column"
             justifyContent="center"
             alignItems="center"
             spacing={2}
-            style={{ width: "100%" }}
+            style={{ width: '100%' }}
           >
-            <GalleryCard width="90%" image={heli.gallery.image1} />
+            <Stack
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+              style={{ width: '100%' }}
+            >
+              <GalleryCard width="90%" image={heli.gallery.image1} />
+            </Stack>
+            <Stack
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+              style={{ width: '100%' }}
+            >
+              <GalleryCard width="43%" image={heli.gallery.image2} />
+              <GalleryCard width="43%" image={heli.gallery.image3} />
+            </Stack>
           </Stack>
-          <Stack
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-            spacing={2}
-            style={{ width: "100%" }}
-          >
-            <GalleryCard width="43%" image={heli.gallery.image2}/>
-            <GalleryCard width="43%" image={heli.gallery.image3} />
-          </Stack>
-        </Stack>
         ) : (
           <>
             <GalleryCard width="32%" image={heli.gallery.image1} />
@@ -371,27 +319,22 @@ const HelicopterDetail = ({ heli }) => {
             <GalleryCard width="32%" image={heli.gallery.image3} />
           </>
         )}
-      
       </Stack>
       <Stack
         justifyContent="center"
         alignItems="center"
         style={{
-          width: "100%",
-          height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh",
-          backgroundColor: "#fff",
-          paddingTop: isMobile ? "0%" : "0%",
+          width: '100%',
+          height: isMobile ? (heli.id === 1 ? '60vh' : 'auto') : '55vh',
+          backgroundColor: '#fff',
+          paddingTop: isMobile ? '0%' : '0%',
         }}
       >
         <div className="S2Tcontainer">
           <Stack alignItems="center" justifyContent="center" spacing={2}>
-            <Typography className="S2Tprincipal">
-              {heli.description2.title2}
-            </Typography>
+            <Typography className="S2Tprincipal">{heli.description2.title2}</Typography>
 
-            <Typography className="S2Tdescription">
-              {heli.description2.text2}
-            </Typography>
+            <Typography className="S2Tdescription">{heli.description2.text2}</Typography>
           </Stack>
         </div>
       </Stack>
@@ -399,287 +342,271 @@ const HelicopterDetail = ({ heli }) => {
         justifyContent="space-evenly"
         alignItems="center"
         direction="row"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
+        style={{ width: '100%', height: '55vh', backgroundColor: '#fff' }}
       >
         {heli.id === 1 ? (
-        isMobile || isTablet ? (
-          <Stack
-            direction="column"
-            justifyContent="center"
-            alignItems="center"
-            spacing={2}
-            style={{ width: "100%" }}
-          >
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              style={{ width: "100%" }}
-            >
-              <GalleryCard width="90%" image={heli.gallery.image5} />
-            </Stack>
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              style={{ width: "100%" }}
-            >
-              <GalleryCard width="43%" image={heli.gallery.image6} />
-              <GalleryCard width="43%" image={heli.gallery.image7} />
-            </Stack>
-          </Stack>
-        ) : (
-          <>
-            <GalleryCard width="32%" image={heli.gallery.image5} />
-            <GalleryCard width="32%" image={heli.gallery.image6} />
-            <GalleryCard width="32%" image={heli.gallery.image7} />
-          </>
-        )
-        ) : (
           isMobile || isTablet ? (
             <Stack
               direction="column"
               justifyContent="center"
               alignItems="center"
               spacing={2}
-              style={{ width: "100%" }}
+              style={{ width: '100%' }}
             >
               <Stack
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
                 spacing={2}
-                style={{ width: "100%" }}
+                style={{ width: '100%' }}
               >
-                <GalleryCard width="90%" image={heli.gallery.image4} />
+                <GalleryCard width="90%" image={heli.gallery.image5} />
               </Stack>
               <Stack
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
                 spacing={2}
-                style={{ width: "100%" }}
+                style={{ width: '100%' }}
               >
-                <GalleryCard width="43%" image={heli.gallery.image5} />
                 <GalleryCard width="43%" image={heli.gallery.image6} />
+                <GalleryCard width="43%" image={heli.gallery.image7} />
               </Stack>
             </Stack>
           ) : (
             <>
-              <GalleryCard width="32%" image={heli.gallery.image4} />
               <GalleryCard width="32%" image={heli.gallery.image5} />
               <GalleryCard width="32%" image={heli.gallery.image6} />
+              <GalleryCard width="32%" image={heli.gallery.image7} />
             </>
           )
+        ) : isMobile || isTablet ? (
+          <Stack
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+            spacing={2}
+            style={{ width: '100%' }}
+          >
+            <Stack
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+              style={{ width: '100%' }}
+            >
+              <GalleryCard width="90%" image={heli.gallery.image4} />
+            </Stack>
+            <Stack
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              spacing={2}
+              style={{ width: '100%' }}
+            >
+              <GalleryCard width="43%" image={heli.gallery.image5} />
+              <GalleryCard width="43%" image={heli.gallery.image6} />
+            </Stack>
+          </Stack>
+        ) : (
+          <>
+            <GalleryCard width="32%" image={heli.gallery.image4} />
+            <GalleryCard width="32%" image={heli.gallery.image5} />
+            <GalleryCard width="32%" image={heli.gallery.image6} />
+          </>
         )}
-
-
-        
       </Stack>
-
 
       {heli.id === 1 ? (
         <>
-      <Stack
-        justifyContent="center"
-        alignItems="center"
-        style={{ width: "100%", height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh", backgroundColor: "#fff" }}
-      >
-        <div className="S2Tcontainer">
-          <Stack alignItems="center" justifyContent="center" spacing={2}>
-            <Typography className="S2Tprincipal">
-              {heli.description2.title3}
-            </Typography>
-
-            <Typography className="S2Tdescription">
-              {heli.description2.text3}
-            </Typography>
-          </Stack>
-        </div>
-      </Stack>
-      <Stack
-        justifyContent="space-evenly"
-        alignItems="center"
-        direction="row"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
-      >
-        {isMobile || isTablet ? (
           <Stack
-            direction="column"
             justifyContent="center"
             alignItems="center"
-            spacing={2}
-            style={{ width: "100%" }}
+            style={{
+              width: '100%',
+              height: isMobile ? (heli.id === 1 ? '60vh' : 'auto') : '55vh',
+              backgroundColor: '#fff',
+            }}
           >
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              style={{ width: "100%" }}
-            >
-              <GalleryCard width="45%" image={heli.gallery.image8} />
-              <GalleryCard width="45%" image={heli.gallery.image9} />
-            </Stack>
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              style={{ width: "100%" }}
-            >
-              <GalleryCard width="45%" image={heli.gallery.image10} />
-              <GalleryCard width="45%" image={heli.gallery.image11} />
-            </Stack>
-          </Stack>
-        ) : (
-          <>
-            <GalleryCard width="24%" image={heli.gallery.image8} />
-            <GalleryCard width="24%" image={heli.gallery.image9} />
-            <GalleryCard width="24%" image={heli.gallery.image10} />
-            <GalleryCard width="24%" image={heli.gallery.image11} />
-          </>
-        )}
-      </Stack>
-      <Stack
-        justifyContent="center"
-        alignItems="center"
-        style={{ width: "100%", height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh", backgroundColor: "#fff" }}
-      >
-        <div className="S2Tcontainer">
-          <Stack alignItems="center" justifyContent="center" spacing={2}>
-            <Typography className="S2Tprincipal">
-              {heli.description2.title4}
-            </Typography>
+            <div className="S2Tcontainer">
+              <Stack alignItems="center" justifyContent="center" spacing={2}>
+                <Typography className="S2Tprincipal">{heli.description2.title3}</Typography>
 
-            <Typography className="S2Tdescription">
-              {heli.description2.text4}
-            </Typography>
+                <Typography className="S2Tdescription">{heli.description2.text3}</Typography>
+              </Stack>
+            </div>
           </Stack>
-        </div>
-      </Stack>
-      <Stack
-        justifyContent="space-evenly"
-        alignItems="center"
-        direction="row"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
-      >
-
-{isMobile || isTablet ? (
           <Stack
-            direction="column"
+            justifyContent="space-evenly"
+            alignItems="center"
+            direction="row"
+            style={{ width: '100%', height: '55vh', backgroundColor: '#fff' }}
+          >
+            {isMobile || isTablet ? (
+              <Stack
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+                spacing={2}
+                style={{ width: '100%' }}
+              >
+                <Stack
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                  spacing={2}
+                  style={{ width: '100%' }}
+                >
+                  <GalleryCard width="45%" image={heli.gallery.image8} />
+                  <GalleryCard width="45%" image={heli.gallery.image9} />
+                </Stack>
+                <Stack
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                  spacing={2}
+                  style={{ width: '100%' }}
+                >
+                  <GalleryCard width="45%" image={heli.gallery.image10} />
+                  <GalleryCard width="45%" image={heli.gallery.image11} />
+                </Stack>
+              </Stack>
+            ) : (
+              <>
+                <GalleryCard width="24%" image={heli.gallery.image8} />
+                <GalleryCard width="24%" image={heli.gallery.image9} />
+                <GalleryCard width="24%" image={heli.gallery.image10} />
+                <GalleryCard width="24%" image={heli.gallery.image11} />
+              </>
+            )}
+          </Stack>
+          <Stack
             justifyContent="center"
             alignItems="center"
-            spacing={2}
-            style={{ width: "100%" }}
+            style={{
+              width: '100%',
+              height: isMobile ? (heli.id === 1 ? '60vh' : 'auto') : '55vh',
+              backgroundColor: '#fff',
+            }}
           >
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              style={{ width: "100%" }}
-            >
-               <GalleryCard width="90%" image={heli.gallery.image14} />
-            </Stack>
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              style={{ width: "100%" }}
-            >
-              <GalleryCard width="43%" image={heli.gallery.image12} />
-              <GalleryCard width="43%" image={heli.gallery.image13} />
-            </Stack>
+            <div className="S2Tcontainer">
+              <Stack alignItems="center" justifyContent="center" spacing={2}>
+                <Typography className="S2Tprincipal">{heli.description2.title4}</Typography>
+
+                <Typography className="S2Tdescription">{heli.description2.text4}</Typography>
+              </Stack>
+            </div>
           </Stack>
-        ) : (
-          <>
-        <GalleryCard width="32%" image={heli.gallery.image12} />
-        <GalleryCard width="32%" image={heli.gallery.image13} />
-        <GalleryCard width="32%" image={heli.gallery.image14} />
-          </>
-        )}
-
-
-      
-      </Stack>
-      <Stack
-        justifyContent="center"
-        alignItems="center"
-        style={{ width: "100%", height: isMobile ? (heli.id === 1 ? "60vh" : "auto") : "55vh", backgroundColor: "#fff" }}
-      >
-        <div className="S2Tcontainer">
-          <Stack alignItems="center" justifyContent="center" spacing={2}>
-            <Typography className="S2Tprincipal">
-              {heli.description2.title6}
-            </Typography>
-
-            <Typography className="S2Tdescription">
-              {heli.description2.text6}
-            </Typography>
-          </Stack>
-        </div>
-      </Stack>
-      <Stack
-        justifyContent="space-evenly"
-        alignItems="center"
-        direction="row"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
-      >
-        {isMobile || isTablet ? (
           <Stack
-            direction="column"
+            justifyContent="space-evenly"
+            alignItems="center"
+            direction="row"
+            style={{ width: '100%', height: '55vh', backgroundColor: '#fff' }}
+          >
+            {isMobile || isTablet ? (
+              <Stack
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+                spacing={2}
+                style={{ width: '100%' }}
+              >
+                <Stack
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                  spacing={2}
+                  style={{ width: '100%' }}
+                >
+                  <GalleryCard width="90%" image={heli.gallery.image14} />
+                </Stack>
+                <Stack
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                  spacing={2}
+                  style={{ width: '100%' }}
+                >
+                  <GalleryCard width="43%" image={heli.gallery.image12} />
+                  <GalleryCard width="43%" image={heli.gallery.image13} />
+                </Stack>
+              </Stack>
+            ) : (
+              <>
+                <GalleryCard width="32%" image={heli.gallery.image12} />
+                <GalleryCard width="32%" image={heli.gallery.image13} />
+                <GalleryCard width="32%" image={heli.gallery.image14} />
+              </>
+            )}
+          </Stack>
+          <Stack
             justifyContent="center"
             alignItems="center"
-            spacing={2}
-            style={{ width: "100%" }}
+            style={{
+              width: '100%',
+              height: isMobile ? (heli.id === 1 ? '60vh' : 'auto') : '55vh',
+              backgroundColor: '#fff',
+            }}
           >
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              style={{ width: "100%" }}
-            >
-              <GalleryCard width="45%" image={heli.gallery.image15} />
-              <GalleryCard width="45%" image={heli.gallery.image16} />
-            </Stack>
-            <Stack
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              spacing={2}
-              style={{ width: "100%" }}
-            >
-              <GalleryCard width="45%" image={heli.gallery.image17} />
-              <GalleryCard width="45%" image={heli.gallery.image18} />
-            </Stack>
+            <div className="S2Tcontainer">
+              <Stack alignItems="center" justifyContent="center" spacing={2}>
+                <Typography className="S2Tprincipal">{heli.description2.title6}</Typography>
+
+                <Typography className="S2Tdescription">{heli.description2.text6}</Typography>
+              </Stack>
+            </div>
           </Stack>
-        ) : (
-          <>
-            <GalleryCard width="24%" image={heli.gallery.image15} />
-            <GalleryCard width="24%" image={heli.gallery.image16} />
-            <GalleryCard width="24%" image={heli.gallery.image17} />
-            <GalleryCard width="24%" image={heli.gallery.image18} />
-          </>
-        )}
-      </Stack>
-      </>
-      ) : (
-        null
-      )}
-
-      
-
-
+          <Stack
+            justifyContent="space-evenly"
+            alignItems="center"
+            direction="row"
+            style={{ width: '100%', height: '55vh', backgroundColor: '#fff' }}
+          >
+            {isMobile || isTablet ? (
+              <Stack
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+                spacing={2}
+                style={{ width: '100%' }}
+              >
+                <Stack
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                  spacing={2}
+                  style={{ width: '100%' }}
+                >
+                  <GalleryCard width="45%" image={heli.gallery.image15} />
+                  <GalleryCard width="45%" image={heli.gallery.image16} />
+                </Stack>
+                <Stack
+                  direction="row"
+                  justifyContent="center"
+                  alignItems="center"
+                  spacing={2}
+                  style={{ width: '100%' }}
+                >
+                  <GalleryCard width="45%" image={heli.gallery.image17} />
+                  <GalleryCard width="45%" image={heli.gallery.image18} />
+                </Stack>
+              </Stack>
+            ) : (
+              <>
+                <GalleryCard width="24%" image={heli.gallery.image15} />
+                <GalleryCard width="24%" image={heli.gallery.image16} />
+                <GalleryCard width="24%" image={heli.gallery.image17} />
+                <GalleryCard width="24%" image={heli.gallery.image18} />
+              </>
+            )}
+          </Stack>
+        </>
+      ) : null}
 
       <Stack
         justifyContent="center"
         alignItems="center"
-        style={{ width: "100%", height: "55vh", backgroundColor: "#fff" }}
+        style={{ width: '100%', height: '55vh', backgroundColor: '#fff' }}
       >
         <div className="S2Tcontainer">
           <Stack alignItems="center" justifyContent="center" spacing={2}>

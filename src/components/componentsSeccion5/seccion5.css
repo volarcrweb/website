@@ -1,183 +1,312 @@
-
-.title-flota{
-    color: #134A4B !important;
-    text-align: center !important;
-    font-family: "Montserrat-Bold" !important;
-    font-size: 66.416px !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    line-height: normal !important;
-}
-.title2-flota{
-    color: #2D2D2D !important;
-    text-align: center !important;
-    font-family: "Montserrat-Regular" !important;
-    font-size: 24px !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    line-height: normal !important;
+.fleet-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #fafbf9;
+  color: #12454c;
+  padding: 34px 0 30px;
+  font-family: 'Montserrat-Regular', sans-serif;
 }
 
-
-.titleAmenidad{
-    color: #134A4B;
-    text-align: center;
-    font-family: "Montserrat-Bold" !important;
-    font-size: 18px !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    line-height: normal !important;
-
-}
-.descripcionAmenidad{
-    color: #2D2D2D !important;
-    text-align: center !important;
-    font-family: "Montserrat-Regular" !important;
-    font-size: 16px !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    line-height: normal !important;
-    width: 206px !important;
-
+.fleet-section *,
+.fleet-section button,
+.fleet-section a {
+  font-family: 'Montserrat-Regular', sans-serif;
+  box-sizing: border-box;
 }
 
-.titleDIalog{
-    color: #ffffff !important;
-    text-align: center !important;
-    font-family: "Montserrat-Bold" !important;
-    font-size: 1.5rem !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    line-height: normal !important;
-    text-transform: uppercase !important;
+.fleet-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 1;
+  background:
+    linear-gradient(0deg, #fafbf9, transparent 28%),
+    url('/images/fleet-background.png') center / cover no-repeat;
 }
 
-.subtitleDIalog{
-    color: #ffffff !important;
-    text-align: center !important;
-    font-family: "Montserrat-Bold" !important;
-    font-size: 1.2rem !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    line-height: normal !important;
+.fleet-inner {
+  width: 94%;
+  max-width: 1600px;
+  margin: auto;
 }
 
-.valueDIalog{
-    color: #ffffff !important;
-    text-align: center !important;
-    font-family: "Montserrat-Regular" !important;
-    font-size: 1.2rem !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    line-height: normal !important;
+.fleet-heading {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: end;
+  gap: 32px;
+  padding: 0 3%;
+  margin-bottom: 26px;
 }
 
-.btnseemore{
-    border-radius: 65.031px !important;
-    background: #134A4B !important;
-    color: #FFFFFF !important;
-    font-family: "Montserrat-Bold" !important;
-    font-size: 0.8rem !important;
-    font-style: normal !important;
-    width: 40% !important;
-    height: 30px !important;
-    border: none !important;
-    text-decoration: none !important;
-    text-align: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+.fleet-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  margin: 0 0 14px;
 }
 
-.amenidadToggle{
-    outline: none;
+.fleet-eyebrow span {
+  width: 82px;
+  height: 1px;
+  background: #59858a;
 }
 
-.amenidadToggleCircle{
-    position: relative;
-    transform: translateZ(0);
-    transition: transform 180ms ease, filter 180ms ease;
-    will-change: transform;
+.fleet-heading h2 {
+  font-size: clamp(26px, 2.7vw, 42px);
+  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  margin: 0;
 }
 
-/* Sutil “pulse” para indicar que es clickeable */
-.amenidadToggleCircle::after{
-    content: "";
-    position: absolute;
-    inset: -8px;
-    border-radius: 50%;
-    border: 2px solid rgba(19, 74, 75, 0.45);
-    opacity: 0;
-    transform: scale(0.92);
-    animation: amenidadPulse 2200ms ease-out infinite;
-    pointer-events: none;
+.fleet-description {
+  max-width: 380px;
+  margin: 0;
+  font-size: clamp(12px, 1.05vw, 15px);
+  line-height: 1.4;
+  color: #697c90;
 }
 
-.amenidadToggle:hover .amenidadToggleCircle,
-.amenidadToggle:focus-visible .amenidadToggleCircle{
-    transform: scale(1.06);
-    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.18));
-    -webkit-transform: scale(1.06);
-    -moz-transform: scale(1.06);
-    -ms-transform: scale(1.06);
-    -o-transform: scale(1.06);
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
-.amenidadToggle:focus-visible .amenidadToggleCircle::after{
-    opacity: 1;
+.fleet-card {
+  background: #ffffffed;
+  border: 1px solid #ffffffd9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px #123e4810;
 }
 
-@keyframes amenidadPulse{
-    0%{
-        opacity: 0;
-        transform: scale(0.92);
-    }
-    20%{
-        opacity: 0.85;
-    }
-    100%{
-        opacity: 0;
-        transform: scale(1.18);
-    }
+.fleet-photo-link {
+  display: block;
 }
 
-@media (prefers-reduced-motion: reduce){
-    .amenidadToggleCircle{
-        transition: none;
-    }
-    .amenidadToggleCircle::after{
-        animation: none;
-        opacity: 0.35;
-        transform: scale(1);
-    }
+.fleet-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2.12;
+  object-fit: cover;
+}
+
+.fleet-card-content {
+  padding: 12px 18px;
+}
+
+.fleet-card h3 {
+  font-size: clamp(21px, 2.2vw, 32px);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  margin: 0 6px 9px;
+}
+
+.fleet-specifications {
+  display: grid;
+  grid-template-columns: 1fr 1.12fr;
+  align-items: stretch;
+  border-top: 1px solid #e5eaea;
+  margin: 0 0 20px;
+  padding: 11px 0 0;
+}
+
+.fleet-specification {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 0 8px;
+}
+
+.fleet-specification + .fleet-specification {
+  border-left: 1px solid #dce4e5;
+  padding-left: 20px;
+}
+
+.fleet-specification svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.fleet-specification dt {
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.fleet-specification dd {
+  font-size: 9px;
+  line-height: 1.4;
+  color: #60758c;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.fleet-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 32px;
+  border-radius: 9px;
+  background: #00474e;
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  transition: background 0.2s;
+}
+
+.fleet-more:hover {
+  background: #17656c;
+}
+
+.fleet-section a:focus-visible {
+  outline: 2px solid #b59c66;
+  outline-offset: -3px;
+}
+
+@media (min-width: 1400px) {
+  .fleet-section {
+    padding: 42px 0 36px;
+  }
+
+  .fleet-card-content {
+    padding: 16px 22px;
+  }
+
+  .fleet-specification dt {
+    font-size: 12px;
+  }
+
+  .fleet-specification dd {
+    font-size: 11px;
+  }
+
+  .fleet-more {
+    min-height: 38px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .fleet-heading {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .fleet-description {
+    max-width: 600px;
+    font-size: 13px;
+  }
+
+  .fleet-heading h2 {
+    font-size: 30px;
+  }
+
+  .fleet-card-content {
+    padding: 12px;
+  }
+
+  .fleet-card h3 {
+    font-size: 20px;
+    min-height: 48px;
+    margin-left: 0;
+  }
+
+  .fleet-specifications {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .fleet-specification + .fleet-specification {
+    border: 0;
+    padding-left: 8px;
+  }
 }
 
 @media (max-width: 600px) {
-    .title-flota {
-        font-size: 32px !important;
-    }
-    .title2-flota {
-        font-size: 16px !important;
-    }
-    .titleAmenidad {
-        font-size: 14px !important;
-    }
-    .descripcionAmenidad {
-        font-size: 12px !important;
-        width: 150px !important;
-    }
-    .titleDIalog{
-        font-size: 1.2rem !important;
-    }
-    
-    .subtitleDIalog{
-        font-size: 1rem !important;
-    }
-    .valueDIalog{
-        font-size: 1rem !important;
-    }
-    .btnseemore{
-        font-size: 0.6rem !important;
-        width: 50% !important;
-    }
+  .fleet-section {
+    padding: 28px 0 24px;
+  }
+
+  .fleet-inner {
+    width: 90%;
+  }
+
+  .fleet-heading {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .fleet-heading h2 {
+    font-size: 26px;
+  }
+
+  .fleet-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .fleet-photo {
+    aspect-ratio: 2.3;
+  }
+
+  .fleet-card-content {
+    padding: 12px 16px;
+  }
+
+  .fleet-card h3 {
+    font-size: 23px;
+    min-height: 0;
+    margin-bottom: 10px;
+  }
+
+  .fleet-specifications {
+    grid-template-columns: 1fr 1.12fr;
+    gap: 0;
+    margin-bottom: 14px;
+  }
+
+  .fleet-specification {
+    gap: 7px;
+    padding: 0 4px;
+  }
+
+  .fleet-specification + .fleet-specification {
+    border-left: 1px solid #dce4e5;
+    padding-left: 12px;
+  }
+
+  .fleet-specification dt {
+    font-size: 10px;
+  }
+
+  .fleet-specification dd {
+    font-size: 9px;
+  }
+
+  .fleet-more {
+    min-height: 34px;
+    font-size: 11px;
+  }
+
+  .fleet-backdrop {
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fleet-more {
+    transition: none;
+  }
 }
